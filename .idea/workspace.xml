@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="faf8a123-37c6-4362-a2ab-15bade5083f3" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\prizma-core\New Text Document.txt" afterPath="" />
+    </list>
+    <ignored path="prizma.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394788620403" ignored="false" />
+    <file path="/fragment.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394714110950" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/FirstFiveLetterRooter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/ToLowerCaseConverter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/LengthOfTitle.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/TooLongTokenFilter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/StopWordRemover.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/test/java/com/hrzafer/prizma/preprocessing/StandardTokenizerTest.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/dataset/FeatureReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/NumberRemover.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/Feature.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/FastTokenizer.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/VowelRemover.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/Filter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/StandardTokenizer.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/dataset/Dataset.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/URLRemover.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/Bigrams.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/ModifierFilter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/Analyzer.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/StemmerFilter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/ArffCreator.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/PunctuationRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/ITokenizer.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/INormalizer.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/IFilter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/MultipleUnderscoreRemover.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/TokenizerFactory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/NormalizerFactory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/WeirdMSWordCharactersNormalizer.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/GlobalsReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/Globals.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/AnalyzerCache.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/Trigrams.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/WordLengthVariance.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/WordLengthAverage.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/Asciifier.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/WordCountOfTitle.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/Unigrams.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/TooShortTokenFilter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/StopwordRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/PunctuationSemicolonRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/PunctuationQuestionMarkRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/PunctuationExclamationRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/PunctuationEllipsisRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/PunctuationDoubleQuoteRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/PunctuationDashRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/LexiconFrequency.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/PunctuationCountOfTitle.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/PunctuationCommaRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/PunctuationColonRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/PunctuationAsteriksRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/NumberCount.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/FilterFactory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/NGramModel.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/pom.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543674222" ignored="false" />
+    <file path="$PROJECT_DIR$/../prizma-damla/pom.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543708522" ignored="false" />
+    <file path="/Instance.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394611275327" ignored="false" />
+    <file path="/InstanceFileSource.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394544514126" ignored="false" />
+    <file path="/Document.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394720051272" ignored="false" />
+    <file path="/Category.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394547673101" ignored="false" />
+    <file path="/CategoryFromSubsets.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394545204939" ignored="false" />
+    <file path="/Dataset.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394719173861" ignored="false" />
+    <file path="/CategoryFromInstances.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394609642561" ignored="false" />
+    <file path="/CategoryFromSubcategories.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394609915412" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/vsm/FeatureVector.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394548234573" ignored="false" />
+    <file path="/pom.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394608942501" ignored="false" />
+    <file path="/DatasetReaderCSV.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394610825955" ignored="false" />
+    <file path="/DatasetReaderDirectory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394610893201" ignored="false" />
+    <file path="/DatasetWriterCSV.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394719772720" ignored="false" />
+    <file path="/DocumentFromMap.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394629991486" ignored="false" />
+    <file path="/DocumentFromFile.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394722592655" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/instance/Instance.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394630134681" ignored="false" />
+    <file path="/DocumentFromString.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394711876824" ignored="false" />
+    <file path="/DocumentFromTokens.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394712061478" ignored="false" />
+    <file path="/DocumentSource.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394721665446" ignored="false" />
+    <file path="/STR.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394712008245" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/tfidf/Category.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394712241523" ignored="false" />
+    <file path="/DatasetDirToCSV.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394722696535" ignored="false" />
+    <file path="/DatasetDirToXML.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394713896998" ignored="false" />
+    <file path="/DatasetFromCSVReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394713916821" ignored="false" />
+    <file path="/DatasetFromDirectoryReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394714008027" ignored="false" />
+    <file path="/DirectoryDatasetReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394803838509" ignored="false" />
+    <file path="/TestMain.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394804014590" ignored="false" />
+    <file path="/DatasetWriterDir.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394721418886" ignored="false" />
+    <file path="/DataCropper.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394721537039" ignored="false" />
+    <file path="/FileDocumentSourceStrategy.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394721913167" ignored="false" />
+    <file path="/DefaultFileDocumentReaderStrategy.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394722011415" ignored="false" />
+    <file path="/TitledFileDocumentSourceStrategy.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394723043297" ignored="false" />
+    <file path="/FileDocumentSource.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394722591864" ignored="false" />
+    <file path="/ArffCreator.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394722679498" ignored="false" />
+    <file path="/CSVDatasetReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394788842449" ignored="false" />
+    <file path="/DatasetReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394803506829" ignored="false" />
+    <file path="/DatasetReaderProperties.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394799348545" ignored="false" />
+    <file path="/DirectoryDataSetReaderProperties.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394799529708" ignored="false" />
+    <file path="/FeatureReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394804222151" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="prizma" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="FileDocumentSource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileDocumentSourceStrategy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSourceStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="17" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TitledFileDocumentSourceStrategy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/TitledFileDocumentSourceStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="26" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeatureExtractor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureExtractor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="13" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeatureReader.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="13" selection-start="999" selection-end="999" vertical-scroll-proportion="0.3321234">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocumentSource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="38" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DirectroyDatasetWriter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectroyDatasetWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocumentFromMap.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="13" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocumentFromString.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocumentFromTokens.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromTokens.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DefaultFileDocumentReaderStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DefaultFileDocumentSourceStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSourceStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DatasetDirToCSV.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/ArffCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/TitledFileDocumentSourceStrategy.java" />
+        <option value="$PROJECT_DIR$/dataset/sample_dataset.csv" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DatasetReaderProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectoryDataSetReaderProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DatasetReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/CSVDatasetReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectoryDatasetReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/TestMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureReader.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="prizma" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="prizma" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dataset/sample_dataset.csv" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RunManager" selected="Application.TestMain">
+    <configuration default="false" name="TestMain" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hrzafer.prizma.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.hrzafer.prizma.TestMain" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="prizma-core" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.TestMain" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.TestMain" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="faf8a123-37c6-4362-a2ab-15bade5083f3" name="Default" comment="" />
+      <created>1394543131874</created>
+      <updated>1394543131874</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3303671" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25186765" sideWeight="0.66518354" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33481646" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/Dataset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/CSVDatasetReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="33" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="26" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DatasetReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="13" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DefaultFileDocumentSourceStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectoryDatasetReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectroyDatasetWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromTokens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="38" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSourceStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/TitledFileDocumentSourceStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="26" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="13" selection-start="999" selection-end="999" vertical-scroll-proportion="0.3321234">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

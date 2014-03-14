@@ -1,0 +1,37 @@
+package com.hrzafer.prizma.feature;
+
+import com.hrzafer.prizma.data.Document;
+import com.hrzafer.prizma.preprocessing.Analyzer;
+import com.hrzafer.prizma.util.STR;
+
+import java.util.Map;
+import java.util.Scanner;
+
+/**
+ * Works only for integer numbers so far.
+ *
+ * @author harun
+ */
+public class NumberCount extends Feature {
+
+    public NumberCount(String type, String name, int weight, String description, Map<String, String> parameters, Analyzer analyzer) {
+        super(type, name, weight, description, parameters, analyzer);
+    }
+
+    @Override
+    public String extract(Document document) {
+        String data = getFieldData(document);
+        String source = data.replaceAll(STR.CLEAN_REGEX, " ");
+        Scanner s = new Scanner(source);
+        Integer numberCount = 0;
+        while (s.hasNext()) {
+            if (s.hasNextInt()) {
+                numberCount++;
+            }
+            s.next();
+        }
+
+        return numberCount.toString();
+    }
+
+}
