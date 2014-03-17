@@ -1,6 +1,10 @@
 package com.hrzafer.prizma.feature.ngram;
 
 import com.hrzafer.prizma.Resources;
+import com.hrzafer.prizma.feature.BinaryValue;
+import com.hrzafer.prizma.feature.FeatureValue;
+import com.hrzafer.prizma.feature.FeatureValueFactory;
+import com.hrzafer.prizma.feature.IntegerValue;
 import com.hrzafer.prizma.util.IO;
 
 import java.util.*;
@@ -127,15 +131,13 @@ public class NGramData {
         nGrams.put(key, new NGramFrequency());
     }
 
-    public int[] getNGramVector(List<String> tokens) {
+    public List<FeatureValue> getNGramVector(List<String> tokens, boolean binary) {
         List<NGram> nGrams = nGramExtractor.extract(tokens, windowSize);
-        return compareAndGetVector(nGrams);
-    }
-
-    public int[] getBinaryNGramVector(List<String> tokens) {
-        int[] vector = getNGramVector(tokens);
-        convertToBinary(vector);
-        return vector;
+        int[] vectors = compareAndGetVector(nGrams);
+        if (binary){
+            return toBinaryValues(vectors);
+        }
+        return toIntegerValues(vectors);
     }
 
     /**
@@ -174,6 +176,23 @@ public class NGramData {
             i++;
         }
         return vector;
+    }
+
+
+    private List<FeatureValue> toIntegerValues(int[] vector){
+        List<FeatureValue> values = new ArrayList<>();
+        for (int i : vector) {
+            values.add(FeatureValueFactory.create(i));
+        }
+        return values;
+    }
+
+    private List<FeatureValue> toBinaryValues(int[] vector){
+        List<FeatureValue> values = new ArrayList<>();
+        for (int i : vector) {
+            values.add(new BinaryValue(i));
+        }
+        return values;
     }
 
     private void convertToBinary(int[] vector) {

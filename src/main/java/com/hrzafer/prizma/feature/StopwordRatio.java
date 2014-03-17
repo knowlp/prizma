@@ -23,8 +23,10 @@ public class StopwordRatio extends Feature {
         stops = new HashSet<>(list);
     }
 
-    @Override
-    public String extract(Document document) {
+
+
+        @Override
+    public List<FeatureValue> extract(Document document) {
         String data = getFieldData(document);
         String source = data.replaceAll("[\\*\\-\\:\\\"\\.,\\(\\);?!']", "");
         Scanner s = new Scanner(source);
@@ -39,17 +41,12 @@ public class StopwordRatio extends Feature {
         }
         s.close();
         double ratio = (double) stopwordCount / wordCount;
-        return STR.formatDouble(ratio, "#.##");
+        FeatureValue value =  FeatureValueFactory.create(ratio);
+        return unitList(value);
     }
 
     public static boolean isStopWord(String token) {
         return stops.contains(token);
-//        for (String stopword : stopwords) {
-//            if (token.equalsIgnoreCase(stopword)) {
-//                return true;
-//            }
-//        }
-//        return false;
     }
 
     public static boolean isStopWordAsciify(String token) {

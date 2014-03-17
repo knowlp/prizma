@@ -1,6 +1,7 @@
 package com.hrzafer.prizma.data;
 
 import com.hrzafer.prizma.feature.Feature;
+import com.hrzafer.prizma.feature.FeatureValue;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,12 +14,12 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class FeatureExtractor {
-    public static List<String> extract(Document document, List<Feature> features) {
-        List<String> values = new ArrayList<>();
+    public static List<FeatureValue> extract(Document document, List<Feature> features) {
+        List<FeatureValue> vector = new ArrayList<>();
         for (Feature feature : features) {
-            String value = feature.extract(document);
-            values.add(value);
+            List<FeatureValue> values = feature.extract(document);
+            vector.addAll(values);
         }
-        return values;
+        return vector;
     }
 }

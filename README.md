@@ -1,4 +1,5 @@
 prizma
 ======
 
-Text Classification Tool Kit for Turkish
+A Feature Extraction and Selection Tool for Categorizing Text Documents
+

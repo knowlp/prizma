@@ -13,12 +13,8 @@ public class PunctuationSemicolonRatio extends PunctuationRatio {
 
     public PunctuationSemicolonRatio(String type, String name, int weight, String description, Map<String, String> parameters, Analyzer analyzer) {
         super(type, name, weight, description, parameters, analyzer);
+        punctuation = SEMI_COLON;
     }
 
-    @Override
-    public String extract(Document document) {
-        String data = getFieldData(document);
-        return extractRatioAsFormattedString(data, SEMI_COLON);
-    }
 
 }

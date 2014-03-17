@@ -62,13 +62,11 @@ public class Frame extends javax.swing.JFrame {
 
     private List<Feature> getInstancesOfAllAttributes() {
         List<Feature> features = Collections.EMPTY_LIST;
+        String featuresXmlPath = Config.get("prizma.features");
         try {
-            String featuresXmlPath = Config.get("prizma.features");
             features = FeatureReader.read(featuresXmlPath);
         } catch (RuntimeException e) {
-            GUI.messageBox("The file " + STR.addDoubleQuote("catAdult/features.xml")
-                    + " must be in the same directory with "
-                    + STR.addDoubleQuote("prizma.jar"), "Applicatin can not be started!");
+            GUI.messageBox(featuresXmlPath + " not Found", "Applicatin can not be started!");
             closeTheApplication();
             e.printStackTrace();
         }

@@ -3,6 +3,7 @@ package com.hrzafer.prizma;
 import com.hrzafer.prizma.data.*;
 import com.hrzafer.prizma.data.io.*;
 import com.hrzafer.prizma.feature.Feature;
+import com.hrzafer.prizma.feature.FeatureValue;
 import com.hrzafer.prizma.feature.NGramModel;
 import com.hrzafer.prizma.feature.Unigrams;
 import com.hrzafer.prizma.data.Document;
@@ -179,9 +180,9 @@ public class ArffCreator {
     }
 
     public static String getInstanceDataLine(List<Feature> features, Document document) {
-        List<String> values = FeatureExtractor.extract(document, features);
+        List<FeatureValue> values = FeatureExtractor.extract(document, features);
         StringBuilder dataLine = new StringBuilder("");
-        for (String value : values) {
+        for (FeatureValue value : values) {
             dataLine.append(value).append(",");
         }
         dataLine.append(document.getActualCategory()).append("\n");

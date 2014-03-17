@@ -2,12 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faf8a123-37c6-4362-a2ab-15bade5083f3" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\prizma-core\New Text Document.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\prizma-core\.idea\libraries\Maven__junit_junit_3_8_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\prizma-core\src\main\java\com\hrzafer\prizma\feature\LengthOfTitle.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\prizma-core\src\main\java\com\hrzafer\prizma\feature\PunctuationCountOfTitle.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\prizma-core\src\main\java\com\hrzafer\prizma\feature\WordCountOfTitle.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/ArffCreator.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/ArffCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DatasetReader.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DatasetReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/Feature.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/Feature.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureExtractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/FilterFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/FilterFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/gui/Frame.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/gui/Frame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/LexiconFrequency.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/LexiconFrequency.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramData.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NGramModel.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NGramModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/NormalizerFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/NormalizerFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NumberCount.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NumberCount.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationAsteriksRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationAsteriksRatio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationColonRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationColonRatio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationCommaRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationCommaRatio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationDashRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationDashRatio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationDoubleQuoteRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationDoubleQuoteRatio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationEllipsisRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationEllipsisRatio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationExclamationRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationExclamationRatio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationQuestionMarkRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationQuestionMarkRatio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationRatio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationSemicolonRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationSemicolonRatio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/StopwordRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/StopwordRatio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/TokenizerFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/TokenizerFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/Trigrams.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/Trigrams.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/WordLengthAverage.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/WordLengthAverage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/WordLengthVariance.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/WordLengthVariance.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prizma-core.iml" afterPath="$PROJECT_DIR$/prizma-core.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/prizma.properties" afterPath="$PROJECT_DIR$/src/main/resources/prizma.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="prizma.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394788620403" ignored="false" />
-    <file path="/fragment.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394714110950" ignored="false" />
+    <file path="/Dummy.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395057727536" ignored="false" />
+    <file path="/fragment.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395057727536" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/FirstFiveLetterRooter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/ToLowerCaseConverter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/LengthOfTitle.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
@@ -33,8 +68,8 @@
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/INormalizer.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/IFilter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/MultipleUnderscoreRemover.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
-    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/TokenizerFactory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
-    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/NormalizerFactory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/TokenizerFactory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395059851000" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/NormalizerFactory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395059845854" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/WeirdMSWordCharactersNormalizer.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/GlobalsReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/Globals.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
@@ -59,7 +94,7 @@
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/PunctuationColonRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/PunctuationAsteriksRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/NumberCount.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
-    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/FilterFactory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/FilterFactory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395059838981" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/NGramModel.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
     <file path="$PROJECT_DIR$/../code/pom.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543674222" ignored="false" />
     <file path="$PROJECT_DIR$/../prizma-damla/pom.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543708522" ignored="false" />
@@ -72,7 +107,7 @@
     <file path="/CategoryFromInstances.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394609642561" ignored="false" />
     <file path="/CategoryFromSubcategories.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394609915412" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/vsm/FeatureVector.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394548234573" ignored="false" />
-    <file path="/pom.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394608942501" ignored="false" />
+    <file path="/pom.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395057377524" ignored="false" />
     <file path="/DatasetReaderCSV.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394610825955" ignored="false" />
     <file path="/DatasetReaderDirectory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394610893201" ignored="false" />
     <file path="/DatasetWriterCSV.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394719772720" ignored="false" />
@@ -83,7 +118,6 @@
     <file path="/DocumentFromTokens.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394712061478" ignored="false" />
     <file path="/DocumentSource.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394721665446" ignored="false" />
     <file path="/STR.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394712008245" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/tfidf/Category.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394712241523" ignored="false" />
     <file path="/DatasetDirToCSV.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394722696535" ignored="false" />
     <file path="/DatasetDirToXML.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394713896998" ignored="false" />
     <file path="/DatasetFromCSVReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394713916821" ignored="false" />
@@ -96,12 +130,43 @@
     <file path="/DefaultFileDocumentReaderStrategy.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394722011415" ignored="false" />
     <file path="/TitledFileDocumentSourceStrategy.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394723043297" ignored="false" />
     <file path="/FileDocumentSource.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394722591864" ignored="false" />
-    <file path="/ArffCreator.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394722679498" ignored="false" />
+    <file path="/ArffCreator.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395058521100" ignored="false" />
     <file path="/CSVDatasetReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394788842449" ignored="false" />
-    <file path="/DatasetReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394803506829" ignored="false" />
+    <file path="/DatasetReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395063131754" ignored="false" />
     <file path="/DatasetReaderProperties.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394799348545" ignored="false" />
     <file path="/DirectoryDataSetReaderProperties.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394799529708" ignored="false" />
     <file path="/FeatureReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394804222151" ignored="false" />
+    <file path="/NumericFeatureValue.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395048361120" ignored="false" />
+    <file path="/FeatureValue.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395048180750" ignored="false" />
+    <file path="/BinaryValue.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395060999954" ignored="false" />
+    <file path="/FeatureType.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395048293991" ignored="false" />
+    <file path="/IntegerValue.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395060449192" ignored="false" />
+    <file path="/DoubleValue.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395062792980" ignored="false" />
+    <file path="/NominalValue.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395048681888" ignored="false" />
+    <file path="/Feature.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395049955762" ignored="false" />
+    <file path="/LengthOfTitle.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395049178239" ignored="false" />
+    <file path="/LexiconFrequency.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395049495251" ignored="false" />
+    <file path="/NumberCount.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395049549579" ignored="false" />
+    <file path="/PunctuationRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395050562795" ignored="false" />
+    <file path="/PunctuationAsteriksRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395050253603" ignored="false" />
+    <file path="/PunctuationColonRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395050148755" ignored="false" />
+    <file path="/PunctuationCommaRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395050587039" ignored="false" />
+    <file path="/PunctuationDashRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395050606260" ignored="false" />
+    <file path="/PunctuationDoubleQuoteRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395050619179" ignored="false" />
+    <file path="/PunctuationEllipsisRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395057972281" ignored="false" />
+    <file path="/FeatureValueFactory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395056569917" ignored="false" />
+    <file path="/FeatureValueFactoryTest.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395057817285" ignored="false" />
+    <file path="/PunctuationExclamationRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395057995426" ignored="false" />
+    <file path="/PunctuationSemicolonRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395058012701" ignored="false" />
+    <file path="/FeatureExtractor.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395058395748" ignored="false" />
+    <file path="/PunctuationQuestionMarkRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395058003858" ignored="false" />
+    <file path="/StopwordRatio.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395058073555" ignored="false" />
+    <file path="/WordLengthAverage.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395058136190" ignored="false" />
+    <file path="/WordLengthVariance.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395058245982" ignored="false" />
+    <file path="/NGramModel.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395061422293" ignored="false" />
+    <file path="/NGramData.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395061366672" ignored="false" />
+    <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/ngram/NGramData.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395061296769" ignored="false" />
+    <file path="/features.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395061846292" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,91 +227,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FileDocumentSource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileDocumentSourceStrategy.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSourceStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="17" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TitledFileDocumentSourceStrategy.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/TitledFileDocumentSourceStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="26" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FeatureExtractor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+            <state line="15" column="31" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FeatureReader.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureReader.java">
+      <file leaf-file-name="NGramModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NGramModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="13" selection-start="999" selection-end="999" vertical-scroll-proportion="0.3321234">
+            <state line="116" column="54" selection-start="3965" selection-end="3965" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocumentSource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentSource.java">
+      <file leaf-file-name="NGramData.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="38" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+            <state line="188" column="0" selection-start="5782" selection-end="5782" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DirectroyDatasetWriter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectroyDatasetWriter.java">
+      <file leaf-file-name="DoubleValue.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/DoubleValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+            <state line="21" column="28" selection-start="453" selection-end="453" vertical-scroll-proportion="0.7208481">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocumentFromMap.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromMap.java">
+      <file leaf-file-name="STR.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/util/STR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+            <state line="179" column="25" selection-start="5979" selection-end="5979" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocumentFromString.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromString.java">
+      <file leaf-file-name="DatasetReader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DatasetReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+            <state line="19" column="63" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocumentFromTokens.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromTokens.java">
+      <file leaf-file-name="BinaryValue.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/BinaryValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+            <state line="6" column="39" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntegerValue.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/IntegerValue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="16" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="features.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/features.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="10" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prizma.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/prizma.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -270,22 +335,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DefaultFileDocumentReaderStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DefaultFileDocumentSourceStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSourceStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DatasetDirToCSV.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/WordLengthVariance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/ArffCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/TitledFileDocumentSourceStrategy.java" />
-        <option value="$PROJECT_DIR$/dataset/sample_dataset.csv" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DatasetReaderProperties.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectoryDataSetReaderProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/Globals.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/prizma.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/gui/Frame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/TokenizerFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/FilterFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/NormalizerFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/IntegerValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/BinaryValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NGramModel.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/features.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DatasetReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/CSVDatasetReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectoryDatasetReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/TestMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/DoubleValue.java" />
       </list>
     </option>
   </component>
@@ -310,6 +375,16 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="Dependencies" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="prizma" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -362,8 +437,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -399,6 +474,14 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -415,6 +498,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,6 +528,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prizma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="preprocessing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -587,19 +704,33 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="OverrideImplement.combined" value="true" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/dataset/sample_dataset.csv" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="Application.TestMain">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.hrzafer.prizma.feature" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Frame">
     <configuration default="false" name="TestMain" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -628,10 +759,126 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="FeatureValueFactoryTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hrzafer.prizma.feature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="prizma-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="com.hrzafer.prizma.feature" />
+      <option name="MAIN_CLASS_NAME" value="com.hrzafer.prizma.feature.FeatureValueFactoryTest" />
+      <option name="METHOD_NAME" value="testCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="WINDOW" value="false" />
+        <option name="JVMPI" value="false" />
+        <option name="INTERPRETED" value="false" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FeatureValueFactoryTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hrzafer.prizma.feature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="prizma-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="com.hrzafer.prizma.feature" />
+      <option name="MAIN_CLASS_NAME" value="com.hrzafer.prizma.feature.FeatureValueFactoryTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="WINDOW" value="false" />
+        <option name="JVMPI" value="false" />
+        <option name="INTERPRETED" value="false" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Frame" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hrzafer.prizma.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.hrzafer.prizma.gui.Frame" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="prizma-core" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -640,19 +887,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -681,6 +915,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -719,12 +966,18 @@
       <patterns />
       <method />
     </configuration>
-    <list size="1">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.TestMain" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FeatureValueFactoryTest.testCreate" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FeatureValueFactoryTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Frame" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestMain" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.Frame" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FeatureValueFactoryTest.testCreate" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FeatureValueFactoryTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TestMain" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -733,6 +986,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="faf8a123-37c6-4362-a2ab-15bade5083f3" name="Default" comment="" />
@@ -741,12 +999,33 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -757,18 +1036,17 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3303671" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22465315" sideWeight="0.68186873" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25186765" sideWeight="0.66518354" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33481646" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2411953" sideWeight="0.68186873" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31813127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -837,124 +1115,196 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/Dataset.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/FilterFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+        <state line="21" column="49" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/CSVDatasetReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/NormalizerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="33" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
+        <state line="20" column="49" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/TestMain.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hrzafer/prizma/feature/FeatureValueFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="26" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DatasetReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/StemmerFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DefaultFileDocumentSourceStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+        <state line="9" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectoryDatasetReader.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/jre/lib/rt.jar!/java/util/ArrayList.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectroyDatasetWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+        <state line="168" column="0" selection-start="5913" selection-end="5913" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromMap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+        <state line="13" column="23" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromString.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/IntegerValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+        <state line="17" column="16" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromTokens.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/BinaryValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+        <state line="6" column="39" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentSource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NGramModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="38" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+        <state line="116" column="54" selection-start="3965" selection-end="3965" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/features.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+        <state line="1" column="10" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSourceStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/prizma.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/TitledFileDocumentSourceStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+        <state line="15" column="31" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="13" selection-start="999" selection-end="999" vertical-scroll-proportion="0.3321234">
+        <state line="188" column="0" selection-start="5782" selection-end="5782" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DatasetReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="63" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/util/STR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="25" selection-start="5979" selection-end="5979" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/DoubleValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="28" selection-start="453" selection-end="453" vertical-scroll-proportion="0.7208481">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>prizma-core</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.google.guava:guava:15.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

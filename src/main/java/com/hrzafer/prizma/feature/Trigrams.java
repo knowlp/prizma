@@ -21,4 +21,6 @@ public class Trigrams extends NGramModel{
         nGramData = getNewNGramData();
     }
 
+
+
 }

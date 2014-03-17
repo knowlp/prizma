@@ -104,19 +104,23 @@ public abstract class NGramModel extends Feature {
     }
 
     @Override
-    public String extract(Document document) {
+    public List<FeatureValue> extract(Document document) {
         String data = getFieldData(document);
         List<String> tokens = analyzer.analyze(data);
+//        int[] nGramVector;
+//        if (binary) {
+//            nGramVector = nGramData.getBinaryNGramVector(tokens);
+//        } else {
+//            nGramVector = nGramData.getNGramVector(tokens);
+//        }
+        //applyWeight(nGramVector);
+        //todo:appyWeight optional olmalı, weight belirtilmemişse boş geçmeli
 
-        int[] nGramVector;
-        if (binary) {
-            nGramVector = nGramData.getBinaryNGramVector(tokens);
-        } else {
-            nGramVector = nGramData.getNGramVector(tokens);
-        }
-        applyWeight(nGramVector);
-        return vectorLineToString(nGramVector);
+        return nGramData.getNGramVector(tokens, binary);
     }
+
+
+
 
     private void applyWeight(int[] nGramVector) {
         for (int i = 0; i < nGramVector.length; i++) {

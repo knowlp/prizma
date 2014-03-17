@@ -4,6 +4,8 @@ import com.hrzafer.prizma.data.Document;
 import com.hrzafer.prizma.preprocessing.Analyzer;
 import com.hrzafer.prizma.util.STR;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -19,7 +21,7 @@ public class NumberCount extends Feature {
     }
 
     @Override
-    public String extract(Document document) {
+    public List<FeatureValue> extract(Document document) {
         String data = getFieldData(document);
         String source = data.replaceAll(STR.CLEAN_REGEX, " ");
         Scanner s = new Scanner(source);
@@ -30,8 +32,8 @@ public class NumberCount extends Feature {
             }
             s.next();
         }
-
-        return numberCount.toString();
+        FeatureValue value = new IntegerValue(numberCount);
+        return Collections.singletonList(value);
     }
 
 }

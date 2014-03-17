@@ -18,7 +18,7 @@ import java.util.logging.Logger;
  */
 public class NormalizerFactory {
     public static INormalizer create(String name){
-        String packagePath = "preprocessing";
+        String packagePath = "com.hrzafer.prizma.preprocessing";
         try {
             Class<?> c = Class.forName(packagePath + "." + name);
             Constructor<?> cons = c.getConstructor();

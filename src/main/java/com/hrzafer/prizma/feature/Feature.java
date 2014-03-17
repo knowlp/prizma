@@ -8,6 +8,8 @@ import com.hrzafer.prizma.util.STR;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -34,7 +36,7 @@ public abstract class Feature implements Comparable<Feature> {
         this.analyzer = analyzer;
     }
 
-    public abstract String extract(Document document);
+    public abstract List<FeatureValue> extract(Document document);
 
     public String getDescription() {
         return description;
@@ -50,6 +52,10 @@ public abstract class Feature implements Comparable<Feature> {
 
     public String getDeclarationForArff() {
         return "@attribute " + type + "_" + parameters.get("field") + " " + "numeric" + "\n";
+    }
+
+    protected List<FeatureValue> unitList(FeatureValue value){
+        return Collections.singletonList(value);
     }
 
     @Override

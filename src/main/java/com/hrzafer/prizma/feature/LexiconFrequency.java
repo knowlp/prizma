@@ -4,10 +4,7 @@ import com.hrzafer.prizma.Resources;
 import com.hrzafer.prizma.data.Document;
 import com.hrzafer.prizma.preprocessing.Analyzer;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 
 public class LexiconFrequency extends Feature{
@@ -29,19 +26,16 @@ public class LexiconFrequency extends Feature{
     }
 
     @Override
-    public String extract(Document document) {
+    public List<FeatureValue> extract(Document document) {
         String data = getFieldData(document);
         List<String> tokens = analyzer.analyze(data);
-
         int count=0;
         for (String token : tokens) {
             if (lexicon.contains(token)){
                 count++;
             }
         }
-        if (count>1){
-            return Integer.toString(1);
-        }
-        return Integer.toString(0);
+        FeatureValue value = new BinaryValue(count > 1 ? true : false);
+        return Collections.singletonList(value);
     }
 }

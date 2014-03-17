@@ -20,7 +20,7 @@ public class WordLengthVariance extends Feature {
     }
 
     @Override
-    public String extract(Document document) {
+    public List<FeatureValue> extract(Document document) {
         String data = getFieldData(document);
         String source = data.replaceAll("[\\*-\\:\\\"\\.,'\\(\\);?!]", "");
         Scanner s = new Scanner(source);
@@ -38,13 +38,14 @@ public class WordLengthVariance extends Feature {
         s.close();
 
         if (wordCount < 1) {
-            return Double.toString(Double.NaN);
+            return unitList(FeatureValueFactory.create(Double.NaN));
+            //return Double.toString(Double.NaN);
         }
 
         double mean = (double) totalWordLen / wordCount;
         int[] values = Ints.toArray(lenghts);
-        int variance = (int) Math.round(MAT.variance(values, mean));
-
-        return Integer.toString(variance);
+        double variance = MAT.variance(values, mean);
+        return unitList(FeatureValueFactory.create(variance));
     }
+
 }

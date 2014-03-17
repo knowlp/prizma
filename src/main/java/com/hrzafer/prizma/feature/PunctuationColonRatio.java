@@ -1,6 +1,5 @@
 package com.hrzafer.prizma.feature;
 
-import com.hrzafer.prizma.data.Document;
 import com.hrzafer.prizma.preprocessing.Analyzer;
 
 import java.util.Map;
@@ -13,12 +12,9 @@ public class PunctuationColonRatio extends PunctuationRatio {
 
     public PunctuationColonRatio(String type, String name, int weight, String description, Map<String, String> parameters, Analyzer analyzer) {
         super(type, name, weight, description, parameters, analyzer);
+        punctuation = COLON;
     }
 
-    @Override
-    public String extract(Document document) {
-        String data = getFieldData(document);
-        return extractRatioAsFormattedString(data, COLON);
-    }
+
 
 }

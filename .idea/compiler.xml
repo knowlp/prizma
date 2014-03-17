@@ -25,6 +25,9 @@
         <module name="prizma-core" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="prizma-core" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

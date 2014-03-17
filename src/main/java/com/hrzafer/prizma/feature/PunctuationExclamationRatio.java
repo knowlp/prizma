@@ -13,12 +13,9 @@ public class PunctuationExclamationRatio extends PunctuationRatio {
 
     public PunctuationExclamationRatio(String type, String name, int weight, String description, Map<String, String> parameters, Analyzer analyzer) {
         super(type, name, weight, description, parameters, analyzer);
+        punctuation = EXCLAMATION;
     }
 
-    @Override
-    public String extract(Document document) {
-        String data = getFieldData(document);
-        return extractRatioAsFormattedString(data, EXCLAMATION);
-    }
+
 
 }

@@ -17,7 +17,7 @@ public abstract class DatasetReader  {
     /** Default percentage value is %100 */
     public static final double DEFAULT_PERCENTAGE = 100.0;
     /** Default Shuffle Option = false */
-    public static final boolean DEFAULT_SHUFFLED_OPTION = true;
+    public static final boolean DEFAULT_SHUFFLED_OPTION = false;
     /** Default Charset = UTF-8 */
     public static final Charset DEFAULT_CHARSET = StandardCharsets.UTF_8;
 

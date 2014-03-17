@@ -13,12 +13,7 @@ public class PunctuationCommaRatio extends PunctuationRatio {
 
     public PunctuationCommaRatio(String type, String name, int weight, String description, Map<String, String> parameters, Analyzer analyzer) {
         super(type, name, weight, description, parameters, analyzer);
-    }
-
-    @Override
-    public String extract(Document document) {
-        String data = getFieldData(document);
-        return extractRatioAsFormattedString(data, COMMA);
+        punctuation = COMMA;
     }
 
 }

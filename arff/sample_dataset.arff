@@ -1,0 +1,120 @@
+% This file is created by the Prizma 1.0.
+% Prizma is a Turkish Text Classification Environment for Weka 
+% and developed by Harun Reşit Zafer with Fatih Universtiy Natural Language Processing Group.
+% http://nlp.ceng.fatih.edu.tr/blog/
+% hrzafer@fatih.edu.tr
+% www.hrzafer.com
+
+@relation sample_dataset
+
+@attribute NumberCount_content numeric
+@attribute PunctuationCommaRatio_content numeric
+@attribute WordLengthAverage_content numeric
+@attribute class {siyaset,spor}
+
+% The first 99 instances (%100) is used for training
+% and the rest 0 instances (%0) is used as test data.
+% Total instance count is 99
+% In Weka (to getData correct results), select "percentage split %100" and "preserve order for % split" options
+
+@data
+
+1,0.133,6.951,siyaset
+5,0.112,6.69,siyaset
+2,0.375,6.447,siyaset
+19,0.183,6.354,siyaset
+2,0.409,7.443,siyaset
+2,0.256,6.567,siyaset
+1,0.193,6.295,siyaset
+11,0.136,6.585,siyaset
+0,0.333,7.434,siyaset
+7,0.182,7.063,siyaset
+15,0.18,7.21,siyaset
+29,0.132,6.581,siyaset
+1,0.212,6.483,siyaset
+2,0.328,7.054,siyaset
+1,0.109,7.171,siyaset
+2,0.222,7.222,siyaset
+17,0.266,6.733,siyaset
+4,0.126,7.105,siyaset
+5,0.182,6.822,siyaset
+3,0.133,6.898,siyaset
+0,0.198,7.372,siyaset
+2,0.328,7.054,siyaset
+0,0.132,7.056,siyaset
+1,0.109,7.171,siyaset
+2,0.222,7.222,siyaset
+17,0.266,6.733,siyaset
+4,0.126,7.105,siyaset
+5,0.182,6.822,siyaset
+3,0.133,6.898,siyaset
+0,0.198,7.372,siyaset
+1,0.14,7.191,siyaset
+10,0.535,6.21,siyaset
+10,0.238,6.735,siyaset
+7,0.184,7.241,siyaset
+10,0.111,6.046,siyaset
+0,0.362,6.527,siyaset
+14,0.278,6.709,siyaset
+5,0.425,6.659,siyaset
+38,0.347,7.013,siyaset
+0,0.268,6.917,siyaset
+2,0.18,6.492,siyaset
+10,0.199,6.553,siyaset
+0,0.286,7.056,siyaset
+11,0.332,6.441,siyaset
+5,0.112,6.69,siyaset
+6,0.2,7.27,siyaset
+4,0.348,6.882,siyaset
+3,0.23,6.457,siyaset
+0,0.289,7.016,siyaset
+2,0.542,7.018,siyaset
+11,0.172,6.879,spor
+9,0.154,6.815,spor
+353,0.024,7.356,spor
+3,0.135,7.174,spor
+4,0.227,6.654,spor
+3,0.143,6.467,spor
+0,0.353,6.47,spor
+2,0.08,6.484,spor
+5,0.149,6.658,spor
+3,0.333,6.404,spor
+2,0.169,6.156,spor
+14,0.33,6.452,spor
+2,0.069,6.366,spor
+0,0.24,7.188,spor
+3,0.333,6.784,spor
+0,0.227,6.791,spor
+6,0.158,6.852,spor
+1,0.138,6.874,spor
+5,0.258,6.632,spor
+5,0.438,7.254,spor
+0,0.2,6.202,spor
+6,0.149,6.633,spor
+17,0.03,6.934,spor
+4,0.133,5.963,spor
+5,0.258,6.632,spor
+5,0.438,7.254,spor
+0,0.2,6.202,spor
+6,0.149,6.633,spor
+4,0.133,5.963,spor
+5,0.258,6.632,spor
+5,0.438,7.254,spor
+0,0.2,6.202,spor
+6,0.149,6.633,spor
+11,0.193,6.798,spor
+4,0.133,5.963,spor
+0,0.11,7.186,spor
+1,0.21,6.378,spor
+0,0.25,6.712,spor
+14,0.132,6.633,spor
+15,0.188,6.546,spor
+2,0.333,7.115,spor
+3,0.213,7.093,spor
+16,0.389,6.462,spor
+0,0.222,6.758,spor
+4,0.058,7.251,spor
+2,0.192,6.5,spor
+9,0.2,7.455,spor
+3,0.061,6.188,spor
+2,0.125,6.396,spor

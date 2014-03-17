@@ -13,12 +13,8 @@ public class PunctuationDashRatio extends PunctuationRatio {
 
     public PunctuationDashRatio(String type, String name, int weight, String description, Map<String, String> parameters, Analyzer analyzer) {
         super(type, name, weight, description, parameters, analyzer);
+        punctuation = DASH;
     }
 
-    @Override
-    public String extract(Document document) {
-        String data = getFieldData(document);
-        return extractRatioAsFormattedString(data, DASH);
-    }
 
 }
