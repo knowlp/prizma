@@ -13,7 +13,7 @@ public abstract class DocumentSource {
      * MaxLen'den daha uzun veriyi kırpar
      */
     //todo: Get cropTooLongData parameter from properties file
-    private static boolean cropTooLongData = true;
+    public static boolean cropTooLongData = true;
 
     public Map<String, String> getData() {
         Map<String, String> data = readData();
@@ -22,6 +22,8 @@ public abstract class DocumentSource {
         }
         return data;
     }
+
+
 
     protected abstract Map<String, String> readData();
 }

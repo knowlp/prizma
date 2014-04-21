@@ -11,6 +11,8 @@ import java.io.Reader;
 import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,9 +21,14 @@ import java.util.List;
  * Time: 15:44
  * To change this template use File | Settings | File Templates.
  */
-public class LuceneNGramExtractor implements NGramExtractor {
+public class LuceneNGramExtractor extends NGramExtractor {
+
+    protected LuceneNGramExtractor(int windowSize) {
+        super(windowSize);
+    }
+
     @Override
-    public List<NGram> extract(List<String> tokens, int windowSize) {
+    public List<String> extractTermList(List<String> tokens) {
         StringBuilder sb = new StringBuilder();
         for (String token : tokens) {
             sb.append(token).append(" ");
@@ -29,30 +36,38 @@ public class LuceneNGramExtractor implements NGramExtractor {
         return extract(sb.toString(), windowSize);
     }
 
-    public List<NGram> extract(String str, int windowSize) {
-        List<NGram> ng = new ArrayList<>();
-        int minShingleSize=2;
-        int maxShingleSize=2;
+    @Override
+    public Map<String, Integer> extractTermMap(List<String> tokens) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 
-        if (windowSize > 2){
+    @Override
+    public Set<String> extractTermSet(List<String> tokens) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    public List<String> extract(String str, int windowSize) {
+        List<String> ng = new ArrayList<>();
+        int minShingleSize = 2;
+        int maxShingleSize = 2;
+
+        if (windowSize > 2) {
             minShingleSize = windowSize;
             maxShingleSize = windowSize;
         }
 
-
         try {
             Reader reader = new StringReader(str);
             SimpleAnalyzer simpleAnalyzer = new SimpleAnalyzer(Version.LUCENE_46);
-            ShingleAnalyzerWrapper shingleAnalyzer = new ShingleAnalyzerWrapper(simpleAnalyzer, minShingleSize , maxShingleSize);
+            ShingleAnalyzerWrapper shingleAnalyzer = new ShingleAnalyzerWrapper(simpleAnalyzer, minShingleSize, maxShingleSize);
             TokenStream stream = shingleAnalyzer.tokenStream("contents", reader);
             CharTermAttribute charTermAttribute = stream.getAttribute(CharTermAttribute.class);
             stream.reset();
             while (stream.incrementToken()) {
                 String shingle = charTermAttribute.toString();
-                if (shingle.split(" ").length == windowSize){
-                    ng.add(new NGram(shingle));
+                if (shingle.split(" ").length == windowSize) {
+                    ng.add(shingle);
                 }
-
             }
             stream.end();
             stream.close();

@@ -38,8 +38,8 @@
             <parameter name="field" value="content"/>
             <parameter name="threshold" value="2"/>
             <parameter name="binary" value="true"/>
-            <parameter name="lexiconEncoded" value="false"/>
-            <parameter name="lexiconFilePath" value="experiment/tfidf_topbigrams.txt"/>
+            <!--<parameter name="lexiconEncoded" value="false"/>-->
+            <!--<parameter name="lexiconFilePath" value="experiment/tfidf_topbigrams.txt"/>-->
         </parameters>
         <analyzer>
             <normalizer name="WeirdMSWordCharactersNormalizer"/>

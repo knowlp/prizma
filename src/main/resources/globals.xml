@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <globals>
     <analyzer name="global">
-        <tokenizer name="StandardTokenizer"/>
+        <tokenizer name="FastTokenizer"/>
         <filter name="TooShortTokenFilter"/>
         <filter name="TooLongTokenFilter"/>
         <filter name="MultipleUnderscoreRemover"/>

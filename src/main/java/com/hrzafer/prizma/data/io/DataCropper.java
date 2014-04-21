@@ -6,11 +6,8 @@ import com.hrzafer.prizma.util.STR;
 import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
- * User: hrzafer
- * Date: 13.03.2014
- * Time: 16:37
- * To change this template use File | Settings | File Templates.
+    If a field of a document (usually the content) is too long, this class shortens the field by splitting it to n parts and
+    reads the first k bytes of each part and merges them. Thus the document size is shortened to n*k=maxSampleLength.
  */
 public class DataCropper {
     private static int maxLen = Config.getAsInt("maxSampleLength");

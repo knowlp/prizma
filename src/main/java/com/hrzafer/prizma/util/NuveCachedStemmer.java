@@ -17,10 +17,6 @@ public enum NuveCachedStemmer implements Stemmer {
     private final String catAdultStemsPath = "/stemDict/catAdult_stems.dict";
     private final String misspelledStemsPath = "/stemDict/misspelled_stems.dict";
     private final Map<String, String> map;
-    static {
-
-
-    }
 
     private NuveCachedStemmer() {
         map = StemDictReader.read(stemsPath);
@@ -30,18 +26,15 @@ public enum NuveCachedStemmer implements Stemmer {
 
     @Override
     public String stem(String token) {
-        String stemmed;
+
         int apostropheIndex = token.indexOf("\'");
 
         if (apostropheIndex > -1){
-//            if (token.substring(0, apostropheIndex).isEmpty())
-//                System.out.println(token);
             return token.substring(0, apostropheIndex);
         }
         if (map.containsKey(token)){
             return map.get(token);
         }
-
 
         return token;
     }

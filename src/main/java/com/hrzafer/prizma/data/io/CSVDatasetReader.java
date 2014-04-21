@@ -1,11 +1,11 @@
 package com.hrzafer.prizma.data.io;
 
+import au.com.bytecode.opencsv.CSVParser;
 import au.com.bytecode.opencsv.CSVReader;
-import com.hrzafer.prizma.data.Category;
-import com.hrzafer.prizma.data.CategoryFromInstances;
+import com.hrzafer.prizma.data.DocumentCategory;
+import com.hrzafer.prizma.data.DocumentCategoryFromDocuments;
 import com.hrzafer.prizma.data.Dataset;
 import com.hrzafer.prizma.data.Document;
-import com.hrzafer.prizma.data.io.DocumentFromMap;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 /**
- * Reads a data from a CSV file
+ * Reads the dataset from a CSV file
  */
 public class CSVDatasetReader extends DatasetReader {
 
@@ -24,26 +24,26 @@ public class CSVDatasetReader extends DatasetReader {
     }
 
     /**
-     * Assigns category label to each instance, creates categories and returns the data
+     * Assigns category label to each document, creates categories and returns the data
      */
     @Override
     public Dataset read() {
         List<Document> documents = readInstances();
         List<Document> instancesOfCategory = new ArrayList<>();
-        List<Category> categories = new ArrayList<>();
+        List<DocumentCategory> categories = new ArrayList<>();
         Collections.sort(documents);
         String categoryName = documents.get(0).getActualCategory();
         for (Document document : documents) {
             if (categoryName.equals(document.getActualCategory())) {
                 instancesOfCategory.add(document);
             } else {
-                categories.add(new CategoryFromInstances(instancesOfCategory, categoryName));
+                categories.add(new DocumentCategoryFromDocuments(instancesOfCategory, categoryName));
                 instancesOfCategory = new ArrayList<>();
                 instancesOfCategory.add(document);
                 categoryName = document.getActualCategory();
             }
         }
-        categories.add(new CategoryFromInstances(instancesOfCategory, categoryName));
+        categories.add(new DocumentCategoryFromDocuments(instancesOfCategory, categoryName));
         return new Dataset(categories);
     }
 
@@ -54,7 +54,13 @@ public class CSVDatasetReader extends DatasetReader {
         List<Document> documents = new ArrayList<>();
         List<String[]> data;
         try {
-            CSVReader csvReader = new CSVReader(new InputStreamReader(new FileInputStream(csvPath), "UTF-8"));
+
+            CSVReader csvReader = new CSVReader(
+                    new InputStreamReader(new FileInputStream(csvPath), "UTF-8"),
+                    CSVParser.DEFAULT_SEPARATOR,
+                    CSVParser.DEFAULT_QUOTE_CHARACTER,
+                    '\0');
+
             data = csvReader.readAll();
             String[] headers = data.get(0);
             for (int i = 1; i < data.size(); i++) {

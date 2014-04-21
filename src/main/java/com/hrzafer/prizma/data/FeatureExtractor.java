@@ -1,7 +1,7 @@
 package com.hrzafer.prizma.data;
 
 import com.hrzafer.prizma.feature.Feature;
-import com.hrzafer.prizma.feature.FeatureValue;
+import com.hrzafer.prizma.feature.value.FeatureValue;
 
 import java.util.ArrayList;
 import java.util.List;

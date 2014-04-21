@@ -1,6 +1,8 @@
 package com.hrzafer.prizma.feature;
 
 import com.hrzafer.prizma.data.Document;
+import com.hrzafer.prizma.feature.value.DoubleValue;
+import com.hrzafer.prizma.feature.value.FeatureValue;
 import com.hrzafer.prizma.preprocessing.Analyzer;
 import com.hrzafer.prizma.util.STR;
 
@@ -28,10 +30,8 @@ public abstract class PunctuationRatio extends Feature {
         super(type, name, weight, description, parameters, analyzer);
     }
 
-
     @Override
-    public List<FeatureValue> extract(Document document) {
-        String data = getFieldData(document);
+    public List<FeatureValue> extract(String data) {
         double ratio = getPunctuationRatio(data, punctuation);
         FeatureValue value = new DoubleValue(ratio);
         return unitList(value);

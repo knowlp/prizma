@@ -27,7 +27,7 @@ public class DirectroyDatasetWriter extends DatasetWriter {
             if (!subDir.exists()) {
                 subDir.mkdir();
             }
-            List<Document> documents = dataset.getInstancesOf(name, 100);
+            List<Document> documents = dataset.getDocumentsOf(name, 100);
             for (Document document : documents) {
                 IO.write(subDir.getPath() + "/"+ document.getFieldData("id"), document.getFieldData("content"));
             }

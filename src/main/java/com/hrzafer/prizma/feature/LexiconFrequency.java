@@ -2,6 +2,8 @@ package com.hrzafer.prizma.feature;
 
 import com.hrzafer.prizma.Resources;
 import com.hrzafer.prizma.data.Document;
+import com.hrzafer.prizma.feature.value.BinaryValue;
+import com.hrzafer.prizma.feature.value.FeatureValue;
 import com.hrzafer.prizma.preprocessing.Analyzer;
 
 import java.util.*;
@@ -26,8 +28,7 @@ public class LexiconFrequency extends Feature{
     }
 
     @Override
-    public List<FeatureValue> extract(Document document) {
-        String data = getFieldData(document);
+    public List<FeatureValue> extract(String data) {
         List<String> tokens = analyzer.analyze(data);
         int count=0;
         for (String token : tokens) {

@@ -1,27 +1,40 @@
 package com.hrzafer.prizma;
 
 import com.hrzafer.prizma.data.Dataset;
+import com.hrzafer.prizma.data.Document;
+import com.hrzafer.prizma.data.FeatureReader;
 import com.hrzafer.prizma.data.io.*;
+import com.hrzafer.prizma.feature.Feature;
+import com.hrzafer.prizma.feature.value.DocumentVectors;
+import com.hrzafer.prizma.util.IO;
 
-import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 /**
- * Created with IntelliJ IDEA.
- * User: hrzafer
- * Date: 13.03.2014
- * Time: 16:01
- * To change this template use File | Settings | File Templates.
+
  */
 public class TestMain {
     public static void main(String[] args) {
 
-        String inputPath = "dataset/sample_dataset_sub";
-        String outputPath = "dataset/sample_dataset_10.csv";
 
-        DatasetReader reader = new DirectoryDatasetReader(inputPath).percentage(10).shuffled(true);
 
-        Dataset dataset = reader.read();
-        DatasetWriter writer = new CSVDatasetWriter();
-        writer.write(dataset, outputPath);
+        String inputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma\\dataset\\test_dataset";
+        String outputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma\\dataset\\test_dataset.csv";
+
+        DirToCSVConverter.convertDataset(inputPath, outputPath);
+//        DatasetReader reader = new CSVDatasetReader(inputPath);
+//        List<Feature> features = FeatureReader.read("experiment/features.xml");
+//        Dataset dataset = reader.read();
+//        List<Document> instances = dataset.getAllInstances();
+//        DocumentVectors relation = new DocumentVectors("test_dataset", features, instances);
+//        String arff = NewArffCreator.create(relation);
+//        IO.write("arff/test_dataset_csv.arff", arff);
+
+
+//        DatasetWriter writer = new CSVDatasetWriter();
+//        writer.write(dataset, outputPath);
+
+
+
     }
 }

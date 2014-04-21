@@ -35,23 +35,23 @@ public class DirectoryDatasetReader extends DatasetReader {
 
     @Override
     public Dataset read() {
-        List<Category> categories = readCategories();
+        List<DocumentCategory> categories = readCategories();
         return new Dataset(categories);
     }
 
 
 
-    private List<Category> readCategories() {
+    private List<DocumentCategory> readCategories() {
         File[] categoryDirs = getSubdirectoriesIgnoreFiles(datasetDirectory);
-        List<Category> categories = new ArrayList<>();
+        List<DocumentCategory> categories = new ArrayList<>();
         for (File categoryDir : categoryDirs) {
-            Category category = readCategory(categoryDir);
+            DocumentCategory category = readCategory(categoryDir);
             categories.add(category);
         }
         return categories;
     }
 
-    private Category readCategory(File classDirectory) {
+    private DocumentCategory readCategory(File classDirectory) {
         if (hasSubdirectory(classDirectory)) {
             return readCategoryFromSubcategories(classDirectory);
         }
@@ -59,25 +59,25 @@ public class DirectoryDatasetReader extends DatasetReader {
         return readCategoryFromInstances(classDirectory);
     }
 
-    private CategoryFromSubcategories readCategoryFromSubcategories(File categoryDir) {
-        List<CategoryFromInstances> subcategories = new ArrayList<>();
+    private DocumentCategoryFromSubcategories readCategoryFromSubcategories(File categoryDir) {
+        List<DocumentCategoryFromDocuments> subcategories = new ArrayList<>();
         File[] subsetDirectories = getSubdirectoriesIgnoreFiles(categoryDir);
         for (File subsetDirectory : subsetDirectories) {
-            CategoryFromInstances subset = readCategoryFromInstances(subsetDirectory, categoryDir.getName());
+            DocumentCategoryFromDocuments subset = readCategoryFromInstances(subsetDirectory, categoryDir.getName());
             //CategoryFromInstances subset = readCategoryFromInstances(subsetDirectory);
             subcategories.add(subset);
         }
-        return new CategoryFromSubcategories(subcategories, categoryDir.getName());
+        return new DocumentCategoryFromSubcategories(subcategories, categoryDir.getName());
     }
 
-    public CategoryFromInstances readCategoryFromInstances(File categoryDir) {
+    public DocumentCategoryFromDocuments readCategoryFromInstances(File categoryDir) {
         List<Document> documents = readAllInstances(categoryDir);
-        return new CategoryFromInstances(documents, categoryDir.getName());
+        return new DocumentCategoryFromDocuments(documents, categoryDir.getName());
     }
 
-    public CategoryFromInstances readCategoryFromInstances(File categoryDir, String parentDirectoryName) {
+    public DocumentCategoryFromDocuments readCategoryFromInstances(File categoryDir, String parentDirectoryName) {
         List<Document> documents = readAllInstances(categoryDir, parentDirectoryName);
-        return new CategoryFromInstances(documents, parentDirectoryName);
+        return new DocumentCategoryFromDocuments(documents, parentDirectoryName);
     }
 
     private List<Document> readAllInstances(File directory) {

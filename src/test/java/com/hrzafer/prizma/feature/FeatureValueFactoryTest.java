@@ -2,6 +2,8 @@ package com.hrzafer.prizma.feature;
 
 
 
+import com.hrzafer.prizma.feature.value.FeatureValue;
+import com.hrzafer.prizma.feature.value.FeatureValueFactory;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;

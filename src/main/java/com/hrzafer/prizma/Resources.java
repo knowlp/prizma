@@ -12,13 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Created with IntelliJ IDEA.
- * User: hrzafer
- * Date: 14.01.2014
- * Time: 08:50
- * To change this template use File | Settings | File Templates.
- */
 public class Resources {
 
     public static List<String> getLines(String path){

@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- *
+ * Writes a dataset to a CSV file
  */
 public class CSVDatasetWriter extends DatasetWriter {
     @Override

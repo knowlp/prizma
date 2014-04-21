@@ -1,6 +1,8 @@
 package com.hrzafer.prizma.feature;
 
 import com.hrzafer.prizma.data.Document;
+import com.hrzafer.prizma.feature.value.FeatureValue;
+import com.hrzafer.prizma.feature.value.IntegerValue;
 import com.hrzafer.prizma.preprocessing.Analyzer;
 import com.hrzafer.prizma.util.STR;
 
@@ -21,8 +23,7 @@ public class NumberCount extends Feature {
     }
 
     @Override
-    public List<FeatureValue> extract(Document document) {
-        String data = getFieldData(document);
+    public List<FeatureValue> extract(String data) {
         String source = data.replaceAll(STR.CLEAN_REGEX, " ");
         Scanner s = new Scanner(source);
         Integer numberCount = 0;

@@ -4,12 +4,11 @@ import com.hrzafer.prizma.data.*;
 import com.hrzafer.prizma.data.io.DirectoryDatasetReader;
 import com.hrzafer.prizma.data.io.DatasetReader;
 import com.hrzafer.prizma.feature.Feature;
-import com.hrzafer.prizma.feature.NGramModel;
+import com.hrzafer.prizma.feature.NGramTerms;
 import com.hrzafer.prizma.util.IO;
 import com.hrzafer.prizma.util.Timer;
 
 import java.util.*;
-
 /**
  * Dataset'te belirtilen sınıf için TF-IDF değerlerini listeler Menü'de araçlar
  * gibi bir sekmeye eklenebilir.
@@ -20,10 +19,10 @@ public class TfIdfExtractor {
     public static final int NumberOfTopTerms = 200;
     public static final double Treshold = 0.0002; //tf-idf eşik değeri
     public static final boolean TresholdBased = false;
-    public static final boolean oneToManyMode = true;
+    public static final boolean oneToManyMode = false;
     private static final double LLRTreshold = 90.0;
     private static final boolean bigram = false;
-    public static final String dataSetPathDir = "data/kategori_10arSayfa";
+    public static final String dataSetPathDir = "dataset/train_9x100";
     public static final String dataSetPathCsv = "data/iyi_kotu.csv";
     public static final String TopTermsFileName = "topTermsLexicon.txt";
 
@@ -36,9 +35,8 @@ public class TfIdfExtractor {
     }
 
     public static void extract() {
-
         List<Feature> features = FeatureReader.read("experiment/features_tfidf.xml");
-        NGramModel nGramModel = (NGramModel) features.get(0);
+        NGramTerms nGramTerms = (NGramTerms) features.get(0);
 
         //DatasetReader reader = new CSVDatasetReader(dataSetPathCsv);
         DatasetReader reader = new DirectoryDatasetReader(dataSetPathDir);
@@ -50,11 +48,11 @@ public class TfIdfExtractor {
         System.out.println("Dataset reading time: " + timer.getElapsedSeconds());
 
         List<String> klassNames = dataset.getKlassNames();
-        List<Category> categories = new ArrayList<>();
+        List<CategoryOld> categories = new ArrayList<>();
 
         timer.start();
         for (String klassName : klassNames) {
-            Category cat = new Category(dataset.getInstancesOf(klassName, 100), nGramModel, klassName);
+            CategoryOld cat = new CategoryOld(dataset.getDocumentsOf(klassName, 100), nGramTerms, klassName);
             categories.add(cat);
         }
 
@@ -63,14 +61,14 @@ public class TfIdfExtractor {
 
         Set<TfIdf> top_terms = new HashSet<>();
 
-        for (Category category : categories) {
+        for (CategoryOld category : categories) {
             List<TfIdf> tfIdfs = category.getTfidfsByKlassFrequency();
             //List<TfIdf> tfIdfs = category.getTfidfsByInstanceFrequency();
             System.out.println(category.getTfidfsByKlassFrequency().size());
             for (TfIdf tfIdf : tfIdfs) {
                 double idf = 0;
                 int catsContainingTheTerm=0;
-                for (Category cat : categories) {
+                for (CategoryOld cat : categories) {
                     if (cat.contains(tfIdf.getTerm().getKey())) {
                         catsContainingTheTerm++;
                     }
@@ -98,7 +96,6 @@ public class TfIdfExtractor {
                 tfidfsToFile(tfIdfs, category.getId());
             }
         }
-
         TopTermsToFile(top_terms, TopTermsFileName);
     }
 

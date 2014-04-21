@@ -2,6 +2,8 @@ package com.hrzafer.prizma.feature;
 
 import com.hrzafer.prizma.Resources;
 import com.hrzafer.prizma.data.Document;
+import com.hrzafer.prizma.feature.value.FeatureValue;
+import com.hrzafer.prizma.feature.value.FeatureValueFactory;
 import com.hrzafer.prizma.preprocessing.Analyzer;
 import com.hrzafer.prizma.util.STR;
 
@@ -23,11 +25,8 @@ public class StopwordRatio extends Feature {
         stops = new HashSet<>(list);
     }
 
-
-
-        @Override
-    public List<FeatureValue> extract(Document document) {
-        String data = getFieldData(document);
+    @Override
+    public List<FeatureValue> extract(String data) {
         String source = data.replaceAll("[\\*\\-\\:\\\"\\.,\\(\\);?!']", "");
         Scanner s = new Scanner(source);
         int stopwordCount = 0;

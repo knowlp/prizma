@@ -18,7 +18,6 @@ public class Document implements Comparable<Document> {
     public static final String SUBCATEGORY_FIELDNAME = "subcategory";
     public static final String PREDICTED_CATEGORY_FIELDNAME = "predicted";
 
-
     public Document(DocumentSource source, String actualCategory){
         data = source.getData();
         data.put(CATEGORY_FIELDNAME, actualCategory);
@@ -26,6 +25,7 @@ public class Document implements Comparable<Document> {
 
     public Document(DocumentSource source) {
         this.data = source.getData();
+        data.put(CATEGORY_FIELDNAME, "?");
     }
 
     public String getActualCategory() {

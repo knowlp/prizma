@@ -3,7 +3,6 @@ package com.hrzafer.prizma.data.io;
 import com.hrzafer.prizma.data.Document;
 import com.hrzafer.prizma.util.IO;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -13,10 +12,10 @@ import java.util.Map;
 
 //todo: UTF_8 meselesini çöz!
 public class FileDocumentSource extends DocumentSource {
-    private String path;
     private final String _encoding = IO.UTF_8;
     private final boolean createId;
     private final FileDocumentSourceStrategy strategy;
+    private String path;
 
     public FileDocumentSource(String path, FileDocumentSourceStrategy strategy, boolean createId) {
         this.path = path;
@@ -28,7 +27,7 @@ public class FileDocumentSource extends DocumentSource {
     protected Map<String, String> readData() {
         String content = IO.read(path, _encoding);
         Map<String, String> data = new LinkedHashMap<>();
-        if (createId){
+        if (createId) {
             data.put(Document.ID_FIELDNAME, getFileName(path));
         }
         strategy.extractData(data, content);
@@ -36,7 +35,10 @@ public class FileDocumentSource extends DocumentSource {
     }
 
     private String getFileName(String path) {
-        return path.substring(path.lastIndexOf('\\') + 1);
+
+        int index = path.lastIndexOf('\\', path.lastIndexOf('\\') - 1);
+        //int index = path.lastIndexOf('\\');
+        return path.substring(index + 1);
     }
 
 

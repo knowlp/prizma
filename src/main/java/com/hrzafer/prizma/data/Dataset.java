@@ -8,10 +8,10 @@ import java.util.List;
  */
 public class Dataset {
 
-    private final List<Category> categories;
+    private final List<DocumentCategory> categories;
     private final List<String> fieldNames;
 
-    public Dataset(List<Category> categories) {
+    public Dataset(List<DocumentCategory> categories) {
         this.categories = categories;
         this.fieldNames = categories.get(0).getAllInstances().get(0).getFieldNames();
     }
@@ -34,12 +34,12 @@ public class Dataset {
     public List<Document> getPercentageSplittedInstances(double trainPercentage) {
 
         List<Document> documents = new ArrayList<>();
-        for (Category category : categories) {
+        for (DocumentCategory category : categories) {
             category.setTrainPercentage(trainPercentage);
             documents.addAll(category.getTrainInstances());
         }
 
-        for (Category category : categories) {
+        for (DocumentCategory category : categories) {
             documents.addAll(category.getTestInstances());
         }
         return documents;
@@ -51,13 +51,13 @@ public class Dataset {
      * @return
      */
 
-    public List<Document> getInstancesOf(String categoryName) {
-        return  getInstancesOf(categoryName, 100.0);
+    public List<Document> getDocumentsOf(String categoryName) {
+        return  getDocumentsOf(categoryName, 100.0);
     }
 
-    public List<Document> getInstancesOf(String categoryName, double percentage) {
-        List<Document> samples = new ArrayList();
-        for (Category category : categories) {
+    public List<Document> getDocumentsOf(String categoryName, double percentage) {
+        List<Document> samples = new ArrayList<>();
+        for (DocumentCategory category : categories) {
             if (category.getName().equalsIgnoreCase(categoryName)) {
                 category.setTrainPercentage(percentage);
                 samples.addAll(category.getTrainInstances());
@@ -69,7 +69,7 @@ public class Dataset {
 
     public List<String> getKlassNames() {
         List<String> names = new ArrayList<>();
-        for (Category category : categories) {
+        for (DocumentCategory category : categories) {
             String name = category.getName();
             names.add(name);
         }
@@ -80,14 +80,14 @@ public class Dataset {
      * Shuffles the instances to make the instances in training and test sets be different
      */
     public void shuffle() {
-        for (Category category : categories) {
+        for (DocumentCategory category : categories) {
             category.shuffle();
         }
     }
 
     public int getInstanceCount() {
         int count = 0;
-        for (Category category : categories) {
+        for (DocumentCategory category : categories) {
             count += category.getInstanceCount();
         }
         return count;
@@ -95,7 +95,7 @@ public class Dataset {
 
     public int getTrainInstanceCount() {
         int count = 0;
-        for (Category category : categories) {
+        for (DocumentCategory category : categories) {
             count += category.getTrainInstanceCount();
         }
         return count;

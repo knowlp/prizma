@@ -7,9 +7,8 @@ import com.hrzafer.prizma.Config;
 import com.hrzafer.prizma.data.FeatureReader;
 import com.hrzafer.prizma.feature.Feature;
 import com.hrzafer.prizma.util.GUI;
-import com.hrzafer.prizma.util.STR;
 import com.hrzafer.prizma.util.Timer;
-import com.hrzafer.prizma.util.WekaHelper;
+
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 import java.util.ArrayList;
@@ -866,7 +865,7 @@ public class Frame extends javax.swing.JFrame {
                 String path = getArffFileReadPath();
                 double percentage = getTrainPercentageForEvaluation();
                 String classifierName = getClassifierName();
-                String evaluation = WekaHelper.evaluate(path, percentage, classifierName);
+                String evaluation = ""; //WekaHelper.evaluate(path, percentage, classifierName); //todo GUI'den classifier panelini kaldır.
                 evaluationTextArea.setText(evaluation);
             } catch (RuntimeException e) {
                 GUI.messageBox("ARFF file not found!", "Error!");

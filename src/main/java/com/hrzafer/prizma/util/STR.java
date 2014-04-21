@@ -219,4 +219,20 @@ public class STR {
         return sb.toString().trim();
     }
 
+    public static <T> String join(List<T> tokens, char delim){
+        return join(tokens.toArray(), delim);
+    }
+
+    public static String join (Object[] array, char delim){
+        StringBuilder builder = new StringBuilder();
+        if (array.length != 0) {
+            builder.append(array[0]);
+            for (int i = 1; i < array.length; i++ )
+            {
+                builder.append(delim);
+                builder.append(array[i]);
+            }
+        }
+        return builder.toString();
+    }
 }

@@ -1,17 +1,19 @@
 package com.hrzafer.prizma.feature.ngram;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
-/**
- * Created with IntelliJ IDEA.
- * User: hrzafer
- * Date: 24.02.2014
- * Time: 15:42
- * To change this template use File | Settings | File Templates.
- */
-public interface NGramExtractor {
+public abstract class NGramExtractor {
+    protected int windowSize;
 
-    public List<NGram> extract(List<String> tokens, int windowSize) ;
+    protected NGramExtractor(int windowSize) {
+        this.windowSize = windowSize;
+    }
 
+    public abstract List<String> extractTermList(List<String> tokens) ;
 
+    public abstract Map<String, Integer> extractTermMap(List<String> tokens) ;
+
+    public abstract Set<String> extractTermSet(List<String> tokens) ;
 }

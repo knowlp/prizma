@@ -90,7 +90,10 @@ public class FeatureReader {
         String description = descriptionElement.getTextContent();
         Map<String, String> parameters = readParameters(parametersElement);
         Analyzer analyzer;
-        if (analyzerElement.hasAttribute("name")){
+        if (analyzerElement == null){
+            analyzer = null;
+        }
+        else if (analyzerElement.hasAttribute("name")){
             analyzer = Globals.getAnalyzer(analyzerElement.getAttribute("name"));
         }
         else {

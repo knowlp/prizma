@@ -3,9 +3,9 @@ package com.hrzafer.prizma;
 import com.hrzafer.prizma.data.*;
 import com.hrzafer.prizma.data.io.*;
 import com.hrzafer.prizma.feature.Feature;
-import com.hrzafer.prizma.feature.FeatureValue;
-import com.hrzafer.prizma.feature.NGramModel;
-import com.hrzafer.prizma.feature.Unigrams;
+import com.hrzafer.prizma.feature.value.FeatureValue;
+import com.hrzafer.prizma.feature.NGramTerms;
+import com.hrzafer.prizma.feature.UnigramTerms;
 import com.hrzafer.prizma.data.Document;
 import com.hrzafer.prizma.preprocessing.*;
 import com.hrzafer.prizma.util.IO;
@@ -23,12 +23,12 @@ import java.util.Map;
  */
 public class ArffCreator {
 
-    public static final String HEADER_COMMENT = "% This file is created by the Prizma 1.0.\n"
-            + "% Prizma is a Turkish Text Classification Environment for Weka \n"
-            + "% and developed by Harun Reşit Zafer with Fatih Universtiy Natural Language Processing Group.\n"
-            + "% http://nlp.ceng.fatih.edu.tr/blog/\n"
-            + "% hrzafer@fatih.edu.tr\n"
-            + "% www.hrzafer.com\n\n";
+//    public static final String HEADER_COMMENT = "% This file is created by the Prizma 1.0.\n"
+//            + "% Prizma is a Turkish Text Classification Environment for Weka \n"
+//            + "% and developed by Harun Reşit Zafer with Fatih Universtiy Natural Language Processing Group.\n"
+//            + "% http://nlp.ceng.fatih.edu.tr/blog/\n"
+//            + "% hrzafer@fatih.edu.tr\n"
+//            + "% www.hrzafer.com\n\n";
     private static ArffProperties _properties;
 
     public static void create(ArffProperties properties, String filename) {
@@ -74,7 +74,7 @@ public class ArffCreator {
         params.put("binary", "true");
         params.put("lexiconEncoded", "false");
         params.put("lexiconFilePath", "experiment/" + name + "Lexicon");
-        return new Unigrams("Unigrams", "bla", 1, "", params, analyzer);
+        return new UnigramTerms("UnigramTerms", "bla", 1, "", params, analyzer);
     }
 
     private static void create(String filename) {
@@ -100,14 +100,14 @@ public class ArffCreator {
     private static void create(Dataset dataset, String filename) {
         StringBuilder sb = new StringBuilder();
         for (Feature feature : _properties.getFeatures()) {
-            if (feature.getType().endsWith("grams")) {
-                ((NGramModel) feature).buildNGramData(dataset.getAllInstances());
+            if (feature.getType().endsWith("gramTerms")) {
+                ((NGramTerms) feature).buildTermDictionary(dataset.getAllInstances());
             }
         }
         sb.append(getHeader());
         sb.append(getWekaClassNames(dataset));
         String data = getData(dataset);
-        sb.append(getArffCommentLineForTrainPercentage(dataset));
+        //sb.append(getArffCommentLineForTrainPercentage(dataset));
         sb.append(data);
         IO.write(filename, sb.toString());
     }
@@ -116,8 +116,9 @@ public class ArffCreator {
         String relationName = _properties.getRelationName();
         List<Feature> features = _properties.getFeatures();
         String relationDeclaration = getRelationDeclaration(relationName);
-        StringBuilder header = new StringBuilder(HEADER_COMMENT).append(relationDeclaration);
+        StringBuilder header = new StringBuilder().append(relationDeclaration);
         for (Feature feature : features) {
+            if(!feature.getType().equals("DocumentId"))
             header.append(feature.getDeclarationForArff());
         }
         return header.toString();
@@ -125,8 +126,9 @@ public class ArffCreator {
 
     private static String getHeader(String relationName, List<Feature> features) {
         String relationDeclaration = getRelationDeclaration(relationName);
-        StringBuilder header = new StringBuilder(HEADER_COMMENT).append(relationDeclaration);
+        StringBuilder header = new StringBuilder().append(relationDeclaration);
         for (Feature feature : features) {
+
             header.append(feature.getDeclarationForArff());
         }
         return header.toString();
@@ -182,35 +184,51 @@ public class ArffCreator {
     public static String getInstanceDataLine(List<Feature> features, Document document) {
         List<FeatureValue> values = FeatureExtractor.extract(document, features);
         StringBuilder dataLine = new StringBuilder("");
+        StringBuilder comment = new StringBuilder("");
         for (FeatureValue value : values) {
-            dataLine.append(value).append(",");
+            if (value.toString().startsWith("%")){
+                comment.append(value);
+            }
+            else {
+                dataLine.append(value).append(",");
+            }
         }
-        dataLine.append(document.getActualCategory()).append("\n");
+        dataLine.insert(0, comment.toString()+ "\n").append(document.getActualCategory()).append("\n");
         return dataLine.toString();
     }
 
-    private static String getArffCommentLineForTrainPercentage(Dataset dataset) {
-
-        int instanceCount = dataset.getInstanceCount();
-        double trainPercentage = _properties.getTrainPercentage();
-        double testPercentage = 100 - trainPercentage;
-        int _trainInstanceCount = dataset.getTrainInstanceCount();
-        int _testInstanceCount = dataset.getInstanceCount() - _trainInstanceCount;
-
-        MessageFormat message = new MessageFormat("% The first {0} instances (%{1}) is used for training\n"
-                + "% and the rest {2} instances (%{3}) is used as test data.\n"
-                + "% Total instance count is {4}\n"
-                + "% In Weka (to getData correct results), select \"percentage split %{1}\" and \"preserve order for % split\" options\n\n");
-        Object[] args = {_trainInstanceCount, trainPercentage, _testInstanceCount, testPercentage, instanceCount};
-
-        return message.format(args);
-    }
+//    private static String getArffCommentLineForTrainPercentage(Dataset dataset) {
+//
+//        int instanceCount = dataset.getInstanceCount();
+//        double trainPercentage = _properties.getTrainPercentage();
+//        double testPercentage = 100 - trainPercentage;
+//        int _trainInstanceCount = dataset.getTrainInstanceCount();
+//        int _testInstanceCount = dataset.getInstanceCount() - _trainInstanceCount;
+//
+//        MessageFormat message = new MessageFormat("% The first {0} instances (%{1}) is used for training\n"
+//                + "% and the rest {2} instances (%{3}) is used as test data.\n"
+//                + "% Total instance count is {4}\n"
+//                + "% In Weka (to getData correct results), select \"percentage split %{1}\" and \"preserve order for % split\" options\n\n");
+//        Object[] args = {_trainInstanceCount, trainPercentage, _testInstanceCount, testPercentage, instanceCount};
+//
+//        return message.format(args);
+//    }
 
     public static String createArffForSingleInstance(List<Feature> features, Document document) {
         StringBuilder sb = new StringBuilder();
         sb.append(getHeader("oylesine", features));
         sb.append("@attribute class {").append(document.getActualCategory()).append("}\n\n@data\n\n");
         sb.append(getInstanceDataLine(features, document));
+        return sb.toString();
+    }
+
+    public static String createArffForDocuments(List<Feature> features, List<Document> documents){
+        StringBuilder sb = new StringBuilder();
+        sb.append(getHeader("oylesine", features));
+        sb.append("@attribute class {").append("null").append("}\n\n@data\n\n");
+        for (Document document : documents) {
+            sb.append(getInstanceDataLine(features, document));
+        }
         return sb.toString();
     }
 

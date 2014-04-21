@@ -1,5 +1,6 @@
 package com.hrzafer.prizma.feature;
 
+import com.hrzafer.prizma.feature.value.FeatureValue;
 import com.hrzafer.prizma.gui.Frame;
 import com.hrzafer.prizma.data.Document;
 import com.hrzafer.prizma.preprocessing.Analyzer;
@@ -36,7 +37,21 @@ public abstract class Feature implements Comparable<Feature> {
         this.analyzer = analyzer;
     }
 
-    public abstract List<FeatureValue> extract(Document document);
+    protected Feature(String type, Map<String, String> parameters, Analyzer analyzer) {
+        this.type = type;
+        this.name = "";
+        this.parameters = parameters;
+        this.analyzer = analyzer;
+        this.weight = 1;
+        this.description = "";
+    }
+
+    public List<FeatureValue> extract(Document document){
+        String data = getFieldData(document);
+        return extract(data);
+    }
+
+    public abstract List<FeatureValue> extract(String data);
 
     public String getDescription() {
         return description;

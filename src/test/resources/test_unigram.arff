@@ -1,0 +1,78 @@
+% This file is created by the Prizma 1.0.
+% Prizma is a Turkish Text Classification Environment for Weka 
+% and developed by Harun Reşit Zafer with Fatih Universtiy Natural Language Processing Group.
+% http://nlp.ceng.fatih.edu.tr/blog/
+% hrzafer@fatih.edu.tr
+% www.hrzafer.com
+
+@relation test_dataset
+
+@attribute w0_content numeric
+@attribute w1_content numeric
+@attribute w2_content numeric
+@attribute w3_content numeric
+@attribute w4_content numeric
+@attribute w5_content numeric
+@attribute w6_content numeric
+@attribute w7_content numeric
+@attribute w8_content numeric
+@attribute w9_content numeric
+@attribute class {c1,c2,c3,c4,c5}
+
+% The first 25 instances (%100) is used for training
+% and the rest 0 instances (%0) is used as test data.
+% Total instance count is 25
+% In Weka (to getData correct results), select "percentage split %100" and "preserve order for % split" options
+
+@data
+
+% c1\01.txt
+1,1,1,1,1,0,0,0,0,0,c1
+% c1\02.txt
+1,1,0,1,1,1,0,0,0,0,c1
+% c1\03.txt
+1,1,0,0,1,1,1,0,0,0,c1
+% c1\04.txt
+1,1,0,0,0,1,1,1,0,0,c1
+% c1\05.txt
+1,1,0,0,0,0,1,1,1,0,c1
+% c2\01.txt
+1,1,1,1,1,0,0,0,0,0,c2
+% c2\02.txt
+0,1,1,1,1,1,0,0,0,0,c2
+% c2\03.txt
+0,0,1,1,1,1,1,0,0,0,c2
+% c2\04.txt
+0,0,1,1,0,1,1,1,0,0,c2
+% c2\05.txt
+0,0,1,1,0,0,1,1,1,0,c2
+% c3\01.txt
+0,1,1,1,1,1,0,0,0,0,c3
+% c3\02.txt
+0,0,1,1,1,1,1,0,0,0,c3
+% c3\03.txt
+0,0,0,1,1,1,1,1,0,0,c3
+% c3\04.txt
+0,0,0,0,1,1,1,1,1,0,c3
+% c3\05.txt
+0,0,0,0,1,1,0,1,1,1,c3
+% c4\01.txt
+0,0,0,1,1,1,1,1,0,0,c4
+% c4\02.txt
+0,0,0,0,1,1,1,1,1,0,c4
+% c4\03.txt
+0,0,0,0,0,1,1,1,1,1,c4
+% c4\04.txt
+1,0,0,0,0,0,1,1,1,1,c4
+% c4\05.txt
+1,1,0,0,0,0,1,1,0,1,c4
+% c5\01.txt
+0,0,0,0,0,1,1,1,1,1,c5
+% c5\02.txt
+1,0,0,0,0,0,1,1,1,1,c5
+% c5\03.txt
+1,1,0,0,0,0,0,1,1,1,c5
+% c5\04.txt
+1,1,1,0,0,0,0,0,1,1,c5
+% c5\05.txt
+0,1,1,1,0,0,0,0,1,1,c5

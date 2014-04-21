@@ -1,10 +1,11 @@
 package com.hrzafer.prizma.feature;
 
 import com.hrzafer.prizma.data.Document;
+import com.hrzafer.prizma.feature.value.FeatureValue;
+import com.hrzafer.prizma.feature.value.FeatureValueFactory;
 import com.hrzafer.prizma.preprocessing.Analyzer;
 
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -19,8 +20,7 @@ public class WordLengthAverage extends Feature {
     }
 
     @Override
-    public List<FeatureValue> extract(Document document) {
-        String data = getFieldData(document);
+    public List<FeatureValue> extract(String data) {
         String source = data.replaceAll("[\\*-\\:\\\"\\.,'\\(\\);?!]", "");
         Scanner s = new Scanner(source);
         int wordCount = 0;
@@ -37,7 +37,6 @@ public class WordLengthAverage extends Feature {
 
         //return String.format(Locale.US, "%.2f", mean);
     }
-
 
 
 }

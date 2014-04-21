@@ -1,8 +1,9 @@
 package com.hrzafer.prizma.feature;
 
 import com.hrzafer.prizma.data.Document;
+import com.hrzafer.prizma.feature.value.FeatureValue;
+import com.hrzafer.prizma.feature.value.FeatureValueFactory;
 import com.hrzafer.prizma.preprocessing.Analyzer;
-import com.hrzafer.prizma.util.STR;
 
 import java.util.List;
 import java.util.Map;
@@ -20,8 +21,7 @@ public class PunctuationEllipsisRatio extends Feature {
     }
 
     @Override
-    public List<FeatureValue> extract(Document document) {
-        String data = getFieldData(document);
+    public List<FeatureValue> extract(String data) {
         PunctuationDataExtractor extractor = new PunctuationDataExtractor(data, '.');
         int totalPunctuationCount = extractor.getTotalPunctuationCount();
         int ellipsisCount = 0;

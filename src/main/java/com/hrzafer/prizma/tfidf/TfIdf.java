@@ -1,7 +1,7 @@
 package com.hrzafer.prizma.tfidf;
 
 
-import com.hrzafer.prizma.feature.ngram.NGramFrequency;
+import com.hrzafer.prizma.feature.ngram.TermFrequency;
 import com.hrzafer.prizma.util.STR;
 
 import java.util.Map;
@@ -11,20 +11,20 @@ import java.util.Map;
  */
 public class TfIdf implements Comparable<TfIdf> {
 
-    private Map.Entry<String, NGramFrequency> term;
+    private Map.Entry<String, TermFrequency> term;
     private double tf;
     private double idf;
     private double llr;
 
-    public TfIdf(Map.Entry<String, NGramFrequency> term) {
+    public TfIdf(Map.Entry<String, TermFrequency> term) {
         this.term = term;
     }
 
-    public Map.Entry<String, NGramFrequency> getTerm() {
+    public Map.Entry<String, TermFrequency> getTerm() {
         return term;
     }
     
-    public TfIdf(Map.Entry<String, NGramFrequency> term, double tf) {
+    public TfIdf(Map.Entry<String, TermFrequency> term, double tf) {
         this.term = term;
         this.tf = tf;
     }
