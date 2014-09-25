@@ -57,7 +57,6 @@ public abstract class NGramTerms extends Feature {
 
     public void buildTermDictionary(List<Document> documents) {
         if (!lexiconFilePath.isEmpty()) {
-            //buildTermDictionaryFromLexicon(lexiconFilePath);
             return;
         }
         termDictionary = buildNewTermDictionary(documents);
@@ -77,14 +76,14 @@ public abstract class NGramTerms extends Feature {
         if (frequencyThreshold > 0) {
             td.eliminateByFrequency(frequencyThreshold);
         }
-        System.out.println("NGram is built from " + documents.size() + " documents with " + td.getTermCount() + " features");
+        System.out.println(size + " dictionary is built from " + documents.size() + " documents with " + td.getTermCount() + " terms");
         return td;
     }
 
     private void buildTermDictionaryFromLexicon(String lexiconfile) {
         termDictionary = new TermDictionary(size);
         termDictionary.fromFile(lexiconfile, lexiconEncoded);//todo: lexicon okuma işi başka yerde yapılmalı
-        System.out.println("NGram is built from lexicon with " + termDictionary.getTermCount() + " features");
+        System.out.println(size + " dictionary is built with " + termDictionary.getTermCount() + " terms");
     }
 
     public NGramSize getSize() {
@@ -150,7 +149,7 @@ public abstract class NGramTerms extends Feature {
         StringBuilder sb = new StringBuilder();
         for (String nGramName : termDictionary.getTerms()) {
             sb.append("@attribute ").
-                    append(nGramName).append("_").append(parameters.get("field")).append(" ").
+                    append(nGramName.replaceAll(" ", "_")).append("_").append(parameters.get("field")).append(" ").
                     append("numeric").append("\n");
         }
         return sb.toString();

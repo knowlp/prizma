@@ -31,7 +31,7 @@ public abstract class DocumentCategory {
 
     @Override
     public String toString() {
-        return "Cat: " + getName() + " with " + getInstanceCount() + " instances.";
+        return "Cat: " + getName() + " with " + getDocumentCount() + " instances.";
     }
 
 
@@ -46,14 +46,14 @@ public abstract class DocumentCategory {
 
     abstract public List<Document> getAllInstances();
 
-    abstract public int getInstanceCount();
+    abstract public int getDocumentCount();
 
     public int getTestInstanceCount() {
-        return getInstanceCount() - getTrainInstanceCount();
+        return getDocumentCount() - getTrainInstanceCount();
     }
 
     public int getTrainInstanceCount() {
-        int trainInstanceCount = (int) Math.round((getInstanceCount() * getTrainPercentage()) / 100);
+        int trainInstanceCount = (int) Math.round((getDocumentCount() * getTrainPercentage()) / 100);
         return trainInstanceCount;
     }
 }

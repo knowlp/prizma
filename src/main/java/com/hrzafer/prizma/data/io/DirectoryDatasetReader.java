@@ -21,12 +21,12 @@ public class DirectoryDatasetReader extends DatasetReader {
         datasetDirectory = new File(datasetDirectoryPath);
     }
 
-    public DatasetReader strategy(FileDocumentSourceStrategy strategy){
+    public DirectoryDatasetReader strategy(FileDocumentSourceStrategy strategy){
         this.strategy = strategy;
         return this;
     }
 
-    public DatasetReader createId (boolean createId){
+    public DirectoryDatasetReader createId (boolean createId){
         this.createId = createId;
         return this;
     }

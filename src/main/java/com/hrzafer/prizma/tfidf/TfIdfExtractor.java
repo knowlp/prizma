@@ -1,6 +1,7 @@
 package com.hrzafer.prizma.tfidf;
 
 import com.hrzafer.prizma.data.*;
+import com.hrzafer.prizma.data.io.CSVDatasetReader;
 import com.hrzafer.prizma.data.io.DirectoryDatasetReader;
 import com.hrzafer.prizma.data.io.DatasetReader;
 import com.hrzafer.prizma.feature.Feature;
@@ -19,10 +20,10 @@ public class TfIdfExtractor {
     public static final int NumberOfTopTerms = 200;
     public static final double Treshold = 0.0002; //tf-idf eşik değeri
     public static final boolean TresholdBased = false;
-    public static final boolean oneToManyMode = false;
+    public static final boolean oneToManyMode = true;
     private static final double LLRTreshold = 90.0;
     private static final boolean bigram = false;
-    public static final String dataSetPathDir = "dataset/train_9x100";
+    public static final String dataSetPathDir = "dataset\\kategori_10arSayfa.csv";
     public static final String dataSetPathCsv = "data/iyi_kotu.csv";
     public static final String TopTermsFileName = "topTermsLexicon.txt";
 
@@ -39,7 +40,7 @@ public class TfIdfExtractor {
         NGramTerms nGramTerms = (NGramTerms) features.get(0);
 
         //DatasetReader reader = new CSVDatasetReader(dataSetPathCsv);
-        DatasetReader reader = new DirectoryDatasetReader(dataSetPathDir);
+        DatasetReader reader = new CSVDatasetReader(dataSetPathDir);
 
         Timer timer = new Timer();
         timer.start();
@@ -59,7 +60,7 @@ public class TfIdfExtractor {
         timer.stop();
         System.out.println("Ngrams time: " + timer.getElapsedSeconds());
 
-        Set<TfIdf> top_terms = new HashSet<>();
+        Set<TfIdf> top_terms = new TreeSet<>();
 
         for (CategoryOld category : categories) {
             List<TfIdf> tfIdfs = category.getTfidfsByKlassFrequency();

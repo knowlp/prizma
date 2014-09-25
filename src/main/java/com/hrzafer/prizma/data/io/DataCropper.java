@@ -20,7 +20,6 @@ public class DataCropper {
             if (isTooLong(entry.getValue())) {
                 data.put(entry.getKey(), crop(entry.getValue()));
                 croppedCount++;
-                System.out.println(croppedCount + " cropped");
             }
         }
         return data;

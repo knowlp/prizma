@@ -4,11 +4,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created with IntelliJ IDEA.
- * User: hrzafer
- * Date: 18.03.2014
- * Time: 14:25
- * To change this template use File | Settings | File Templates.
+ *
  */
 public class Category {
     private String name;

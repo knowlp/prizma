@@ -2,91 +2,158 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faf8a123-37c6-4362-a2ab-15bade5083f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/value/DocumentVectors.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/NewArffCreator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/hrzafer/prizma/preprocessing/StandardTokenizerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/TermDictionary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/TermFrequency.java" />
-      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\.idea\libraries\Maven__net_sf_squirrel_sql_thirdparty_non_maven_java_cup_0_11a.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\.idea\libraries\Maven__nz_ac_waikato_cms_weka_weka_stable_3_6_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\dataset\sample_dataset2.csv" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\dataset\sample_dataset_10.csv" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\prizma-core.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\ngram\MyNGramExtractor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\ngram\NGram.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\ngram\NGramData.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\ngram\NGramFrequency.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\util\TrainAndTestInstances.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\util\WekaHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\util\WekaNaiveBayesClassifier.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\data\Category.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/DocumentCategory.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\data\CategoryFromInstances.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/DocumentCategoryFromDocuments.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\data\CategoryFromSubcategories.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/DocumentCategoryFromSubcategories.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\Bigrams.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/BigramTerms.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\BinaryValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/value/BinaryValue.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\DoubleValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/value/DoubleValue.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\FeatureValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/value/FeatureValue.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\FeatureValueFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/value/FeatureValueFactory.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\IntegerValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/value/IntegerValue.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\NGramModel.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NGramTerms.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\NominalValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/value/NominalValue.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\Trigrams.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/TrigramTerms.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\Unigrams.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/UnigramTerms.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\feature\ValueType.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/value/FeatureValueType.java" />
-      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\tfidf\Category.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/tfidf/CategoryOld.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/ArffCreator.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/ArffCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/CSVDatasetReader.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/CSVDatasetReader.java" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\experiment\ekonomiLexicon" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\experiment\kultur-sanatLexicon" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\experiment\magazinLexicon" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\experiment\new_Lexicon" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\experiment\new_topTerms" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\experiment\planetLexicon" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\experiment\saglikLexicon" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\experiment\siyasetLexicon" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\experiment\sporLexicon" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\experiment\teknolojiLexicon" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\experiment\yasamLexicon" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\nuve_stems.zip" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\ArffCreator.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/OldArffCreator.java" />
+      <change type="MOVED" beforePath="C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\java\com\hrzafer\prizma\NewArffCreator.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/ArffCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/1.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/1.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/10.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/10.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/10.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/10.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/11.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/11.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub2/11.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub2/11.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/13.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/13.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub2/13.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub2/13.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/14.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/14.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub2/14.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub2/14.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/15.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/15.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/15.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/15.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub2/15.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub2/15.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub2/15.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub2/15.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/16.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/16.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub2/16.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub2/16.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/18.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/18.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub2/18.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub2/18.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/2.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/2.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/20.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/20.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub2/20.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub2/20.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/21.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/21.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/21.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/21.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/21.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/21.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub3/21.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub3/21.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/22.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/22.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/22.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/22.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/24.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/24.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/24.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/24.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/25.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/25.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/25.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/25.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/26.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/26.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/26.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/26.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/26.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/26.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub3/26.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub3/26.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/27.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/27.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/27.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/27.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/28.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/28.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/28.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/28.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/29.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/29.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/29.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/29.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/29.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/29.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub3/29.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub3/29.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/3.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/3.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/30.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/30.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/30.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub3/30.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/31.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/31.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub4/31.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub4/31.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/32.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/32.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/32.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/32.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/33.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/33.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/33.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/33.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/34.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/34.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/34.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/34.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/34.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/34.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub4/34.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub4/34.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/35.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/35.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/35.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/35.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/36.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/36.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/36.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/36.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/36.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/36.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub4/36.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub4/36.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/37.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/37.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/37.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/37.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/38.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/38.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/38.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub4/38.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/39.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/39.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub4/39.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub4/39.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/4.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/4.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/4.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub1/4.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub1/4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/41.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/41.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/41.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/41.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub5/41.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub5/41.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub5/41.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub5/41.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/42.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/42.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub5/42.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub5/42.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/45.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/45.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub5/45.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub5/45.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/5.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/5.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/5.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/5.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/5.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/5.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub1/5.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub1/5.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/6.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/6.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/6.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/6.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/6.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/6.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub1/6.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub1/6.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/spor/7.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/spor/7.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub1/7.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/spor/sub1/7.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/8.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset/siyaset/8.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/8.txt" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub/siyaset/sub1/8.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/CSVDatasetWriter.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/CSVDatasetWriter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/termselection/Category.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/termselection/Category.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/Config.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/Config.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DataCropper.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DataCropper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/Dataset.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/Dataset.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectoryDatasetReader.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectoryDatasetReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectroyDatasetWriter.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectroyDatasetWriter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/Document.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/Document.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromString.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentSource.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/FastTokenizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/FastTokenizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/Feature.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/Feature.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureExtractor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureReader.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/FeatureReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/hrzafer/prizma/feature/FeatureValueFactoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/hrzafer/prizma/feature/FeatureValueFactoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSource.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/FileDocumentSource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/DocumentCategory.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/DocumentCategory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/DocumentCategoryFromDocuments.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/DocumentCategoryFromDocuments.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/DocumentCategoryFromSubcategories.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/DocumentCategoryFromSubcategories.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/gui/Frame.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/gui/Frame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/LexiconFrequency.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/LexiconFrequency.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/IntegrationTests.java" afterPath="$PROJECT_DIR$/src/test/java/IntegrationTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/LuceneNGramExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/LuceneNGramExtractor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramExtractor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramSize.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramSize.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NumberCount.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NumberCount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/NumberRemover.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/NumberRemover.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/util/NuveCachedStemmer.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/util/NuveCachedStemmer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationEllipsisRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationEllipsisRatio.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/PunctuationRatio.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/Resources.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/Resources.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/util/STR.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/util/STR.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NGramTerms.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NGramTerms.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractorTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/util/StemDictReader.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/util/StemDictReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/StopwordRatio.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/StopwordRatio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/TermDictionary.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/TermDictionary.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/termselection/TermDistribution.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/termselection/TermDistribution.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/TestMain.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/TestMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/tfidf/TfIdf.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/tfidf/TfIdf.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/tfidf/TfIdfExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/tfidf/TfIdfExtractor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/TooShortTokenFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/TooShortTokenFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/WordLengthAverage.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/WordLengthAverage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/WordLengthVariance.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/WordLengthVariance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/features.xml" afterPath="$PROJECT_DIR$/src/main/resources/features.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/globals.xml" afterPath="$PROJECT_DIR$/src/main/resources/globals.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/TitledFileDocumentSourceStrategy.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/TitledFileDocumentSourceStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/features.xml" afterPath="$PROJECT_DIR$/experiment/features.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/new_ekonomiLexicon" afterPath="$PROJECT_DIR$/experiment/new_ekonomiLexicon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/new_kultur-sanatLexicon" afterPath="$PROJECT_DIR$/experiment/new_kultur-sanatLexicon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/new_magazinLexicon" afterPath="$PROJECT_DIR$/experiment/new_magazinLexicon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/new_planetLexicon" afterPath="$PROJECT_DIR$/experiment/new_planetLexicon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/new_saglikLexicon" afterPath="$PROJECT_DIR$/experiment/new_saglikLexicon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/new_siyasetLexicon" afterPath="$PROJECT_DIR$/experiment/new_siyasetLexicon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/new_sporLexicon" afterPath="$PROJECT_DIR$/experiment/new_sporLexicon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/new_teknolojiLexicon" afterPath="$PROJECT_DIR$/experiment/new_teknolojiLexicon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/new_yasamLexicon" afterPath="$PROJECT_DIR$/experiment/new_yasamLexicon" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/prizma.properties" afterPath="$PROJECT_DIR$/src/main/resources/prizma.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arff/sample_dataset.arff" afterPath="$PROJECT_DIR$/arff/sample_dataset.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/prizma.properties" afterPath="$PROJECT_DIR$/experiment/prizma.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset.csv" afterPath="$PROJECT_DIR$/dataset/sample_dataset.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/sample_dataset_sub.csv" afterPath="$PROJECT_DIR$/dataset/sample_dataset_sub.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/topTermsLexicon.txt" afterPath="$PROJECT_DIR$/experiment/topTermsLexicon.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="prizma.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398077057155" ignored="false" />
-    <file path="/fragment.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398082298192" ignored="false" />
+    <file path="/Dummy.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411628879723" ignored="false" />
+    <file path="/fragment.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398692691322" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/FirstFiveLetterRooter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/preprocessing/ToLowerCaseConverter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/LengthOfTitle.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394543337044" ignored="false" />
@@ -147,7 +214,7 @@
     <file path="/Document.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394720051272" ignored="false" />
     <file path="/Category.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397558931980" ignored="false" />
     <file path="/CategoryFromSubsets.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394545204939" ignored="false" />
-    <file path="/Dataset.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397807130733" ignored="false" />
+    <file path="/Dataset.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398686414149" ignored="false" />
     <file path="/CategoryFromInstances.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394609642561" ignored="false" />
     <file path="/CategoryFromSubcategories.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394609915412" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/vsm/FeatureVector.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394548234573" ignored="false" />
@@ -167,14 +234,14 @@
     <file path="/DatasetFromCSVReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394713916821" ignored="false" />
     <file path="/DatasetFromDirectoryReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394714008027" ignored="false" />
     <file path="/DirectoryDatasetReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394803838509" ignored="false" />
-    <file path="/TestMain.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398081249068" ignored="false" />
+    <file path="/TestMain.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848091163" ignored="false" />
     <file path="/DatasetWriterDir.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394721418886" ignored="false" />
-    <file path="/DataCropper.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394721537039" ignored="false" />
+    <file path="/DataCropper.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411394184659" ignored="false" />
     <file path="/FileDocumentSourceStrategy.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394721913167" ignored="false" />
     <file path="/DefaultFileDocumentReaderStrategy.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394722011415" ignored="false" />
     <file path="/TitledFileDocumentSourceStrategy.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394723043297" ignored="false" />
     <file path="/FileDocumentSource.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394722591864" ignored="false" />
-    <file path="/ArffCreator.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398061081975" ignored="false" />
+    <file path="/ArffCreator.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398408591293" ignored="false" />
     <file path="/CSVDatasetReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398066067357" ignored="false" />
     <file path="/DatasetReader.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395063131754" ignored="false" />
     <file path="/DatasetReaderProperties.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1394799348545" ignored="false" />
@@ -210,28 +277,28 @@
     <file path="/NGramModel.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397216784944" ignored="false" />
     <file path="/NGramData.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395154755937" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/feature/ngram/NGramData.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395061296769" ignored="false" />
-    <file path="/features.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397558765928" ignored="false" />
+    <file path="/features.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1402551926458" ignored="false" />
     <file path="$PROJECT_DIR$/../../Reversi/stadium-client-master/src/main/java/im/firat/reversi/stadiumclient/Main.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395140474289" ignored="false" />
     <file path="/Term.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397217276491" ignored="false" />
     <file path="/MyNGramExtractorTest.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395148609155" ignored="false" />
     <file path="/MyNGramExtractor.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395150056768" ignored="false" />
-    <file path="/NGramExtractor.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397550565991" ignored="false" />
-    <file path="/LuceneNGramExtractor.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397549469692" ignored="false" />
+    <file path="/NGramExtractor.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411642994251" ignored="false" />
+    <file path="/LuceneNGramExtractor.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411643318739" ignored="false" />
     <file path="/NGramFrequency.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1395150144356" ignored="false" />
     <file path="/Frequency.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1396007719364" ignored="false" />
-    <file path="/NGramTerms.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398081989791" ignored="false" />
+    <file path="/NGramTerms.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1402552314705" ignored="false" />
     <file path="$PROJECT_DIR$/../../Reversi/Java/harun-reversi-client/.idea/workspace.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1396007873942" ignored="false" />
     <file path="/TermDistribution.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397214615666" ignored="false" />
     <file path="/TermDistributionExtractor.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397546266896" ignored="false" />
-    <file path="/TfIdfExtractor.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397220115316" ignored="false" />
-    <file path="/a.dummy" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397201834825" ignored="false" />
-    <file path="/TermDictionary.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398080692562" ignored="false" />
+    <file path="/TfIdfExtractor.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398751464950" ignored="false" />
+    <file path="/a.dummy" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411629584110" ignored="false" />
+    <file path="/TermDictionary.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411643621967" ignored="false" />
     <file path="/TermFrequency.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397199468442" ignored="false" />
     <file path="/CategoryNew.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397200311717" ignored="false" />
     <file path="/CategoryOld.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397546287103" ignored="false" />
     <file path="/Measurement.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397214493708" ignored="false" />
     <file path="/TermSelector.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397223655931" ignored="false" />
-    <file path="/TfIdfMeasurement.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397223634924" ignored="false" />
+    <file path="/TfIdfMeasurement.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398751618649" ignored="false" />
     <file path="/DFMeasurement.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397217703282" ignored="false" />
     <file path="/MIMeasurement.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397218379289" ignored="false" />
     <file path="$PROJECT_DIR$/../code/src/main/java/com/hrzafer/prizma/tfidf/TfIdfExtractor.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397220117212" ignored="false" />
@@ -243,8 +310,8 @@
     <file path="/Trigrams.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397546377975" ignored="false" />
     <file path="/Bigrams.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397546386402" ignored="false" />
     <file path="/TermVector.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397549324129" ignored="false" />
-    <file path="/PrizmaNGramExtractor.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397550353535" ignored="false" />
-    <file path="/PrizmaNGramExtractorTest.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398079279050" ignored="false" />
+    <file path="/PrizmaNGramExtractor.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411643039055" ignored="false" />
+    <file path="/PrizmaNGramExtractorTest.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411630419842" ignored="false" />
     <file path="$PROJECT_DIR$/../damla-categorization/src/main/resources/catTech/catTechFeatures.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397559057705" ignored="false" />
     <file path="/catTechFeatures.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397558500591" ignored="false" />
     <file path="$PROJECT_DIR$/../damla-categorization/src/main/java/tr/gov/bilgem/damla/categorization/Category.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397558943699" ignored="false" />
@@ -261,8 +328,8 @@
     <file path="$PROJECT_DIR$/../damla-categorization/src/main/resources/catReligion/catReligionFeatures.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397559138637" ignored="false" />
     <file path="$PROJECT_DIR$/../damla-categorization/src/main/resources/catShopping/catShoppingFeatures.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397559115051" ignored="false" />
     <file path="$PROJECT_DIR$/../damla-categorization/src/main/resources/catSports/catSportsFeatures.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397559105554" ignored="false" />
-    <file path="$PROJECT_DIR$/../damla-categorization/src/main/java/tr/gov/bilgem/damla/categorization/BenchMarker.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397816437789" ignored="false" />
-    <file path="/BenchMarker.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397815979340" ignored="false" />
+    <file path="$PROJECT_DIR$/../damla-categorization/src/main/java/tr/gov/bilgem/damla/categorization/BenchMarker.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398421878600" ignored="false" />
+    <file path="/BenchMarker.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398421876975" ignored="false" />
     <file path="/NewArffCreator.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398076750334" ignored="false" />
     <file path="/DocumentFeatureRelation.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397738238271" ignored="false" />
     <file path="$PROJECT_DIR$/../damla-categorization/src/main/java/tr/gov/bilgem/damla/categorization/WebPageCategorizer.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1397815338082" ignored="false" />
@@ -285,6 +352,446 @@
     <file path="/UnigramTerms.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398070622695" ignored="false" />
     <file path="/DatasetDirToCSVConverter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398081156152" ignored="false" />
     <file path="/DirToCSVConverter.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398084291366" ignored="false" />
+    <file path="/DocumentCategory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398405069773" ignored="false" />
+    <file path="/JaccardDistance.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398683353984" ignored="false" />
+    <file path="/JaccardTest.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398684430757" ignored="false" />
+    <file path="/Evaluation.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398692042679" ignored="false" />
+    <file path="/WeightedJaccard.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1398692790142" ignored="false" />
+    <file path="/Experiment.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400156570238" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/kultur-sanat/12.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187057" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/kultur-sanat/22.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187061" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/45.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187297" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/planet/84.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187297" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/kultur-sanat/95.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187351" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/35.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187349" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/kultur-sanat/26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187297" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/47.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187299" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/planet/74.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187351" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/49.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187299" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/37.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187299" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/11.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187300" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/kultur-sanat/41.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187348" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/2.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187300" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/kultur-sanat/5.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187300" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/8.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187300" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/39.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187300" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/40.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187301" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/27.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187301" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/4.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187301" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/13.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187314" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/19.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187302" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/kultur-sanat/7.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187302" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/6.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187302" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/20.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187302" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/28.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187302" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/44.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187303" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/22.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187303" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/43.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187304" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/46.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187304" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/12.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187304" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/planet/48.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187358" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/36.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187305" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187305" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/51.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187305" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/16.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187305" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/10.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187355" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/planet/80.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187306" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/1.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187395" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/24.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187306" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/48.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187306" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/saglik/21.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187307" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/38.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187307" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/41.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187307" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/5.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187395" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/112.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187308" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/3.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187342" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/28.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187342" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/87.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187308" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/102.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187310" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/18.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187344" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/21.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187310" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187311" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/33.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187349" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/35.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187354" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/29.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187312" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/20.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187312" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/100.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187312" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/106.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187312" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/25.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187344" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/31.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187327" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/37.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187344" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/89.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187315" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/111.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187315" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/2.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187348" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/15.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187316" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/21.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187316" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/8.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187316" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/27.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187346" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/4.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187342" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/109.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187317" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/29.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187317" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/30.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187345" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/6.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187318" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/108.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187318" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/110.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187318" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/32.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187346" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/15.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187319" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/22.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187397" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/34.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187397" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/36.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187348" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/105.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187320" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/107.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187320" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/24.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187351" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187397" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/14.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187321" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/16.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187349" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/80.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187340" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/42.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187322" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/6.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187322" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/teknoloji/2.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187322" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/teknoloji/19.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187322" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/77.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187322" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/teknoloji/17.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187323" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/4.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187323" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/74.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187323" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/71.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187323" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/36.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187324" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/82.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187324" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/85.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187324" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/teknoloji/56.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187341" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/34.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187325" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/39.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187325" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/41.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187340" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/teknoloji/7.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187330" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/5.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187347" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/teknoloji/15.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187326" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/spor/7.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187358" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/2.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187396" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/74.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187327" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/62.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187328" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/52.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187328" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/76.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187328" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/68.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187328" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/19.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187329" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/66.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187329" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/44.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187329" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/91.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187346" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/10.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187330" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/12.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187330" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/71.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187330" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/93.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187331" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/69.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187331" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/83.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187346" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/48.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187331" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/51.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187331" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/16.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187332" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/73.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187332" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/5.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187332" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/65.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187332" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/28.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187334" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/90.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187334" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/77.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187341" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/45.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187336" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/43.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187336" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/7.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187336" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/11.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187336" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/57.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187336" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/78.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187397" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/59.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187337" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/82.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187337" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/47.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187337" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/60.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187337" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/13.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187337" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/yasam/84.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847187342" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/SOzisik/2012_07_04.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847911158" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/SOzisik/2012_06_14.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847957254" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_13.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258391" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_11_01.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258398" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2010_03_28.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007627" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_03_31.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258397" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_09_08.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258396" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YOzdil/2012_09_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007671" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YOzdil/2012_10_13.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007686" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YOzdil/2012_10_31.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007692" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YOzdil/2012_10_09.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007682" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YOzdil/2012_10_10.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007689" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YOzdil/2012_10_11.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007677" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_02_04.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258390" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_08_18.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258392" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/SOzisik/2012_08_22.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400847957250" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_02_11.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258403" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_03_10.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007641" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_10_20.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007658" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_09_15.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007649" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_11_17.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007664" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_09_27.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258377" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_03.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258379" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_09_21.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258380" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_11.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258380" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_13.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258383" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_11_01.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258387" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_24.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258375" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/SOzisik/2012_06_11.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007595" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YOzdil/2012_09_18.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007669" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YOzdil/2012_09_23.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007670" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YOzdil/2012_10_12.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007681" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/AAltan/2012_10_17.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007814" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MBaransu/2012_06_22.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007814" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_31.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258388" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MBaransu/2012_07_20.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258384" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MBaransu/2012_08_11.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258365" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MTonbekici/2012_09_12.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007815" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_10_17.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007816" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_11_08.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258383" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_20.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258365" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MBaransu/2012_08_04.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007817" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_21.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258354" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MNHazar/2012_10_22.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258362" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258362" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MNHazar/2012_10_10.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258365" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_22.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258387" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_09_09.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258359" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_11_01.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258388" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_18.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258362" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MBaransu/2012_08_13.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007819" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MBaransu/2012_07_13.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007821" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_11_06.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258355" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_09_07.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258354" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_06_16.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258402" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_09_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258375" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_22.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258394" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_31.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258373" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MNHazar/2012_10_16.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258367" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MBaransu/2012_06_20.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007823" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_04_07.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258400" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/AAltan/2012_11_14.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007824" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MBaransu/2012_06_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007824" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MBaransu/2012_09_29.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258361" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MBaransu/2012_06_21.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848007971" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_08_29.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258333" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/teknoloji/77.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213672" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/kultur-sanat/11.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213672" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/ekonomi/88.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213673" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/44.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213674" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/magazin/99.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213674" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/teknoloji/72.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213674" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/teknoloji/5.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213674" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/magazin/93.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213675" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/88.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213676" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/kultur-sanat/6.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213676" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/magazin/91.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213676" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/teknoloji/76.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213676" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/86.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213677" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/ekonomi/81.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213678" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/magazin/92.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213678" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/siyaset/90.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213678" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/train_9x100/magazin/96.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848213679" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_09_17.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258323" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_10_03.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258334" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_09_25.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258323" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_09_23.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258323" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_09_28.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258323" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_09_21.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258324" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_10_01.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258324" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_09_16.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258325" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_09_14.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258326" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_09_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258326" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_10_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258327" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_08_31.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258327" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_11_05.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258327" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_10_06.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258328" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_08_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258328" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_10_14.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258328" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_08_21.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258329" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_08_24.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258329" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_10_31.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258329" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_10_15.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258329" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_10_08.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258330" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_08_28.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258330" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_10_07.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258331" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_09_02.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258331" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/CCandar/2012_10_24.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258332" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_09_04.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258333" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_08_22.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258333" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_09_05.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258334" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_23.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258335" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_09_25.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258335" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_11_07.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258335" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_09_25.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258345" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_31.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258345" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_09_12.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258346" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_16.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258346" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_09_18.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258347" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_09_11.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258347" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_09_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258347" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_09_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258347" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_11_02.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258348" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_02.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258349" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_02.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258349" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_11_09.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258349" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_09_19.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258349" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_03.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258350" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_09_27.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258350" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_09_20.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258350" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258350" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_03.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258350" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_09_28.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258351" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_19.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258351" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_09_28.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258352" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_09_14.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258352" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_17.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258352" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_05.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258353" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_04.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258353" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_28.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258354" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_09_29.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258355" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_09_23.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258355" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_09_22.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258355" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_09_30.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258356" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_14.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258356" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_05.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258357" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_09_16.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258357" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_09_15.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258357" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_30.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258357" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/COzdemir/2012_10_07.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258358" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_09_23.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258358" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_11_02.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258359" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_17.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258359" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MBaransu/2012_07_24.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258360" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_10.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258360" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_25.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258361" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MNHazar/2012_11_08.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258361" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_11.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258362" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_19.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258363" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_12.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258364" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MNHazar/2012_10_17.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258364" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MNHazar/2012_11_05.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258365" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_13.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258365" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_21.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258366" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_07.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258367" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_11_04.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258367" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MNHazar/2012_11_12.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258368" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/SOzisik/2012_06_15.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258368" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MNHazar/2012_11_14.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258368" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MNHazar/2012_10_13.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258368" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_09_17.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258369" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MNHazar/2012_10_24.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258369" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MNHazar/2012_10_25.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258369" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MNHazar/2012_10_29.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258370" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_09_18.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258370" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_09_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258370" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_02.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258370" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_09_19.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258372" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_09_20.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258372" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_09_21.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258372" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_09_29.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258372" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_09_22.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258372" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_09_30.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258373" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_09_24.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258373" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_11_07.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258373" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_08.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258374" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_01.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258374" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_11_05.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258376" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_11_09.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258376" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_11_02.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258376" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_17.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258377" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_09_19.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258377" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_10.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258377" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MTonbekici/2012_10_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258378" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_09_20.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258378" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_18.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258380" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_04.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258381" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_19.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258381" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_12.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258381" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_09_29.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258381" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_20.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258382" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_09_30.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258382" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_05.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258382" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MTonbekici/2012_10_21.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258382" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_11_10.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258383" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_21.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258384" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_09_23.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258384" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_06.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258385" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/MBaransu/2012_11_07.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258385" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_14.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258386" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_09_24.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258387" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_10_07.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258387" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/RMengi/2012_11_04.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258388" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_16.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258389" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/HCemal/2012_10_28.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258389" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_11_12.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258390" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_27.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258391" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_20.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258391" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_03_03.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258392" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_11_09.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258392" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_11_06.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258392" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_08_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258392" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_11_03.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258392" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_03_17.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258393" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_29.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258393" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_06_02.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258393" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_30.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258394" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_11_07.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258394" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YOzdil/2012_09_29.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258395" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_15.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258395" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_23.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258396" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_31.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258397" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_11_08.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258397" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_02_08.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258398" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_24.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258398" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_11_02.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258399" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_02_17.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258399" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_17.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258399" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_11_10.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258400" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_02_10.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258400" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_25.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258401" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YOzdil/2012_09_25.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258401" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_02_25.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258401" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_07_14.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258402" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_18.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258402" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_26.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258403" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2011_12_16.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258403" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_04.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258404" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/YCongar/2012_09_22.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258404" ignored="false" />
+    <file path="$PROJECT_DIR$/dataset/dataset_authorship/TAkyol/2012_10_19.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1400848258405" ignored="false" />
+    <file path="/a02.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1401178645830" ignored="false" />
+    <file path="/Config.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1407760441219" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/java/tr/gov/bilgem/damla/util/Query.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411373261784" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/webapp/WEB-INF/views/webhome.jsp" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411375628275" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/webapp/WEB-INF/views/websearch.jsp" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411366540322" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/java/tr/gov/bilgem/damla/swa/ImageSearchServlet.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411373261784" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/java/tr/gov/bilgem/damla/swa/WebHomeServlet.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411373261784" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/webapp/WEB-INF/web.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411373261784" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/java/tr/gov/bilgem/damla/swa/WebSearchServlet.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411373261784" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/webapp/WEB-INF/views/imagesearch.jsp" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411373261784" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/webapp/WEB-INF/views/imagehome.jsp" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411375628275" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/java/tr/gov/bilgem/damla/swa/ImageHomeServlet.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411373261784" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/test/java/tr/gov/bilgem/damla/util/QueryTest.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411366273556" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/webapp/index.jsp" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411373261783" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/webapp/javascripts/damla.js" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411366273556" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/pom.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411373261784" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/.idea/compiler.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411366364145" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/.idea/workspace.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411373585310" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/.idea/vcs.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411366364145" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/.idea/modules.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411366364546" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/.idea/misc.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411366364546" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/.idea/encodings.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411366364548" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/webapp/WEB-INF/common/taglibs.jsp" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411373261784" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/webapp/WEB-INF/tld/damla.tld" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411373261784" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/webapp/WEB-INF/tags/masterpage.tag" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411373261786" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/webapp/javascripts/damla-web.js" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411375628275" ignored="false" />
+    <file path="/webhome.jsp" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411374894743" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/webapp/javascripts/damla-common.js" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411376178565" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/searcher-web-app/src/main/webapp/javascripts/damla-image.js" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411376163102" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/damla-solr-plugin/src/main/resources/50K-words.txt" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411467957391" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/damla-solr-plugin/src/main/java/tr/gov/bilgem/damla/solr/plugin/tokenizer/BesBesBolTokenizer.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411468051306" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/damla-solr-plugin/src/main/java/tr/gov/bilgem/damla/solr/plugin/tokenizer/BesBesBolTokenizerFactory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411468066255" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/damla-solr-plugin/src/main/java/tr/gov/bilgem/damla/solr/plugin/tokenizer/SampleTokenByFiveCharTokenizer.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411468118140" ignored="false" />
+    <file path="/BesBesBolTokenizerFactory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411468066255" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/damla-solr-plugin/src/main/java/tr/gov/bilgem/damla/solr/plugin/tokenizer/SampleTokenByFiveCharTokenizerFactory.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411468124411" ignored="false" />
+    <file path="/SampleTokenByFiveCharTokenizer.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411468098673" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/damla-solr-plugin/src/main/java/tr/gov/bilgem/damla/solr/plugin/suggesters/DamlaSuggester.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411468149968" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/damla-solr-plugin/src/test/java/tr/gov/bilgem/damla/solr/plugin/suggesters/SpellcheckerTest.java" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411468218740" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Damla/code/damla-solr-plugin/pom.xml" changelist="faf8a123-37c6-4362-a2ab-15bade5083f3" time="1411468390578" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +806,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -337,7 +843,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/CSVDatasetWriter.java" line="20" class="com.hrzafer.prizma.data.io.CSVDatasetWriter" package="com.hrzafer.prizma.data.io">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/CSVDatasetWriter.java" line="19" class="com.hrzafer.prizma.data.io.CSVDatasetWriter" package="com.hrzafer.prizma.data.io">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -353,6 +859,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -362,55 +869,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IntegrationTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/IntegrationTests.java">
+      <file leaf-file-name="TermDictionary.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/TermDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="34" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
+            <state line="141" column="33" selection-start="4337" selection-end="4337" vertical-scroll-proportion="0.5731959">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArffCreator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/ArffCreator.java">
+      <file leaf-file-name="Config.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="0" selection-start="6201" selection-end="6201" vertical-scroll-proportion="0.0">
+            <state line="80" column="28" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="globals.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/globals.xml">
+      <file leaf-file-name="TooLongTokenFilter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/TooLongTokenFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="15" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="features.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/features.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="48" selection-start="2075" selection-end="2075" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prizma.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/prizma.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestMain.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/TestMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="65" selection-start="798" selection-end="798" vertical-scroll-proportion="0.5714286">
+            <state line="7" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -419,25 +899,16 @@
       <file leaf-file-name="DataCropper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DataCropper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+            <state line="15" column="35" selection-start="571" selection-end="583" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocumentSource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentSource.java">
+      <file leaf-file-name="NGramExtractor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="41" selection-start="317" selection-end="332" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DirToCSVConverter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirToCSVConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -445,10 +916,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DirectoryDatasetReader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectoryDatasetReader.java">
+      <file leaf-file-name="PrizmaNGramExtractor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="5" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.0">
+            <state line="9" column="16" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LuceneNGramExtractor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/LuceneNGramExtractor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="63" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="method#extractTermMap#0;class#LuceneNGramExtractor#0" expanded="false" />
+                <element signature="method#extractTermSet#0;class#LuceneNGramExtractor#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrizmaNGramExtractorTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="68" selection-start="214" selection-end="249" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NGramSize.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramSize.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TooShortTokenFilter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/TooShortTokenFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="13" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -472,22 +982,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/DocumentId.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/UnigramTerms.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/value/DocumentVectors.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/Feature.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentFromString.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/NewArffCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/TermDictionary.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DatasetDirToCSVConverter.java" />
+        <option value="$PROJECT_DIR$/dataset/train_9x100/ekonomi/100.txt" />
+        <option value="$PROJECT_DIR$/dataset/train_9x100/ekonomi/80.txt" />
+        <option value="$PROJECT_DIR$/dataset/dataset_authorship/AAltan/2012_10_19.txt" />
+        <option value="$USER_HOME$/Dropbox/nuve/corpus/tinyCorpus/a02.xml" />
+        <option value="$USER_HOME$/Dropbox/nuve/corpus/tinyCorpusSegmented/01.xml" />
+        <option value="$PROJECT_DIR$/experiment/features.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NGramTerms.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/prizma.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirToCSVConverter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/IntegrationTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/TestMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/Config.java" />
+        <option value="$PROJECT_DIR$/../../../Damla/solr/solr-4.6.0/example/solr/collection1/conf/solrconfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DataCropper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/LuceneNGramExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/TermDictionary.java" />
       </list>
     </option>
   </component>
@@ -543,10 +1053,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -576,7 +1086,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -612,26 +1121,8 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -650,78 +1141,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ngram" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -799,7 +1218,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
+              <option name="myItemId" value="feature" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -829,77 +1248,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tfidf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
+              <option name="myItemId" value="feature" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="termselection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prizma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
+              <option name="myItemId" value="ngram" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/hrzafer/prizma/feature/ngram" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/hrzafer/prizma" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="OverrideImplement.combined" value="true" />
@@ -907,26 +1271,30 @@
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Damla/code/searcher-web-app" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.hrzafer.prizma.util" />
       <recent name="com.hrzafer.prizma.feature.ngram" />
       <recent name="com.hrzafer.prizma.feature" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hrzafer.prizma.util" />
     </key>
   </component>
   <component name="RunManager" selected="Application.TestMain">
@@ -953,34 +1321,6 @@
         <option name="JVMPI" value="false" />
         <option name="INTERPRETED" value="false" />
       </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="PrizmaNGramExtractorTest.testExtractBigramsAsMap" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hrzafer.prizma.feature.ngram.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="prizma" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hrzafer.prizma.feature.ngram" />
-      <option name="MAIN_CLASS_NAME" value="com.hrzafer.prizma.feature.ngram.PrizmaNGramExtractorTest" />
-      <option name="METHOD_NAME" value="testExtractBigramsAsMap" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -1013,19 +1353,19 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="PrizmaNGramExtractorTest.testExtractTrigramsAsSet" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="JaccardTest.testSimilarity" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.hrzafer.prizma.feature.ngram.*" />
+          <option name="PATTERN" value="com.hrzafer.prizma.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="prizma" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hrzafer.prizma.feature.ngram" />
-      <option name="MAIN_CLASS_NAME" value="com.hrzafer.prizma.feature.ngram.PrizmaNGramExtractorTest" />
-      <option name="METHOD_NAME" value="testExtractTrigramsAsSet" />
+      <option name="PACKAGE_NAME" value="com.hrzafer.prizma.util" />
+      <option name="MAIN_CLASS_NAME" value="com.hrzafer.prizma.util.JaccardTest" />
+      <option name="METHOD_NAME" value="testSimilarity" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1041,30 +1381,46 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="PrizmaNGramExtractorTest.testExtractTrigramsAsMap" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="TfIdfExtractor" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.hrzafer.prizma.feature.ngram.*" />
+          <option name="PATTERN" value="com.hrzafer.prizma.tfidf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="prizma" />
+      <option name="MAIN_CLASS_NAME" value="com.hrzafer.prizma.tfidf.TfIdfExtractor" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hrzafer.prizma.feature.ngram" />
-      <option name="MAIN_CLASS_NAME" value="com.hrzafer.prizma.feature.ngram.PrizmaNGramExtractorTest" />
-      <option name="METHOD_NAME" value="testExtractTrigramsAsMap" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
+      <module name="prizma" />
       <envs />
-      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TermSelector" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hrzafer.prizma.termselection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.hrzafer.prizma.termselection.TermSelector" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="prizma" />
+      <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -1105,19 +1461,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1144,6 +1487,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1207,18 +1563,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Frame" />
       <item index="1" class="java.lang.String" itemvalue="Application.TestMain" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PrizmaNGramExtractorTest.testExtractBigramsAsMap" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PrizmaNGramExtractorTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PrizmaNGramExtractorTest.testExtractTrigramsAsSet" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.PrizmaNGramExtractorTest.testExtractTrigramsAsMap" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PrizmaNGramExtractorTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.JaccardTest.testSimilarity" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TfIdfExtractor" />
+      <item index="5" class="java.lang.String" itemvalue="Application.TermSelector" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestMain" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PrizmaNGramExtractorTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PrizmaNGramExtractorTest.testExtractTrigramsAsMap" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PrizmaNGramExtractorTest.testExtractTrigramsAsSet" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PrizmaNGramExtractorTest.testExtractBigramsAsMap" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.PrizmaNGramExtractorTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestMain" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TermSelector" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TfIdfExtractor" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.JaccardTest.testSimilarity" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1278,8 +1634,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1291,20 +1647,20 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32703003" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22998933" sideWeight="0.68186873" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25080043" sideWeight="0.6062291" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22251868" sideWeight="0.68370605" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31629393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21237993" sideWeight="0.6062291" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39377084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.6840934" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33182332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5250266" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1373,118 +1729,153 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/TermDictionary.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/util/STR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="84" selection-start="3024" selection-end="3024" vertical-scroll-proportion="0.0">
+        <state line="65" column="41" selection-start="2272" selection-end="2272" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.hrzafer.prizma.data.io.CSVDatasetReader">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.hrzafer.prizma.data.io.CSVDatasetReader</OriginalElement>
+          <nodes>
+            <node x="" y="">com.hrzafer.prizma.data.io.DatasetReader</node>
+            <node x="" y="">com.hrzafer.prizma.data.io.CSVDatasetReader</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="2.0" y="65.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.hrzafer.prizma">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.hrzafer.prizma</OriginalElement>
+          <nodes>
+            <node x="" y="">com.hrzafer.prizma.termselection</node>
+            <node x="" y="">com.hrzafer.prizma.preprocessing</node>
+            <node x="" y="">com.hrzafer.prizma.tfidf</node>
+            <node x="" y="">com.hrzafer.prizma.Experiment</node>
+            <node x="" y="">com.hrzafer.prizma.util</node>
+            <node x="" y="">com.hrzafer.prizma.ArffCreator</node>
+            <node x="" y="">com.hrzafer.prizma.Resources</node>
+            <node x="" y="">com.hrzafer.prizma.gui</node>
+            <node x="" y="">com.hrzafer.prizma.Globals</node>
+            <node x="" y="">com.hrzafer.prizma.OldArffCreator</node>
+            <node x="" y="">com.hrzafer.prizma.GlobalsReader</node>
+            <node x="" y="">com.hrzafer.prizma.TestMain</node>
+            <node x="" y="">com.hrzafer.prizma.data</node>
+            <node x="" y="">com.hrzafer.prizma.feature</node>
+            <node x="" y="">com.hrzafer.prizma.Config</node>
+            <node x="" y="">com.hrzafer.prizma.ArffProperties</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="136.0" y="208.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="2547" selection-end="2547" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stopwords.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/gui/Frame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="873" column="9" selection-start="45229" selection-end="45229" vertical-scroll-proportion="0.0">
+        <state line="18" column="6" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/CSVDatasetWriter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="38" selection-start="1083" selection-end="1104" vertical-scroll-proportion="0.0">
+        <state line="80" column="28" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/TooShortTokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/preprocessing/TooLongTokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/jre/lib/rt.jar!/java/util/Map.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="10" selection-start="733" selection-end="733" vertical-scroll-proportion="0.4470377" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DataCropper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="35" selection-start="571" selection-end="583" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramSize.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+        <state line="11" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/NGramTerms.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="5" selection-start="2322" selection-end="2322" vertical-scroll-proportion="0.0">
+        <state line="10" column="68" selection-start="214" selection-end="249" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/ArffCreator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/NGramExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="0" selection-start="6201" selection-end="6201" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/globals.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="15" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/features.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="48" selection-start="2075" selection-end="2075" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirectoryDatasetReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="5" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DataCropper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DocumentSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="41" selection-start="317" selection-end="332" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/data/io/DirToCSVConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/prizma.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/PrizmaNGramExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+        <state line="9" column="16" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/IntegrationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/LuceneNGramExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="34" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="19" column="63" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="method#extractTermMap#0;class#LuceneNGramExtractor#0" expanded="false" />
+            <element signature="method#extractTermSet#0;class#LuceneNGramExtractor#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/TestMain.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrzafer/prizma/feature/ngram/TermDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="65" selection-start="798" selection-end="798" vertical-scroll-proportion="0.5714286">
+        <state line="141" column="33" selection-start="4337" selection-end="4337" vertical-scroll-proportion="0.5731959">
           <folding />
         </state>
       </provider>

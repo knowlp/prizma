@@ -17,9 +17,14 @@ public class TitledFileDocumentSourceStrategy implements FileDocumentSourceStrat
     @Override
     public void extractData(Map<String, String> data, String content) {
         int i = content.indexOf(System.lineSeparator());
-        String title = content.substring(0, i);
+        if(i>0){
+            String title = content.substring(0, i);
+            data.put("title", title);
+        }
+        else{
+            data.put("title", "");
+        }
         String rest = content.substring(i+1);
-        data.put("title", title);
         data.put(Document.CONTENT_FIELDNAME, rest);
     }
 }

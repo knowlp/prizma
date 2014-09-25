@@ -6,7 +6,6 @@ import com.hrzafer.prizma.data.Document;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -19,7 +18,7 @@ public class CSVDatasetWriter extends DatasetWriter {
 
         try {
             writer = new CSVWriter(new OutputStreamWriter(new FileOutputStream(path), "UTF-8"));
-            List<Document> documents = dataset.getAllInstances();
+            List<Document> documents = dataset.getAllDocuments();
             List<String[]> data = new ArrayList<>();
             List<String> headers = dataset.getFieldNames();
             data.add(headers.toArray(new String[headers.size()]));

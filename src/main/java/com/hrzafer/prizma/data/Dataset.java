@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Represents a set of categories.
+ * Represents a set of categories containing documents
  */
 public class Dataset {
 
@@ -20,7 +20,7 @@ public class Dataset {
         return fieldNames;
     }
 
-    public List<Document> getAllInstances() {
+    public List<Document> getAllDocuments() {
         return getPercentageSplittedInstances(100);
     }
 
@@ -85,10 +85,27 @@ public class Dataset {
         }
     }
 
+    public Evaluation evaluate(){
+        int correct = 0;
+        int wrong = 0;
+        List<Document> allDocuments = getAllDocuments();
+        for (Document document : allDocuments) {
+            if (document.getActualCategory().equals(document.getPredictedCategory())){
+                correct++;
+            }
+            else {
+                wrong++;
+            }
+        }
+
+        return new Evaluation(correct, wrong);
+
+    }
+
     public int getInstanceCount() {
         int count = 0;
         for (DocumentCategory category : categories) {
-            count += category.getInstanceCount();
+            count += category.getDocumentCount();
         }
         return count;
     }

@@ -1,7 +1,7 @@
 package com.hrzafer.prizma.gui;
 
 
-import com.hrzafer.prizma.ArffCreator;
+import com.hrzafer.prizma.OldArffCreator;
 import com.hrzafer.prizma.ArffProperties;
 import com.hrzafer.prizma.Config;
 import com.hrzafer.prizma.data.FeatureReader;
@@ -707,8 +707,8 @@ public class Frame extends javax.swing.JFrame {
                 timer.start();
                 String arffFilename = getArffFileWritePath();
                 ArffProperties properties = getArffProperties();
-                ArffCreator.create(properties, arffFilename + ".arff");
-                //ArffCreator.createForEachKlass(properties, arffFilename + ".arff");
+                OldArffCreator.create(properties, arffFilename + ".arff");
+                //OldArffCreator.createForEachKlass(properties, arffFilename + ".arff");
                 timer.stop();
                 outputTextArea.append("ARFF File created successfully...\n\nTime: " + timer.getElapsedSeconds() + " seconds");
             } catch (RuntimeException e) {

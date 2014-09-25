@@ -15,16 +15,16 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created with IntelliJ IDEA.
- * User: hrzafer
- * Date: 24.02.2014
- * Time: 15:44
- * To change this template use File | Settings | File Templates.
+ * Extracts word n-grams using Lucene API.
+ * This class only overrides the extractTermList method of the NGramExtractor interface.
+ * extractTermSet and extractTermMap methods are not supported.
  */
-public class LuceneNGramExtractor extends NGramExtractor {
+public class LuceneNGramExtractor implements NGramExtractor {
+
+    private int windowSize;
 
     protected LuceneNGramExtractor(int windowSize) {
-        super(windowSize);
+        this.windowSize = windowSize;
     }
 
     @Override
@@ -34,16 +34,6 @@ public class LuceneNGramExtractor extends NGramExtractor {
             sb.append(token).append(" ");
         }
         return extract(sb.toString(), windowSize);
-    }
-
-    @Override
-    public Map<String, Integer> extractTermMap(List<String> tokens) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
-    }
-
-    @Override
-    public Set<String> extractTermSet(List<String> tokens) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     public List<String> extract(String str, int windowSize) {
@@ -72,10 +62,18 @@ public class LuceneNGramExtractor extends NGramExtractor {
             stream.end();
             stream.close();
         } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
-
         return ng;
+    }
 
+    @Override
+    public Map<String, Integer> extractTermMap(List<String> tokens) {
+        throw new UnsupportedOperationException("Method is not implemented");
+    }
+
+    @Override
+    public Set<String> extractTermSet(List<String> tokens) {
+        throw new UnsupportedOperationException("Method is not implemented");
     }
 }

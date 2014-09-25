@@ -1,11 +1,7 @@
 package com.hrzafer.prizma.termselection;
 
 /**
- * Created with IntelliJ IDEA.
- * User: hrzafer
- * Date: 28.03.2014
- * Time: 15:08
- * To change this template use File | Settings | File Templates.
+ *
  */
 public class TermDistribution{
 
@@ -29,8 +25,6 @@ public class TermDistribution{
     public String toString() {
         return a + " " + b + " "+ c + " " +d + " " + getMeasurementValue();
     }
-
-
 
 }
 

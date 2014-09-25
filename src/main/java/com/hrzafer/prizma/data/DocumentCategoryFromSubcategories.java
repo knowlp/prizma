@@ -59,10 +59,10 @@ public class DocumentCategoryFromSubcategories extends DocumentCategory {
     }
 
     @Override
-    public int getInstanceCount() {
+    public int getDocumentCount() {
         int count = 0;
         for (DocumentCategoryFromDocuments subset : subcategories) {
-            count += subset.getInstanceCount();
+            count += subset.getDocumentCount();
         }
         return count;
     }

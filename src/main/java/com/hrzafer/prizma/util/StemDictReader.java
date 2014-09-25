@@ -11,7 +11,6 @@ import java.util.Scanner;
  */
 public class StemDictReader {
     public static Map<String, String> read(String resourcePath) {
-        System.out.println("deneme");
         InputStream is = StemDictReader.class.getResourceAsStream(resourcePath);
         Scanner scanner = new Scanner(is);
         Map<String, String> map = new HashMap<String, String>();

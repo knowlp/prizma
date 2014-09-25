@@ -12,6 +12,7 @@ public class Config {
     private static String embeddedProperties = "prizma.properties";
 
     private Config() {
+
     }
 
     static {

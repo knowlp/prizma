@@ -1,10 +1,7 @@
 package com.hrzafer.prizma.feature.ngram;
 
 import com.hrzafer.prizma.Resources;
-import com.hrzafer.prizma.feature.value.BinaryValue;
-import com.hrzafer.prizma.feature.value.FeatureValue;
-import com.hrzafer.prizma.feature.value.FeatureValueFactory;
-import com.hrzafer.prizma.feature.value.IntegerValue;
+import com.hrzafer.prizma.feature.value.*;
 
 import java.util.*;
 
@@ -27,10 +24,10 @@ public class TermDictionary {
 
     public void addDocument(List<String> tokens) {
         appendStartStopSymbols(tokens); //todo: bu optional olmalı, Gerekli gerçekten?
-        List<String> terms = nGramExtractor.extractTermList(tokens);
-        add(terms);
-        Set<String> uniqNGrams = new HashSet<>(terms);
-        updateInstanceFrequency(uniqNGrams);
+        List<String> ngramList = nGramExtractor.extractTermList(tokens);
+        add(ngramList);
+        Set<String> nGramSet = new HashSet<>(ngramList);
+        updateInstanceFrequency(nGramSet);
         documentCount++;
     }
 
@@ -123,6 +120,7 @@ public class TermDictionary {
         }
     }
 
+
     /**
      * Returns a FeatureValue Vector.
      * This vector's size is equal to the number terms this class includes.
@@ -133,16 +131,6 @@ public class TermDictionary {
      * @param binary
      * @return
      */
-    public List<FeatureValue> getTermsVector2(List<String> tokens, boolean binary) {
-        List<String> nGrams = nGramExtractor.extractTermList(tokens);
-        int[] vectors = compareAndGetVector(nGrams);
-        if (binary) {
-            return toBinaryValues(vectors);
-        }
-        return toIntegerValues(vectors);
-    }
-
-    //hızlı olanı bu !!!
     public List<FeatureValue> getTermsVector(List<String> tokens, boolean binary) {
         if (binary){
             Set<String> termSet = nGramExtractor.extractTermSet(tokens);
@@ -150,7 +138,10 @@ public class TermDictionary {
         }
 
         Map<String, Integer> termMap = nGramExtractor.extractTermMap(tokens);
-        return compareAndGetIntegerVector(termMap);
+        return  compareAndGetTfIdfVector(termMap);
+            //todo: buradaki tf-idf değerleri muhtemelen hatalı, ilk iş olarak burayı düzelt
+            //Ya da değerin frequenct mi tf-idf mi, yoksa başka bir şey mi olacağı parametre olarak gelmeli
+        //return compareAndGetIntegerVector(termMap);
     }
 
     private List<FeatureValue> compareAndGetBinaryVector(Set<String> termsMap){
@@ -170,6 +161,25 @@ public class TermDictionary {
             }
             else {
                 value = new IntegerValue(0);
+            }
+            vector.add(value);
+        }
+        return vector;
+    }
+
+    private List<FeatureValue> compareAndGetTfIdfVector(Map<String, Integer> termsMap){
+        List<FeatureValue> vector = new ArrayList<>();
+        for (String term : terms.keySet()) {
+            DoubleValue value;
+            if (termsMap.containsKey(term)){
+                int f = termsMap.get(term);
+                double tf = f/(double)termsMap.size();
+                double docCount= terms.get(term).getContainingDocumentCount();
+                double idf = Math.log(documentCount/docCount);
+                value = new DoubleValue(tf*idf);
+            }
+            else {
+                value = new DoubleValue(0);
             }
             vector.add(value);
         }

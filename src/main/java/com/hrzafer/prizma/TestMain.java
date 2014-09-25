@@ -5,36 +5,101 @@ import com.hrzafer.prizma.data.Document;
 import com.hrzafer.prizma.data.FeatureReader;
 import com.hrzafer.prizma.data.io.*;
 import com.hrzafer.prizma.feature.Feature;
+import com.hrzafer.prizma.feature.ngram.NGramExtractor;
 import com.hrzafer.prizma.feature.value.DocumentVectors;
+import com.hrzafer.prizma.preprocessing.Analyzer;
 import com.hrzafer.prizma.util.IO;
+import com.hrzafer.prizma.util.Jaccard;
+import com.hrzafer.prizma.util.WeightedJaccard;
 
-import java.util.List;
+import java.util.*;
 
 /**
 
  */
 public class TestMain {
+    public static Map<String, Set<String>> map = new HashMap<>();
+
+//    static {
+//        int count = 100;
+//        map.put("catBusiness", new HashSet<>(IO.readLines("experiment/catBusinessLexicon")));
+//        map.put("catEducation", new HashSet<>(IO.readLines("experiment/catEducationLexicon")));
+//        map.put("catGame", new HashSet<>(IO.readLines("experiment/catGameLexicon")));
+//        map.put("catHealth", new HashSet<>(IO.readLines("experiment/catHealthLexicon")));
+//        map.put("catMagazine", new HashSet<>(IO.readLines("experiment/catMagazineLexicon")));
+//        map.put("catNews", new HashSet<>(IO.readLines("experiment/catNewsLexicon")));
+//        map.put("catPolitics", new HashSet<>(IO.readLines("experiment/catPoliticsLexicon")));
+//        map.put("catReligion", new HashSet<>(IO.readLines("experiment/catReligionLexicon")));
+//        map.put("catShopping", new HashSet<>(IO.readLines("experiment/catShoppingLexicon")));
+//        map.put("catSport", new HashSet<>(IO.readLines("experiment/catSportsLexicon")));
+//        map.put("catTech", new HashSet<>(IO.readLines("experiment/catTechLexicon")));
+//    }
+
     public static void main(String[] args) {
 
+        //convertToCSV();
+        convertDirToXML();
+        System.out.println(Character.isAlphabetic('.'));
+        System.out.println(Character.isLetterOrDigit('.'));
+
+    }
+
+    public static void test() {
+        String inputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma-old\\dataset\\kategori_10arSayfa";
+        DatasetReader reader = new DirectoryDatasetReader(inputPath);
+        List<Feature> features = FeatureReader.read("experiment/features.xml");
+        Dataset dataset = reader.read();
+        List<Document> instances = dataset.getAllDocuments();
+        DocumentVectors vectors = new DocumentVectors("test_dataset", features, instances);
+        String arff = ArffCreator.create(vectors);
+        IO.write("arff/test_dataset.arff", arff);
 
 
-        String inputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma\\dataset\\test_dataset";
-        String outputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma\\dataset\\test_dataset.csv";
+    }
 
+    public static void convertToCSV() {
+        String inputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma-old\\dataset\\kategori_valid_11x600";
+        String outputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma\\dataset\\kategori_valid_11x600.csv";
         DirToCSVConverter.convertDataset(inputPath, outputPath);
-//        DatasetReader reader = new CSVDatasetReader(inputPath);
-//        List<Feature> features = FeatureReader.read("experiment/features.xml");
-//        Dataset dataset = reader.read();
-//        List<Document> instances = dataset.getAllInstances();
-//        DocumentVectors relation = new DocumentVectors("test_dataset", features, instances);
-//        String arff = NewArffCreator.create(relation);
-//        IO.write("arff/test_dataset_csv.arff", arff);
+    }
+
+    private static void convertDirToXML(){
+        String inputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\veri\\train_9x100";
+        String outputPath = "C:\\Users\\hrzafer\\Desktop\\solr-4.9.0\\example\\exampledocs\\train_9x100.xml";
+        DatasetReader reader = new DirectoryDatasetReader(inputPath)
+                .createId(true).strategy(new TitledFileDocumentSourceStrategy());
+        Dataset dataset = reader.read();
+        XmlDatasetWriter writer = new XmlDatasetWriter();
+        writer.write(dataset, outputPath);
+
+    }
 
 
-//        DatasetWriter writer = new CSVDatasetWriter();
-//        writer.write(dataset, outputPath);
+    //Bazı terimler diğerlerine göre daha ağırlıklı! Burada bu ağırlık kullanılmadığından başarım %87'den %75'e düştü
+    //Bu ağırlığı nasıl kullanabiliriz?
+    //TF-IDF
+    //
+    public static void JaccardSimTest() {
 
-
-
+        Analyzer analyzer = Globals.getAnalyzer("global");
+        DatasetReader reader = new CSVDatasetReader("dataset\\kategori_valid_11x600.csv");
+        Dataset dataset = reader.read();
+        List<Document> documents = dataset.getAllDocuments();
+        for (Document document : documents) {
+            List<String> tokens = analyzer.analyze(document.getFieldData("content"));
+            Set<String> s2 = NGramExtractor.UnigramExtractor.extractTermSet(tokens);
+            String predicted = "";
+            double max = 0;
+            for (String cat : map.keySet()) {
+                Set<String> s1 = map.get(cat);
+                double sim = Jaccard.Similarity(s1, s2);
+                if (max < sim) {
+                    max = sim;
+                    predicted = cat;
+                }
+            }
+            document.setPredictedCategory(predicted);
+        }
+        System.out.println(dataset.evaluate());
     }
 }

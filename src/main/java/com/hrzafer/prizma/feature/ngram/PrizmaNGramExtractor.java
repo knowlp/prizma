@@ -2,10 +2,12 @@ package com.hrzafer.prizma.feature.ngram;
 
 import java.util.*;
 
-public class PrizmaNGramExtractor extends NGramExtractor {
+public class PrizmaNGramExtractor implements NGramExtractor {
+
+    private int windowSize;
 
     protected PrizmaNGramExtractor(int windowSize) {
-        super(windowSize);
+        this.windowSize = windowSize;
     }
 
     public List<String> extractTermList(List<String> tokens) {

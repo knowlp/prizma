@@ -1,8 +1,6 @@
-import com.hrzafer.prizma.NewArffCreator;
-import com.hrzafer.prizma.data.Dataset;
+
+import com.hrzafer.prizma.ArffCreator;
 import com.hrzafer.prizma.data.Document;
-import com.hrzafer.prizma.data.io.DatasetReader;
-import com.hrzafer.prizma.data.io.DirectoryDatasetReader;
 import com.hrzafer.prizma.data.io.DocumentFromString;
 import com.hrzafer.prizma.feature.DocumentId;
 import com.hrzafer.prizma.feature.Feature;
@@ -10,7 +8,6 @@ import com.hrzafer.prizma.feature.UnigramTerms;
 import com.hrzafer.prizma.feature.value.DocumentVectors;
 import com.hrzafer.prizma.preprocessing.Analyzer;
 import com.hrzafer.prizma.preprocessing.FastTokenizer;
-import com.hrzafer.prizma.util.IO;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -149,7 +146,7 @@ public class IntegrationTests {
         features.add(new UnigramTerms(params, analyzer));
 
         DocumentVectors relation = new DocumentVectors("test_dataset", features, documents);
-        String arff = NewArffCreator.create(relation);
+        String arff = ArffCreator.create(relation);
 
         assertEquals(expectedUnigrams, arff);
 

@@ -36,7 +36,7 @@ public class DocumentCategoryFromDocuments extends DocumentCategory {
     }
 
     @Override
-    public int getInstanceCount() {
+    public int getDocumentCount() {
         return documents.size();
     }
 }
