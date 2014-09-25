@@ -6,8 +6,8 @@ public class PrizmaNGramExtractor implements NGramExtractor {
 
     private int windowSize;
 
-    protected PrizmaNGramExtractor(int windowSize) {
-        this.windowSize = windowSize;
+    public PrizmaNGramExtractor(NGramSize size) {
+        this.windowSize = size.size;
     }
 
     public List<String> extractTermList(List<String> tokens) {

@@ -6,6 +6,8 @@ import com.hrzafer.prizma.data.FeatureReader;
 import com.hrzafer.prizma.data.io.*;
 import com.hrzafer.prizma.feature.Feature;
 import com.hrzafer.prizma.feature.ngram.NGramExtractor;
+import com.hrzafer.prizma.feature.ngram.NGramSize;
+import com.hrzafer.prizma.feature.ngram.PrizmaNGramExtractor;
 import com.hrzafer.prizma.feature.value.DocumentVectors;
 import com.hrzafer.prizma.preprocessing.Analyzer;
 import com.hrzafer.prizma.util.IO;
@@ -87,7 +89,8 @@ public class TestMain {
         List<Document> documents = dataset.getAllDocuments();
         for (Document document : documents) {
             List<String> tokens = analyzer.analyze(document.getFieldData("content"));
-            Set<String> s2 = NGramExtractor.UnigramExtractor.extractTermSet(tokens);
+            NGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.UNIGRAM);
+            Set<String> s2 = extractor.extractTermSet(tokens);
             String predicted = "";
             double max = 0;
             for (String cat : map.keySet()) {

@@ -14,7 +14,7 @@ public class TermDictionary {
 
     public TermDictionary(NGramSize size) {
         this.windowSize = size.size;
-        this.nGramExtractor = new PrizmaNGramExtractor(windowSize);
+        this.nGramExtractor = new PrizmaNGramExtractor(size);
         this.terms = new TreeMap<>();
     }
 

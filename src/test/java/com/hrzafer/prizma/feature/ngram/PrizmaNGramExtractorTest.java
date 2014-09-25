@@ -13,7 +13,7 @@ public class PrizmaNGramExtractorTest {
     @Test
     public void testExtractUnigramsAsList() throws Exception {
 
-        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.UNIGRAM.size);
+        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.UNIGRAM);
 
         List<String> tokens = Arrays.asList(text.split(" "));
 
@@ -27,7 +27,7 @@ public class PrizmaNGramExtractorTest {
     @Test
     public void testExtractBigramsAsList() throws Exception {
 
-        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.BIGRAM.size);
+        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.BIGRAM);
 
         List<String> tokens = Arrays.asList(text.split(" "));
 
@@ -43,7 +43,7 @@ public class PrizmaNGramExtractorTest {
     @Test
     public void testExtractTrigramsAsList() throws Exception {
 
-        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.TRIGRAM.size);
+        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.TRIGRAM);
 
         List<String> tokens = Arrays.asList(text.split(" "));
 
@@ -59,7 +59,7 @@ public class PrizmaNGramExtractorTest {
     @Test
     public void testExtractUnigramsAsSet() throws Exception {
 
-        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.UNIGRAM.size);
+        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.UNIGRAM);
 
         List<String> tokens = Arrays.asList(text.split(" "));
 
@@ -73,7 +73,7 @@ public class PrizmaNGramExtractorTest {
     @Test
     public void testExtractBigramsAsSet() throws Exception {
 
-        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.BIGRAM.size);
+        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.BIGRAM);
 
         List<String> tokens = Arrays.asList(text.split(" "));
 
@@ -87,7 +87,7 @@ public class PrizmaNGramExtractorTest {
     @Test
     public void testExtractTrigramsAsSet() throws Exception {
 
-        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.TRIGRAM.size);
+        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.TRIGRAM);
 
         List<String> tokens = Arrays.asList(text.split(" "));
 
@@ -103,7 +103,7 @@ public class PrizmaNGramExtractorTest {
     @Test
     public void testExtractUnigramsAsMap() throws Exception {
 
-        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.UNIGRAM.size);
+        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.UNIGRAM);
 
         List<String> tokens = Arrays.asList(text.split(" "));
 
@@ -122,7 +122,7 @@ public class PrizmaNGramExtractorTest {
     @Test
     public void testExtractBigramsAsMap() throws Exception {
 
-        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.BIGRAM.size);
+        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.BIGRAM);
 
         List<String> tokens = Arrays.asList(text.split(" "));
 
@@ -141,7 +141,7 @@ public class PrizmaNGramExtractorTest {
     @Test
     public void testExtractTrigramsAsMap() throws Exception {
 
-        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.TRIGRAM.size);
+        PrizmaNGramExtractor extractor = new PrizmaNGramExtractor(NGramSize.TRIGRAM);
 
         List<String> tokens = Arrays.asList(text.split(" "));
 
