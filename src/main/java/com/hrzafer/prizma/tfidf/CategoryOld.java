@@ -1,7 +1,7 @@
 package com.hrzafer.prizma.tfidf;
 
 
-import com.hrzafer.prizma.feature.NGramTerms;
+import com.hrzafer.prizma.feature.TermVector;
 import com.hrzafer.prizma.feature.ngram.TermFrequency;
 import com.hrzafer.prizma.feature.ngram.TermDictionary;
 import com.hrzafer.prizma.feature.ngram.NGramSize;
@@ -23,13 +23,13 @@ public class CategoryOld {
     private int totalInstanceCount;
     private boolean bigram;
 
-    public CategoryOld(List<Document> documents, NGramTerms nGramTerms, String id) {
+    public CategoryOld(List<Document> documents, TermVector termVector, String id) {
         this.id = id;
-        this.termDictionary = nGramTerms.buildNewTermDictionary(documents);
+        this.termDictionary = termVector.buildNewTermDictionary(documents);
         System.out.println(id + "-" + termDictionary.getTermCount() + "-" + termDictionary.getTotalTermFrequency());
         totalWordCount = termDictionary.getTotalTermFrequency();
         totalInstanceCount = documents.size();
-        if (nGramTerms.getSize() == NGramSize.BIGRAM){
+        if (termVector.getSize() == NGramSize.BIGRAM){
             bigram = true;
         }
     }

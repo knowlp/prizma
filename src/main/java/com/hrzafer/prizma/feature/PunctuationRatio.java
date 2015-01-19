@@ -13,7 +13,7 @@ import java.util.Map;
  *
  * @author test
  */
-public abstract class PunctuationRatio extends Feature {
+public abstract class PunctuationRatio extends SingleTokenFeature {
 
     protected final char ASTERIKS = '*';
     protected final char COLON = ':';
@@ -26,13 +26,15 @@ public abstract class PunctuationRatio extends Feature {
     private PunctuationDataExtractor extractor;
     protected char punctuation;
 
-    protected PunctuationRatio(String type, String name, int weight, String description, Map<String, String> parameters, Analyzer analyzer) {
-        super(type, name, weight, description, parameters, analyzer);
+
+    public PunctuationRatio(String type, String field, String name, String description, Map<String, String> parameters, Analyzer analyzer) {
+        super(type, field, name, description, parameters, analyzer);
+        punctuation = parameters.get("char").charAt(0);
     }
 
     @Override
-    public List<FeatureValue> extract(String data) {
-        double ratio = getPunctuationRatio(data, punctuation);
+    public List<FeatureValue> extract(String text) {
+        double ratio = getPunctuationRatio(text, punctuation);
         FeatureValue value = new DoubleValue(ratio);
         return unitList(value);
     }

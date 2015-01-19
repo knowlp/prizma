@@ -1,9 +1,15 @@
 package com.hrzafer.prizma.data.io;
 
 import com.hrzafer.prizma.data.Dataset;
+import com.hrzafer.prizma.data.Document;
+import com.hrzafer.prizma.data.DocumentCategory;
+import com.hrzafer.prizma.data.DocumentCategoryFromDocuments;
 
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -25,22 +31,26 @@ public abstract class DatasetReader  {
     protected boolean shuffled = DEFAULT_SHUFFLED_OPTION;
     protected Charset charset = DEFAULT_CHARSET;
 
-    public DatasetReader percentage(int percentage){
-        this.percentage = percentage;
-        return this;
-    }
-
-    public DatasetReader shuffled(boolean shuffled){
-        this.shuffled = true;
-        return this;
-    }
-
-    public DatasetReader charset(Charset charset){
-        this.charset = charset;
-        return this;
-    }
-
     public abstract Dataset read();
+
+    protected Dataset documentsToDataset(List<Document> documents){
+        List<Document> instancesOfCategory = new ArrayList<>();
+        List<DocumentCategory> categories = new ArrayList<>();
+        Collections.sort(documents);
+        String categoryName = documents.get(0).getActualCategory();
+        for (Document document : documents) {
+            if (categoryName.equals(document.getActualCategory())) {
+                instancesOfCategory.add(document);
+            } else {
+                categories.add(new DocumentCategoryFromDocuments(instancesOfCategory, categoryName));
+                instancesOfCategory = new ArrayList<>();
+                instancesOfCategory.add(document);
+                categoryName = document.getActualCategory();
+            }
+        }
+        categories.add(new DocumentCategoryFromDocuments(instancesOfCategory, categoryName));
+        return new Dataset(categories);
+    }
 
 }
 

@@ -4,8 +4,7 @@ import com.hrzafer.prizma.data.*;
 import com.hrzafer.prizma.data.io.*;
 import com.hrzafer.prizma.feature.Feature;
 import com.hrzafer.prizma.feature.value.FeatureValue;
-import com.hrzafer.prizma.feature.NGramTerms;
-import com.hrzafer.prizma.feature.UnigramTerms;
+import com.hrzafer.prizma.feature.TermVector;
 import com.hrzafer.prizma.data.Document;
 import com.hrzafer.prizma.preprocessing.*;
 import com.hrzafer.prizma.util.IO;
@@ -68,12 +67,11 @@ public class OldArffCreator {
         Analyzer analyzer = new Analyzer(new StandardTokenizer(), filters);
 
         Map<String, String> params= new HashMap<>();
-        params.put("field", "content");
         params.put("threshold", "2");
         params.put("binary", "true");
         params.put("lexiconEncoded", "false");
         params.put("lexiconFilePath", "experiment/" + name + "Lexicon");
-        return new UnigramTerms("UnigramTerms", "bla", 1, "", params, analyzer);
+        return new TermVector("TermVector", "content",  "", "", params, analyzer);
     }
 
     private static void create(String filename) {
@@ -83,11 +81,16 @@ public class OldArffCreator {
 
     private static Dataset getDataset() {
         DatasetReader reader;
+        String input = _properties.getDatasetDirectory();
         if (_properties.getDatasetDirectory().endsWith(".csv")){
-            reader = new CSVDatasetReader(_properties.getDatasetDirectory());
+            reader = new CSVDatasetReader(input);
+        }
+        else if(_properties.getDatasetDirectory().endsWith(".json")){
+            reader = new JSONDatasetReader(input);
+
         }
         else {
-            reader = new DirectoryDatasetReader(_properties.getDatasetDirectory());
+            reader = new DirectoryDatasetReader.Builder(input).build();
         }
         Dataset dataset = reader.read();
         if (_properties.isRandom()) {
@@ -99,8 +102,8 @@ public class OldArffCreator {
     private static void create(Dataset dataset, String filename) {
         StringBuilder sb = new StringBuilder();
         for (Feature feature : _properties.getFeatures()) {
-            if (feature.getType().endsWith("gramTerms")) {
-                ((NGramTerms) feature).buildTermDictionary(dataset.getAllDocuments());
+            if (feature.getType().equals("TermVector")) {
+                ((TermVector) feature).buildTermDictionary(dataset.getAllDocuments());
             }
         }
         sb.append(getHeader());
@@ -117,7 +120,7 @@ public class OldArffCreator {
         String relationDeclaration = getRelationDeclaration(relationName);
         StringBuilder header = new StringBuilder().append(relationDeclaration);
         for (Feature feature : features) {
-            if(!feature.getType().equals("DocumentId"))
+            if(!feature.getType().equals("DocId"))
             header.append(feature.getDeclarationForArff());
         }
         return header.toString();
@@ -221,7 +224,7 @@ public class OldArffCreator {
         return sb.toString();
     }
 
-    public static String createArffForDocuments(List<Feature> features, List<Document> documents){
+    private static String createArffForDocuments(List<Feature> features, List<Document> documents){
         StringBuilder sb = new StringBuilder();
         sb.append(getHeader("oylesine", features));
         sb.append("@attribute class {").append("null").append("}\n\n@data\n\n");

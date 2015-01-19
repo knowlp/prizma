@@ -17,26 +17,22 @@ import java.util.Scanner;
  */
 public class WordLengthVariance extends Feature {
 
-    public WordLengthVariance(String type, String name, int weight, String description, Map<String, String> parameters, Analyzer analyzer) {
-        super(type, name, weight, description, parameters, analyzer);
+    public WordLengthVariance(String type, String field, String name, String description, Map<String, String> parameters, Analyzer analyzer) {
+        super(type, field, name, description, parameters, analyzer);
     }
 
     @Override
-    public List<FeatureValue> extract(String data) {
-        String source = data.replaceAll("[\\*-\\:\\\"\\.,'\\(\\);?!]", "");
-        Scanner s = new Scanner(source);
+    public List<FeatureValue> extract(List<String> tokens) {
         int wordCount = 0;
         int totalWordLen = 0;
         List<Integer> lenghts = new ArrayList();
 
-        while (s.hasNext()) {
-            String token = s.next();
+        for (String token : tokens) {
             int tokenLength = token.length();
             totalWordLen += tokenLength;
             wordCount++;
             lenghts.add(new Integer(tokenLength));
         }
-        s.close();
 
         if (wordCount < 1) {
             return unitList(FeatureValueFactory.create(Double.NaN));
@@ -48,5 +44,4 @@ public class WordLengthVariance extends Feature {
         double variance = MAT.variance(values, mean);
         return unitList(FeatureValueFactory.create(variance));
     }
-
 }

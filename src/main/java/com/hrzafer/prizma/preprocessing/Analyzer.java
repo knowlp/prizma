@@ -4,13 +4,13 @@ import java.util.Collections;
 import java.util.List;
 
 public class Analyzer {
-    private List<INormalizer> normalizers;
+    private List<ICharFilter> normalizers;
     private ITokenizer tokenizer;
     private List<IFilter> filters;
     private AnalyzerCache cache;
 
-    public Analyzer(List<INormalizer> normalizers, ITokenizer tokenizer, List<IFilter> filters) {
-        this.normalizers = normalizers;
+    public Analyzer(List<ICharFilter> charFilters, ITokenizer tokenizer, List<IFilter> filters) {
+        this.normalizers = charFilters;
         this.tokenizer = tokenizer;
         this.filters = filters;
         cache = new AnalyzerCache();
@@ -24,7 +24,7 @@ public class Analyzer {
         this(Collections.EMPTY_LIST, tokenizer, filters);
     }
 
-    public Analyzer(List<INormalizer> normalizers, ITokenizer tokenizer) {
+    public Analyzer(List<ICharFilter> normalizers, ITokenizer tokenizer) {
         this(normalizers, tokenizer, Collections.EMPTY_LIST);
     }
 
@@ -49,7 +49,7 @@ public class Analyzer {
     }
 
     public String normalize(String str){
-        for (INormalizer normalizer : normalizers) {
+        for (ICharFilter normalizer : normalizers) {
             str = normalizer.normalize(str);
         }
         return str;

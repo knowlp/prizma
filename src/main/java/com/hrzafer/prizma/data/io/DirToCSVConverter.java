@@ -23,7 +23,7 @@ public class DirToCSVConverter {
 
     public static void convertDataset(String dirPath, String csvPath){
         DocumentSource.cropTooLongData = false;
-        DatasetReader reader = new DirectoryDatasetReader(dirPath);
+        DatasetReader reader = new DirectoryDatasetReader.Builder(dirPath).build();
         Dataset dataset = reader.read();
         CSVDatasetWriter writer = new CSVDatasetWriter();
         writer.write(dataset, csvPath);

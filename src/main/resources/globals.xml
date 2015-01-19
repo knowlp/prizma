@@ -1,13 +1,48 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <globals>
-    <analyzer name="global">
-        <tokenizer name="FastTokenizer"/>
-        <filter name="TooShortTokenFilter"/>
-        <filter name="TooLongTokenFilter"/>
-        <filter name="MultipleUnderscoreRemover"/>
-        <filter name="ToLowerCaseConverter"/>
-        <filter name="StemmerFilter"/>
-        <filter name="NumberRemover"/>
-        <filter name="StopWordRemover"/>
+  <analyzers>
+
+    <analyzer name="classic">
+      <tokenizer name="FastTokenizer"/>
+      <filter name="TooShortTokenFilter"/>
+      <filter name="TooLongTokenFilter"/>
+      <filter name="MultipleUnderscoreRemover"/>
+      <filter name="ToLowerCaseConverter"/>
+      <filter name="StemmerFilter"/>
+      <filter name="NumberRemover"/>
+      <filter name="StopWordRemover"/>
     </analyzer>
+
+  </analyzers>
+
+  <features>
+
+    <feature type="DocId" name="Document Id" field="id">
+      <description>File name or path of the file</description>
+    </feature>
+
+    <feature type="TermVector" name="Unigrams terms" field="content">
+      <description>Unigram term vector of the content field</description>
+      <parameters>
+        <parameter name="nGramSize" value="1"/>
+        <parameter name="weight" value="binary"/>
+        <parameter name="frequencyThreshold" value="2"/>
+      </parameters>
+      <analyzer name="classic"/>
+    </feature>
+
+    <feature type="TermVector" name="Bigram terms" field="content">
+      <description>Unigram term vector of the content field</description>
+      <parameters>
+        <parameter name="nGramSize" value="1"/>
+        <parameter name="weight" value="binary"/>
+        <parameter type="numeric" name="frequencyThreshold" value="2"/>
+        <!--<parameter name="lexiconFilePath" value="experiment/topTermsLexicon.txt"/>
+        <parameter name="lexiconEncoded" value="false"/>-->
+      </parameters>
+      <analyzer name="classic"/>
+    </feature>
+
+  </features>
+
 </globals>

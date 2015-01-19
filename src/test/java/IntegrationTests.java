@@ -2,9 +2,9 @@
 import com.hrzafer.prizma.ArffCreator;
 import com.hrzafer.prizma.data.Document;
 import com.hrzafer.prizma.data.io.DocumentFromString;
-import com.hrzafer.prizma.feature.DocumentId;
+import com.hrzafer.prizma.feature.DocId;
 import com.hrzafer.prizma.feature.Feature;
-import com.hrzafer.prizma.feature.UnigramTerms;
+import com.hrzafer.prizma.feature.TermVector;
 import com.hrzafer.prizma.feature.value.DocumentVectors;
 import com.hrzafer.prizma.preprocessing.Analyzer;
 import com.hrzafer.prizma.preprocessing.FastTokenizer;
@@ -24,7 +24,7 @@ import static junit.framework.Assert.assertEquals;
  */
 public class IntegrationTests {
 
-    private static final String expectedUnigrams = "@relation test_dataset\n" +
+    private static final String expectedBinaryUnigrams = "@relation test_dataset\n" +
             "\n" +
             "@attribute w0_content numeric\n" +
             "@attribute w1_content numeric\n" +
@@ -81,15 +81,149 @@ public class IntegrationTests {
             "% c4\\05.txt\n" +
             "1,1,0,0,0,0,1,1,0,1,c4\n" +
             "% c5\\01.txt\n" +
-            "0,0,0,0,0,1,1,1,1,1,c5\n" +
+            "0,0,0,0,0,1,0,1,1,1,c5\n" +
             "% c5\\02.txt\n" +
-            "1,0,0,0,0,0,1,1,1,1,c5\n" +
+            "1,0,0,0,0,0,1,1,1,0,c5\n" +
             "% c5\\03.txt\n" +
-            "1,1,0,0,0,0,0,1,1,1,c5\n" +
+            "1,1,0,0,0,0,0,0,0,1,c5\n" +
             "% c5\\04.txt\n" +
             "1,1,1,0,0,0,0,0,1,1,c5\n" +
             "% c5\\05.txt\n" +
             "0,1,1,1,0,0,0,0,1,1,c5\n";
+
+    private static final String expectedIntegerUnigrams = "@relation test_dataset\n" +
+            "\n" +
+            "@attribute w0_content numeric\n" +
+            "@attribute w1_content numeric\n" +
+            "@attribute w2_content numeric\n" +
+            "@attribute w3_content numeric\n" +
+            "@attribute w4_content numeric\n" +
+            "@attribute w5_content numeric\n" +
+            "@attribute w6_content numeric\n" +
+            "@attribute w7_content numeric\n" +
+            "@attribute w8_content numeric\n" +
+            "@attribute w9_content numeric\n" +
+            "@attribute class {c1,c2,c3,c4,c5}\n" +
+            "\n" +
+            "@data\n" +
+            "\n" +
+            "% c1\\01.txt\n" +
+            "1,1,1,1,1,0,0,0,0,0,c1\n" +
+            "% c1\\02.txt\n" +
+            "1,1,0,1,1,1,0,0,0,0,c1\n" +
+            "% c1\\03.txt\n" +
+            "1,1,0,0,1,1,1,0,0,0,c1\n" +
+            "% c1\\04.txt\n" +
+            "1,1,0,0,0,1,1,1,0,0,c1\n" +
+            "% c1\\05.txt\n" +
+            "1,1,0,0,0,0,1,1,1,0,c1\n" +
+            "% c2\\01.txt\n" +
+            "1,1,1,1,1,0,0,0,0,0,c2\n" +
+            "% c2\\02.txt\n" +
+            "0,1,1,1,1,1,0,0,0,0,c2\n" +
+            "% c2\\03.txt\n" +
+            "0,0,1,1,1,1,1,0,0,0,c2\n" +
+            "% c2\\04.txt\n" +
+            "0,0,1,1,0,1,1,1,0,0,c2\n" +
+            "% c2\\05.txt\n" +
+            "0,0,1,1,0,0,1,1,1,0,c2\n" +
+            "% c3\\01.txt\n" +
+            "0,1,1,1,1,1,0,0,0,0,c3\n" +
+            "% c3\\02.txt\n" +
+            "0,0,1,1,1,1,1,0,0,0,c3\n" +
+            "% c3\\03.txt\n" +
+            "0,0,0,1,1,1,1,1,0,0,c3\n" +
+            "% c3\\04.txt\n" +
+            "0,0,0,0,1,1,1,1,1,0,c3\n" +
+            "% c3\\05.txt\n" +
+            "0,0,0,0,1,1,0,1,1,1,c3\n" +
+            "% c4\\01.txt\n" +
+            "0,0,0,1,1,1,1,1,0,0,c4\n" +
+            "% c4\\02.txt\n" +
+            "0,0,0,0,1,1,1,1,1,0,c4\n" +
+            "% c4\\03.txt\n" +
+            "0,0,0,0,0,1,1,1,1,1,c4\n" +
+            "% c4\\04.txt\n" +
+            "1,0,0,0,0,0,1,1,1,1,c4\n" +
+            "% c4\\05.txt\n" +
+            "1,1,0,0,0,0,1,1,0,1,c4\n" +
+            "% c5\\01.txt\n" +
+            "0,0,0,0,0,2,0,1,1,1,c5\n" +
+            "% c5\\02.txt\n" +
+            "1,0,0,0,0,0,1,1,2,0,c5\n" +
+            "% c5\\03.txt\n" +
+            "1,1,0,0,0,0,0,0,0,3,c5\n" +
+            "% c5\\04.txt\n" +
+            "1,1,1,0,0,0,0,0,1,1,c5\n" +
+            "% c5\\05.txt\n" +
+            "0,1,1,1,0,0,0,0,1,1,c5\n";
+
+    private final String expectedTfIdfUnigrams = "@relation test_dataset\n" +
+            "\n" +
+            "@attribute w0_content numeric\n" +
+            "@attribute w1_content numeric\n" +
+            "@attribute w2_content numeric\n" +
+            "@attribute w3_content numeric\n" +
+            "@attribute w4_content numeric\n" +
+            "@attribute w5_content numeric\n" +
+            "@attribute w6_content numeric\n" +
+            "@attribute w7_content numeric\n" +
+            "@attribute w8_content numeric\n" +
+            "@attribute w9_content numeric\n" +
+            "@attribute class {c1,c2,c3,c4,c5}\n" +
+            "\n" +
+            "@data\n" +
+            "\n" +
+            "% c1\\01.txt\n" +
+            "0.16,0.15,0.18,0.15,0.13,0,0,0,0,0,c1\n" +
+            "% c1\\02.txt\n" +
+            "0.16,0.15,0,0.15,0.13,0.1,0,0,0,0,c1\n" +
+            "% c1\\03.txt\n" +
+            "0.16,0.15,0,0,0.13,0.1,0.1,0,0,0,c1\n" +
+            "% c1\\04.txt\n" +
+            "0.16,0.15,0,0,0,0.1,0.1,0.12,0,0,c1\n" +
+            "% c1\\05.txt\n" +
+            "0.16,0.15,0,0,0,0,0.1,0.12,0.16,0,c1\n" +
+            "% c2\\01.txt\n" +
+            "0.16,0.15,0.18,0.15,0.13,0,0,0,0,0,c2\n" +
+            "% c2\\02.txt\n" +
+            "0,0.15,0.18,0.15,0.13,0.1,0,0,0,0,c2\n" +
+            "% c2\\03.txt\n" +
+            "0,0,0.18,0.15,0.13,0.1,0.1,0,0,0,c2\n" +
+            "% c2\\04.txt\n" +
+            "0,0,0.18,0.15,0,0.1,0.1,0.12,0,0,c2\n" +
+            "% c2\\05.txt\n" +
+            "0,0,0.18,0.15,0,0,0.1,0.12,0.16,0,c2\n" +
+            "% c3\\01.txt\n" +
+            "0,0.15,0.18,0.15,0.13,0.1,0,0,0,0,c3\n" +
+            "% c3\\02.txt\n" +
+            "0,0,0.18,0.15,0.13,0.1,0.1,0,0,0,c3\n" +
+            "% c3\\03.txt\n" +
+            "0,0,0,0.15,0.13,0.1,0.1,0.12,0,0,c3\n" +
+            "% c3\\04.txt\n" +
+            "0,0,0,0,0.13,0.1,0.1,0.12,0.16,0,c3\n" +
+            "% c3\\05.txt\n" +
+            "0,0,0,0,0.13,0.1,0,0.12,0.16,0.23,c3\n" +
+            "% c4\\01.txt\n" +
+            "0,0,0,0.15,0.13,0.1,0.1,0.12,0,0,c4\n" +
+            "% c4\\02.txt\n" +
+            "0,0,0,0,0.13,0.1,0.1,0.12,0.16,0,c4\n" +
+            "% c4\\03.txt\n" +
+            "0,0,0,0,0,0.1,0.1,0.12,0.16,0.23,c4\n" +
+            "% c4\\04.txt\n" +
+            "0.16,0,0,0,0,0,0.1,0.12,0.16,0.23,c4\n" +
+            "% c4\\05.txt\n" +
+            "0.16,0.15,0,0,0,0,0.1,0.12,0,0.23,c4\n" +
+            "% c5\\01.txt\n" +
+            "0,0,0,0,0,0.26,0,0.14,0.21,0.28,c5\n" +
+            "% c5\\02.txt\n" +
+            "0.21,0,0,0,0,0,0.13,0.14,0.41,0,c5\n" +
+            "% c5\\03.txt\n" +
+            "0.27,0.24,0,0,0,0,0,0,0,1.14,c5\n" +
+            "% c5\\04.txt\n" +
+            "0.16,0.15,0.18,0,0,0,0,0,0.16,0.23,c5\n" +
+            "% c5\\05.txt\n" +
+            "0,0.15,0.18,0.15,0,0,0,0,0.16,0.23,c5\n";
 
     static final List<List<String>> dataset = Arrays.asList(
             Arrays.asList("c1\\01.txt", "w0 w1 w2 w3 w4", "c1"),
@@ -112,14 +246,18 @@ public class IntegrationTests {
             Arrays.asList("c4\\03.txt", "w5 w6 w7 w8 w9", "c4"),
             Arrays.asList("c4\\04.txt", "w0 w6 w7 w8 w9", "c4"),
             Arrays.asList("c4\\05.txt", "w0 w1 w6 w7 w9", "c4"),
-            Arrays.asList("c5\\01.txt", "w5 w6 w7 w8 w9", "c5"),
-            Arrays.asList("c5\\02.txt", "w0 w6 w7 w8 w9", "c5"),
-            Arrays.asList("c5\\03.txt", "w0 w1 w7 w8 w9", "c5"),
+            Arrays.asList("c5\\01.txt", "w5 w5 w7 w8 w9", "c5"),
+            Arrays.asList("c5\\02.txt", "w0 w6 w7 w8 w8", "c5"),
+            Arrays.asList("c5\\03.txt", "w0 w1 w9 w9 w9", "c5"),
             Arrays.asList("c5\\04.txt", "w0 w1 w2 w8 w9", "c5"),
             Arrays.asList("c5\\05.txt", "w1 w2 w3 w8 w9", "c5")
+
     );
 
     List<Document> documents;
+    Map<String, String> params = new HashMap<>();
+    List<Feature> features = new ArrayList<>();
+    Analyzer analyzer = new Analyzer(new FastTokenizer());
 
     @Before
     public void setUp() throws Exception {
@@ -128,27 +266,60 @@ public class IntegrationTests {
             Document d = new Document(new DocumentFromString(strings.get(0), strings.get(1)), strings.get(2));
             documents.add(d);
         }
+
+        params.put("nGramSize", "1");
+        features.add(new DocId());
     }
 
     @Test
-    public void unigrams() {
+      public void unigramsBinary() {
 
-        List<Feature> features = new ArrayList<>();
-        Map<String, String> params = new HashMap<>();
-        params.put("field", "content");
-        params.put("binary", "false");
-        Analyzer analyzer = new Analyzer(new FastTokenizer());
+        params.put("weight", "binary");
 
-        features.add(new DocumentId());
-
-        UnigramTerms unigramTerms = new UnigramTerms(params, analyzer);
+        TermVector unigramTerms = new TermVector("", "content", "", "", params, analyzer);
         unigramTerms.buildTermDictionary(documents);
-        features.add(new UnigramTerms(params, analyzer));
+        features.add(unigramTerms);
 
         DocumentVectors relation = new DocumentVectors("test_dataset", features, documents);
         String arff = ArffCreator.create(relation);
 
-        assertEquals(expectedUnigrams, arff);
+        assertEquals(expectedBinaryUnigrams, arff);
 
     }
+
+    @Test
+    public void unigramsInteger() {
+
+        params.put("weight", "integer");
+
+        TermVector unigramTerms = new TermVector("", "content", "", "", params, analyzer);
+        unigramTerms.buildTermDictionary(documents);
+        features.add(unigramTerms);
+
+        DocumentVectors relation = new DocumentVectors("test_dataset", features, documents);
+        String arff = ArffCreator.create(relation);
+
+        assertEquals(expectedIntegerUnigrams, arff);
+
+    }
+
+    @Test
+    public void unigramsTfIdf() {
+
+        params.put("weight", "tfidf");
+
+        TermVector unigramTerms = new TermVector("", "content", "", "", params, analyzer);
+        unigramTerms.buildTermDictionary(documents);
+        features.add(unigramTerms);
+
+        DocumentVectors relation = new DocumentVectors("test_dataset", features, documents);
+        String arff = ArffCreator.create(relation);
+
+        assertEquals(expectedTfIdfUnigrams, arff);
+
+    }
+
+
+
+
 }

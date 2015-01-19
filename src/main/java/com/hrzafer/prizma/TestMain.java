@@ -39,37 +39,50 @@ public class TestMain {
 
     public static void main(String[] args) {
 
-        //convertToCSV();
-        convertDirToXML();
-        System.out.println(Character.isAlphabetic('.'));
-        System.out.println(Character.isLetterOrDigit('.'));
+        //convertToJSON();
+        test();
 
     }
 
     public static void test() {
-        String inputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma-old\\dataset\\kategori_10arSayfa";
-        DatasetReader reader = new DirectoryDatasetReader(inputPath);
-        List<Feature> features = FeatureReader.read("experiment/features.xml");
-        Dataset dataset = reader.read();
-        List<Document> instances = dataset.getAllDocuments();
-        DocumentVectors vectors = new DocumentVectors("test_dataset", features, instances);
-        String arff = ArffCreator.create(vectors);
-        IO.write("arff/test_dataset.arff", arff);
+
+        String inputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma\\dataset\\train_9x100.json";
+        //DatasetReader reader = new DirectoryDatasetReader.Builder(inputPath).build();
+
+        List<Feature> features = FeatureReader.read("experiment/exp1.xml");
+
+
+        ArffProperties properties = new ArffProperties(inputPath, features, "test", 100);
+        OldArffCreator.create(properties, "arff/train_9x100_json.arff");
+
+        //DatasetReader reader = new JSONDatasetReader(inputPath);
+        //Dataset dataset = reader.read();
+        //List<Document> instances = dataset.getAllDocuments();
+        //DocumentVectors vectors = new DocumentVectors("test_dataset", features, instances);
+        //String arff = ArffCreator.create(vectors);todo: neden çalışmıyor ?
 
 
     }
 
+    public static void convertToJSON() {
+        String inputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma\\dataset\\train_9x100";
+        String outputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma\\dataset\\train_9x100.json";
+        DatasetReader reader = new DirectoryDatasetReader.Builder(inputPath).build();
+        JSONDatasetWriter writer = new JSONDatasetWriter();
+        writer.write(reader.read(),outputPath);
+    }
+
     public static void convertToCSV() {
-        String inputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma-old\\dataset\\kategori_valid_11x600";
-        String outputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma\\dataset\\kategori_valid_11x600.csv";
+        String inputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma-old\\prizma_data_sets\\dataset_authorship";
+        String outputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\code\\prizma\\dataset\\dataset_authorship.csv";
         DirToCSVConverter.convertDataset(inputPath, outputPath);
     }
 
     private static void convertDirToXML(){
         String inputPath = "C:\\Users\\hrzafer\\Desktop\\workspace\\Prizma\\veri\\train_9x100";
         String outputPath = "C:\\Users\\hrzafer\\Desktop\\solr-4.9.0\\example\\exampledocs\\train_9x100.xml";
-        DatasetReader reader = new DirectoryDatasetReader(inputPath)
-                .createId(true).strategy(new TitledFileDocumentSourceStrategy());
+        DatasetReader reader = new DirectoryDatasetReader.
+                Builder(inputPath).createId(true).strategy(new TitledFileDocumentSourceStrategy()).build();
         Dataset dataset = reader.read();
         XmlDatasetWriter writer = new XmlDatasetWriter();
         writer.write(dataset, outputPath);

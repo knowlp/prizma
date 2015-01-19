@@ -13,10 +13,10 @@ import java.util.*;
  *
  * @author hrzafer
  */
-public class StopwordRatio extends Feature {
+public class StopwordRatio extends SingleTokenFeature {
 
-    public StopwordRatio(String type, String name, int weight, String description, Map<String, String> parameters, Analyzer analyzer) {
-        super(type, name, weight, description, parameters, analyzer);
+    public StopwordRatio(String type, String field, String name, String description, Map<String, String> parameters, Analyzer analyzer) {
+        super(type, field, name, description, parameters, analyzer);
     }
 
     private static Set<String> stops;

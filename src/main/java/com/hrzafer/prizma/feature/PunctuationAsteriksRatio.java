@@ -13,8 +13,8 @@ import java.util.Map;
  */
 public class PunctuationAsteriksRatio extends PunctuationRatio {
 
-    public PunctuationAsteriksRatio(String type, String name, int weight, String description, Map<String, String> parameters, Analyzer analyzer) {
-        super(type, name, weight, description, parameters, analyzer);
+    public PunctuationAsteriksRatio(String type, String field, String name, String description, Map<String, String> parameters, Analyzer analyzer) {
+        super(type, field, name, description, parameters, analyzer);
         punctuation = ASTERIKS;
     }
 }

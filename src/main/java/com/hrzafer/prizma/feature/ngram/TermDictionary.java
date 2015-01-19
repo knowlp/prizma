@@ -1,6 +1,8 @@
 package com.hrzafer.prizma.feature.ngram;
 
 import com.hrzafer.prizma.Resources;
+import com.hrzafer.prizma.feature.*;
+import com.hrzafer.prizma.feature.TermVector;
 import com.hrzafer.prizma.feature.value.*;
 
 import java.util.*;
@@ -124,24 +126,28 @@ public class TermDictionary {
     /**
      * Returns a FeatureValue Vector.
      * This vector's size is equal to the number terms this class includes.
-     * In this vector, values corresponding to any matching term will be either its frequency or a binary value that
+     * In this vector, values corresponding to any matching term will be either its frequency or a weight value that
      * represents existance of the term in tokens.
      *
      * @param tokens
-     * @param binary
+     * @param weight
      * @return
      */
-    public List<FeatureValue> getTermsVector(List<String> tokens, boolean binary) {
-        if (binary){
-            Set<String> termSet = nGramExtractor.extractTermSet(tokens);
-            return compareAndGetBinaryVector(termSet);
+    public List<FeatureValue> getTermsVector(List<String> tokens, TermVector.Weight weight) {
+        switch (weight){
+            case BINARY:
+                Set<String> termSet = nGramExtractor.extractTermSet(tokens);
+                return compareAndGetBinaryVector(termSet);
+            case INTEGER:
+                Map<String, Integer> termMap = nGramExtractor.extractTermMap(tokens);
+                return  compareAndGetIntegerVector(termMap);
+            case TFIDF:
+                Map<String, Integer> termMap2 = nGramExtractor.extractTermMap(tokens);
+                return compareAndGetTfIdfVector(termMap2);
+
         }
 
-        Map<String, Integer> termMap = nGramExtractor.extractTermMap(tokens);
-        return  compareAndGetTfIdfVector(termMap);
-            //todo: buradaki tf-idf değerleri muhtemelen hatalı, ilk iş olarak burayı düzelt
-            //Ya da değerin frequenct mi tf-idf mi, yoksa başka bir şey mi olacağı parametre olarak gelmeli
-        //return compareAndGetIntegerVector(termMap);
+        throw new IllegalArgumentException("böyle bir terim ağırlıklandırma olayı yok hacı!");
     }
 
     private List<FeatureValue> compareAndGetBinaryVector(Set<String> termsMap){

@@ -29,7 +29,7 @@ public class ArffCreator {
         String relationDeclaration = getRelationDeclaration(relationName);
         StringBuilder header = new StringBuilder().append(relationDeclaration);
         for (Feature feature : features) {
-            if(!feature.getType().equals("DocumentId"))
+            if(!feature.getType().equals("DocId"))
                 header.append(feature.getDeclarationForArff());
         }
         return header.toString();

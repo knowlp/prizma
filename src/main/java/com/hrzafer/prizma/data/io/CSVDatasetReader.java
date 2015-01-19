@@ -2,8 +2,6 @@ package com.hrzafer.prizma.data.io;
 
 import au.com.bytecode.opencsv.CSVParser;
 import au.com.bytecode.opencsv.CSVReader;
-import com.hrzafer.prizma.data.DocumentCategory;
-import com.hrzafer.prizma.data.DocumentCategoryFromDocuments;
 import com.hrzafer.prizma.data.Dataset;
 import com.hrzafer.prizma.data.Document;
 
@@ -13,7 +11,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 /**
- * Reads the dataset from a CSV file
+ * Reads the dataset from a CSV fileyo
  */
 public class CSVDatasetReader extends DatasetReader {
 
@@ -29,22 +27,7 @@ public class CSVDatasetReader extends DatasetReader {
     @Override
     public Dataset read() {
         List<Document> documents = readInstances();
-        List<Document> instancesOfCategory = new ArrayList<>();
-        List<DocumentCategory> categories = new ArrayList<>();
-        Collections.sort(documents);
-        String categoryName = documents.get(0).getActualCategory();
-        for (Document document : documents) {
-            if (categoryName.equals(document.getActualCategory())) {
-                instancesOfCategory.add(document);
-            } else {
-                categories.add(new DocumentCategoryFromDocuments(instancesOfCategory, categoryName));
-                instancesOfCategory = new ArrayList<>();
-                instancesOfCategory.add(document);
-                categoryName = document.getActualCategory();
-            }
-        }
-        categories.add(new DocumentCategoryFromDocuments(instancesOfCategory, categoryName));
-        return new Dataset(categories);
+        return documentsToDataset(documents);
     }
 
     /**

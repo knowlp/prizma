@@ -4,6 +4,7 @@ import com.hrzafer.prizma.data.*;
 
 import java.io.File;
 import java.io.FileFilter;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -14,24 +15,62 @@ import java.util.List;
  */
 public class DirectoryDatasetReader extends DatasetReader {
     private File datasetDirectory;
-    private FileDocumentSourceStrategy strategy = new DefaultFileDocumentSourceStrategy();
-    private boolean createId = true;
+    private FileDocumentSourceStrategy strategy;
+    private boolean createId;
 
-    public DirectoryDatasetReader(String datasetDirectoryPath) {
-        datasetDirectory = new File(datasetDirectoryPath);
+    public static class Builder{
+
+        private double percentage = DatasetReader.DEFAULT_PERCENTAGE;
+        private boolean shuffled = DatasetReader.DEFAULT_SHUFFLED_OPTION;
+        private Charset charset = DatasetReader.DEFAULT_CHARSET;
+        private  boolean createId = true;
+        private FileDocumentSourceStrategy strategy = new DefaultFileDocumentSourceStrategy();
+        private final String datasetDirectoryPath;
+
+        public Builder(String datasetDirectoryPath){
+            this.datasetDirectoryPath = datasetDirectoryPath;
+        }
+
+        public Builder percentage(int percentage){
+            this.percentage = percentage;
+            return this;
+        }
+
+        public Builder shuffled(boolean shuffled){
+            this.shuffled = shuffled;
+            return this;
+        }
+
+        public Builder charset(Charset charset){
+            this.charset=charset;
+            return this;
+        }
+
+        public Builder createId(boolean createId){
+            this.createId = createId;
+            return this;
+        }
+
+        public  Builder strategy(FileDocumentSourceStrategy strategy){
+            this.strategy = strategy;
+            return this;
+        }
+
+        public DirectoryDatasetReader build(){
+            return new DirectoryDatasetReader(this);
+        }
+
     }
 
-    public DirectoryDatasetReader strategy(FileDocumentSourceStrategy strategy){
-        this.strategy = strategy;
-        return this;
+    private DirectoryDatasetReader(Builder builder){
+        datasetDirectory = new File(builder.datasetDirectoryPath);
+        this.createId = builder.createId;
+        this.percentage = builder.percentage;
+        this.shuffled = builder.shuffled;
+        this.charset = builder.charset;
+        this.strategy = builder.strategy;
+
     }
-
-    public DirectoryDatasetReader createId (boolean createId){
-        this.createId = createId;
-        return this;
-    }
-
-
 
     @Override
     public Dataset read() {

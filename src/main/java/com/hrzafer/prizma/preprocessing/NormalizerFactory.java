@@ -17,12 +17,12 @@ import java.util.logging.Logger;
  * To change this template use File | Settings | File Templates.
  */
 public class NormalizerFactory {
-    public static INormalizer create(String name){
+    public static ICharFilter create(String name){
         String packagePath = "com.hrzafer.prizma.preprocessing";
         try {
             Class<?> c = Class.forName(packagePath + "." + name);
             Constructor<?> cons = c.getConstructor();
-            return (INormalizer) cons.newInstance();
+            return (ICharFilter) cons.newInstance();
         } catch (ClassNotFoundException ex) {
             GUI.messageBox("INormalizer " + STR.addDoubleQuote(name)
                     + " can not be found in the package " + STR.addDoubleQuote(packagePath), "Missing Normalizer");

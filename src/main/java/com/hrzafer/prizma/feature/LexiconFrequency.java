@@ -9,15 +9,14 @@ import com.hrzafer.prizma.preprocessing.Analyzer;
 import java.util.*;
 
 
-public class LexiconFrequency extends Feature{
+public class LexiconFrequency extends SingleTokenFeature{
 
     private Set<String> lexicon;
     private static final String PARAM_LEXICONENCODED = "lexiconEncoded";
     private boolean lexiconEncoded;
 
-    //sınıf sayısı boyutunda bir vektör gerekiyor
-    public LexiconFrequency(String type, String name, int weight, String description, Map<String, String> parameters, Analyzer analyzer) {
-        super(type, name, weight, description, parameters, analyzer);
+    public LexiconFrequency(String type, String field, String name, String description, Map<String, String> parameters, Analyzer analyzer) {
+        super(type, field, name, description, parameters, analyzer);
         parseAndSetIsLexiconEncoded();
         lexicon = new HashSet<>(Resources.getLines(parameters.get("lexiconFilePath"), lexiconEncoded));
     }

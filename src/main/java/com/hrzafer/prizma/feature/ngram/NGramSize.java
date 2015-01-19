@@ -5,6 +5,8 @@ public enum NGramSize {
 
     public final int size;
 
+
+
     NGramSize(int size) {
         this.size = size;
     }

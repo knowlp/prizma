@@ -1,7 +1,6 @@
 package com.hrzafer.prizma.data.io;
 
 import com.hrzafer.prizma.data.Document;
-import com.hrzafer.prizma.util.STR;
 
 import java.util.Map;
 

@@ -11,7 +11,6 @@ public class FastTokenizer implements ITokenizer {
 
     @Override
     public List<String> tokenize(String str) {
-        //System.out.println("hüloooooğ");
         String[] tokens = str.replaceAll("[^\\p{L}\\p{Nd}]", " ").split("\\s+");
         return new ArrayList<>(Arrays.asList(tokens));
     }

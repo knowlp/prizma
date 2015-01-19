@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <features>
+
     <feature type="Unigrams" name="Unigrams on content" weight="1">
         <description>Bla bla bla</description>
         <parameters>
             <parameter name="field" value="content"/>
             <parameter name="threshold" value="1"/>
-            <parameter name="binary" value="false"/>
+            <parameter name="binary" value="true"/>
             <!--<parameter name="lexiconEncoded" value="false"/>-->
             <!--<parameter name="lexiconFilePath" value="experiment/topTermsLexicon.txt"/>-->
         </parameters>
         <analyzer name="global"/>
     </feature>
+
     <feature type="PunctuationCommaRatio" name="PunctuationCommaRatio on content" weight="1">
         <description>Bla bla bla</description>
         <parameters>
@@ -18,6 +20,7 @@
         </parameters>
         <analyzer name="global"/>
     </feature>
+
     <feature type="WordLengthAverage" name="WordLengthAverage on content" weight="1">
         <description>Bla bla bla</description>
         <parameters>
@@ -25,6 +28,7 @@
         </parameters>
         <analyzer name="global"/>
     </feature>
+
     <feature type="NumberCount" name="NumberCount on content" weight="1">
         <description>Bla bla bla</description>
         <parameters>
@@ -32,6 +36,7 @@
         </parameters>
         <analyzer name="global"/>
     </feature>
+
     <feature type="Bigrams" name="Bigrams on content" weight="1">
         <description>Bla bla bla</description>
         <parameters>

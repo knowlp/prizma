@@ -13,7 +13,7 @@ public enum NuveCachedStemmer implements Stemmer {
 
     Instance;
 
-    private final String stemsPath = "/stemDict/nuve_stems.dict";
+    private final String stemsPath = "/stemDict/nuve_stems2.dict";
     private final String catAdultStemsPath = "/stemDict/catAdult_stems.dict";
     private final String misspelledStemsPath = "/stemDict/misspelled_stems.dict";
     private final Map<String, String> map;

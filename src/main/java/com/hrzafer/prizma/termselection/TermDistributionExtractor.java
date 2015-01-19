@@ -6,7 +6,7 @@ import com.hrzafer.prizma.data.FeatureReader;
 import com.hrzafer.prizma.data.io.DatasetReader;
 import com.hrzafer.prizma.data.io.DirectoryDatasetReader;
 import com.hrzafer.prizma.feature.Feature;
-import com.hrzafer.prizma.feature.NGramTerms;
+import com.hrzafer.prizma.feature.TermVector;
 import com.hrzafer.prizma.feature.ngram.TermDictionary;
 
 import java.util.*;
@@ -17,12 +17,12 @@ import java.util.*;
 
 public class TermDistributionExtractor {
 
-    public static List<Category> extract(Dataset dataset, NGramTerms nGramTerms) {
+    public static List<Category> extract(Dataset dataset, TermVector termVector) {
         List<String> klassNames = dataset.getKlassNames();
         Map<String, TermDictionary> categoryDictionaries = new TreeMap<>();
         for (String klassName : klassNames) {
             List<Document> documents = dataset.getDocumentsOf(klassName);
-            TermDictionary terms = nGramTerms.buildNewTermDictionary(documents);
+            TermDictionary terms = termVector.buildNewTermDictionary(documents);
             categoryDictionaries.put(klassName, terms);
         }
 
@@ -57,11 +57,11 @@ public class TermDistributionExtractor {
     }
 
     public static void main(String[] args) {
-        DatasetReader reader = new DirectoryDatasetReader("dataset/test_dataset");
+        DatasetReader reader = new DirectoryDatasetReader.Builder("dataset/test_dataset").build();
         Dataset dataset = reader.read();
         List<Feature> features = FeatureReader.read("experiment/features_tfidf.xml");
-        NGramTerms nGramTerms = (NGramTerms) features.get(0);
-        List<Category> categories = TermDistributionExtractor.extract(dataset, nGramTerms);
+        TermVector termVector = (TermVector) features.get(0);
+        List<Category> categories = TermDistributionExtractor.extract(dataset, termVector);
         for (Category category : categories) {
             System.out.println(category);
         }

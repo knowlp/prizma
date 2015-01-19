@@ -1,5 +1,6 @@
 package com.hrzafer.prizma.feature.ngram;
 
+
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -12,7 +13,7 @@ public interface NGramExtractor {
      * Expected unigrams are: {"bir", "iki", "üç", "iki", "üç", "dört"} <br/>
      * Expected bigrams are: {"bir iki", "iki üç", "üç iki", "iki üç", "üç dört"} <br/>
      * @param tokens The tokenized text.
-     * @return ngram list
+     * @return n-gram list
      */
     public abstract List<String> extractTermList(List<String> tokens);
 

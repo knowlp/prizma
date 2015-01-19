@@ -70,24 +70,24 @@ public class GlobalsReader {
         NodeList normalizerNodes = analyzerElement.getElementsByTagName("normalizer");
         NodeList tokenizerNodes = analyzerElement.getElementsByTagName("tokenizer");
         NodeList filterNodes = analyzerElement.getElementsByTagName("filter");
-        List<INormalizer> normalizers = readNormalizers(normalizerNodes);
+        List<ICharFilter> normalizers = readNormalizers(normalizerNodes);
         ITokenizer tokenizer = readTokenizer(tokenizerNodes);
         List<IFilter> filters = readFilters(filterNodes);
         return new Analyzer(normalizers, tokenizer, filters);
 
     }
 
-    private static List<INormalizer> readNormalizers(NodeList normalizerNodes){
-        List<INormalizer> list = new ArrayList<>();
+    private static List<ICharFilter> readNormalizers(NodeList normalizerNodes){
+        List<ICharFilter> list = new ArrayList<>();
         for (int i = 0; i < normalizerNodes.getLength(); i++) {
             Element normalizerElement = (Element) normalizerNodes.item(i);
-            INormalizer n = readNormalizer(normalizerElement);
+            ICharFilter n = readNormalizer(normalizerElement);
             list.add(n);
         }
         return list;
     }
 
-    private static INormalizer readNormalizer(Element normalizerElement){
+    private static ICharFilter readNormalizer(Element normalizerElement){
         String name = normalizerElement.getAttribute("name");
         return NormalizerFactory.create(name);
     }

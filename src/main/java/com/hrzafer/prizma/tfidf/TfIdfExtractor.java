@@ -2,10 +2,9 @@ package com.hrzafer.prizma.tfidf;
 
 import com.hrzafer.prizma.data.*;
 import com.hrzafer.prizma.data.io.CSVDatasetReader;
-import com.hrzafer.prizma.data.io.DirectoryDatasetReader;
 import com.hrzafer.prizma.data.io.DatasetReader;
 import com.hrzafer.prizma.feature.Feature;
-import com.hrzafer.prizma.feature.NGramTerms;
+import com.hrzafer.prizma.feature.TermVector;
 import com.hrzafer.prizma.util.IO;
 import com.hrzafer.prizma.util.Timer;
 
@@ -37,7 +36,7 @@ public class TfIdfExtractor {
 
     public static void extract() {
         List<Feature> features = FeatureReader.read("experiment/features_tfidf.xml");
-        NGramTerms nGramTerms = (NGramTerms) features.get(0);
+        TermVector termVector = (TermVector) features.get(0);
 
         //DatasetReader reader = new CSVDatasetReader(dataSetPathCsv);
         DatasetReader reader = new CSVDatasetReader(dataSetPathDir);
@@ -53,7 +52,7 @@ public class TfIdfExtractor {
 
         timer.start();
         for (String klassName : klassNames) {
-            CategoryOld cat = new CategoryOld(dataset.getDocumentsOf(klassName, 100), nGramTerms, klassName);
+            CategoryOld cat = new CategoryOld(dataset.getDocumentsOf(klassName, 100), termVector, klassName);
             categories.add(cat);
         }
 

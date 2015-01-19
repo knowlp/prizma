@@ -12,8 +12,11 @@ import org.junit.Before;
  */
 public class UnigramTermsTest {
 
+
     @Before
     public void setUp() throws Exception {
+
+        TermVector vector = new TermVector("", "content", "", "", null, null);
 
     }
 
@@ -21,7 +24,6 @@ public class UnigramTermsTest {
     public void tearDown() throws Exception {
 
     }
-
 
 
 }

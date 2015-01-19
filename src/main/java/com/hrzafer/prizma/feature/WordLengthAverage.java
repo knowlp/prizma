@@ -15,28 +15,20 @@ import java.util.Scanner;
  */
 public class WordLengthAverage extends Feature {
 
-    public WordLengthAverage(String type, String name, int weight, String description, Map<String, String> parameters, Analyzer analyzer) {
-        super(type, name, weight, description, parameters, analyzer);
+    public WordLengthAverage(String type, String field, String name, String description, Map<String, String> parameters, Analyzer analyzer) {
+        super(type, field, name, description, parameters, analyzer);
     }
 
     @Override
-    public List<FeatureValue> extract(String data) {
-        String source = data.replaceAll("[\\*-\\:\\\"\\.,'\\(\\);?!]", "");
-        Scanner s = new Scanner(source);
+    public List<FeatureValue> extract(List<String> tokens) {
         int wordCount = 0;
         int totalWordLen = 0;
-        while (s.hasNext()) {
-            String token = s.next();
+        for (String token : tokens) {
             totalWordLen += token.length();
             wordCount++;
         }
-        s.close();
         double mean = (double) totalWordLen / wordCount;
         FeatureValue value = FeatureValueFactory.create(mean);
         return unitList(value);
-
-        //return String.format(Locale.US, "%.2f", mean);
     }
-
-
 }

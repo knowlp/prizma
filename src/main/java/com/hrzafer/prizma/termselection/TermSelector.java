@@ -5,7 +5,7 @@ import com.hrzafer.prizma.data.FeatureReader;
 import com.hrzafer.prizma.data.io.DatasetReader;
 import com.hrzafer.prizma.data.io.DirectoryDatasetReader;
 import com.hrzafer.prizma.feature.Feature;
-import com.hrzafer.prizma.feature.NGramTerms;
+import com.hrzafer.prizma.feature.TermVector;
 import com.hrzafer.prizma.util.IO;
 import com.hrzafer.prizma.util.Timer;
 
@@ -21,7 +21,7 @@ import java.util.Set;
  * To change this template use File | Settings | File Templates.
  */
 public class TermSelector {
-    public static final int NumberOfTopTerms = 200;
+    public static final int NumberOfTopTerms = 100;
     public static final double Treshold = 0.0002;
     public static final boolean TresholdBased = false;
     public static final boolean oneToManyMode = false;
@@ -30,10 +30,10 @@ public class TermSelector {
 
     public static void main(String[] args){
         List<Feature> features = FeatureReader.read("experiment/features_tfidf.xml");
-        NGramTerms nGramTerms = (NGramTerms) features.get(0);
+        TermVector termVector = (TermVector) features.get(0);
 
         //DatasetReader reader = new CSVDatasetReader(dataSetPathCsv);
-        DatasetReader reader = new DirectoryDatasetReader("dataset/train_9x100");
+        DatasetReader reader = new DirectoryDatasetReader.Builder("dataset/train_9x100").build();
 
         Timer timer = new Timer();
         timer.start();
@@ -41,7 +41,7 @@ public class TermSelector {
         timer.stop();
         System.out.println("Dataset reading time: " + timer.getElapsedSeconds());
 
-        List<Category> categories = TermDistributionExtractor.extract(dataset, nGramTerms);
+        List<Category> categories = TermDistributionExtractor.extract(dataset, termVector);
         Set<Term> termSet = selectTerms(categories);
         TopTermsToFile(termSet, "topTermsLexicon.txt");
 

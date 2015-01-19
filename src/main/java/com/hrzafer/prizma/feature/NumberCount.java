@@ -16,10 +16,10 @@ import java.util.Scanner;
  *
  * @author harun
  */
-public class NumberCount extends Feature {
+public class NumberCount extends SingleTokenFeature {
 
-    public NumberCount(String type, String name, int weight, String description, Map<String, String> parameters, Analyzer analyzer) {
-        super(type, name, weight, description, parameters, analyzer);
+    public NumberCount(String type, String field, String name, String description, Map<String, String> parameters, Analyzer analyzer) {
+        super(type, field, name, description, parameters, analyzer);
     }
 
     @Override

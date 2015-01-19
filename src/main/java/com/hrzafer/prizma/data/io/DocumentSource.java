@@ -23,7 +23,5 @@ public abstract class DocumentSource {
         return data;
     }
 
-
-
     protected abstract Map<String, String> readData();
 }

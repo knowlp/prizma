@@ -1,5 +1,6 @@
 package com.hrzafer.prizma.data.io;
 
+import au.com.bytecode.opencsv.CSVParser;
 import au.com.bytecode.opencsv.CSVWriter;
 import com.hrzafer.prizma.data.Dataset;
 import com.hrzafer.prizma.data.Document;
@@ -12,12 +13,16 @@ import java.util.List;
  * Writes a dataset to a CSV file
  */
 public class CSVDatasetWriter extends DatasetWriter {
+
     @Override
     public void write(Dataset dataset, String path) {
         CSVWriter writer;
 
         try {
-            writer = new CSVWriter(new OutputStreamWriter(new FileOutputStream(path), "UTF-8"));
+            writer = new CSVWriter(new OutputStreamWriter(new FileOutputStream(path), "UTF-8"),
+                    CSVParser.DEFAULT_SEPARATOR,
+                    CSVParser.DEFAULT_QUOTE_CHARACTER,
+                    '\0');
             List<Document> documents = dataset.getAllDocuments();
             List<String[]> data = new ArrayList<>();
             List<String> headers = dataset.getFieldNames();

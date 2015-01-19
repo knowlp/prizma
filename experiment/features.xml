@@ -1,33 +1,43 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<features>   
-	<feature type="DocumentId" name="Document Id" weight="1">
+<features>
+	
+	<feature type="DocId" name="Document Id" field="id">
         <description>File name or path of the file</description>
-		<parameters>
-            <parameter name="field" value="id"/>            
-        </parameters>
-    </feature>    
-	<feature type="UnigramTerms" name="Unigrams on content" weight="1">
-        <description>Bla bla bla</description>
-        <parameters>
-            <parameter name="field" value="content"/>
-            <parameter name="binary" value="true"/>           
-			<parameter name="frequencyThreshold" value="1"/>
-			<!--<parameter name="lexiconFilePath" value="experiment/topTermsLexicon.txt"/>
-			<parameter name="lexiconEncoded" value="false"/>-->
-        </parameters>
-        <analyzer name="global"/>
     </feature>
 	
-	<feature type="BigramTerms" name="Unigrams on content" weight="1">
+	<feature type="TermVector" field="content" name="Unigram binary" >
         <description>Bla bla bla</description>
         <parameters>
-            <parameter name="field" value="content"/>
-            <parameter name="binary" value="false"/>           
-			<parameter name="frequencyThreshold" value="50"/>           
-			<!--<parameter name="lexiconFilePath" value="experiment/topTermsLexicon.txt"/>
-			<parameter name="lexiconEncoded" value="false"/>-->
+            <parameter name="nGramSize" value="1"/>
+            <parameter name="weight" value="binary"/>
+			<parameter name="frequencyThreshold" value="3"/>
         </parameters>
-        <analyzer name="global"/>
-    </feature>	
+        <analyzer name="classic"/>
+    </feature>
+
+	<feature type="TermVector" field="content" name="Unigram integer" >
+        <description>Bla bla bla</description>
+        <parameters>
+            <parameter name="nGramSize" value="1"/>
+			<parameter name="weight" value="integer"/>
+			<parameter name="frequencyThreshold" value="3"/>
+			<!-- <parameter name="lexiconFilePath" value="experiment/topTermsLexicon.txt"/>
+			<parameter name="lexiconEncoded" value="false"/> -->
+        </parameters>
+        <analyzer name="classic"/>
+    </feature>
 	
+	<feature type="TermVector" field="content" name="Unigram tfidf" >
+        <description>Bla bla bla</description>
+        <parameters>
+            <parameter name="nGramSize" value="1"/>
+			<parameter name="weight" value="tfidf"/>
+			<parameter name="frequencyThreshold" value="3"/>
+			<!-- <parameter name="lexiconFilePath" value="experiment/topTermsLexicon.txt"/>
+			<parameter name="lexiconEncoded" value="false"/> -->
+        </parameters>
+        <analyzer name="classic"/>
+    </feature>
+
 </features>
+

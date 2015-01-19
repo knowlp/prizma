@@ -2,7 +2,7 @@ package com.hrzafer.prizma.feature.value;
 
 import com.hrzafer.prizma.data.Document;
 import com.hrzafer.prizma.feature.Feature;
-import com.hrzafer.prizma.feature.NGramTerms;
+import com.hrzafer.prizma.feature.TermVector;
 
 import java.util.*;
 
@@ -27,8 +27,8 @@ public class DocumentVectors {
         this.name = name;
         this.features = features;
         for (Feature feature : features) {
-            if (feature.getType().endsWith("gramTerms")) {
-                ((NGramTerms) feature).buildTermDictionary(documents);
+            if (feature.getType().equals("TermVector")) {
+                ((TermVector) feature).buildTermDictionary(documents);
             }
         }
         vectors = new ArrayList<>();

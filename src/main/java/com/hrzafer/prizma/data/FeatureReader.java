@@ -5,6 +5,7 @@
  */
 package com.hrzafer.prizma.data;
 
+import com.hrzafer.prizma.feature.FeatureFactory;
 import com.hrzafer.prizma.Globals;
 import com.hrzafer.prizma.Resources;
 import com.hrzafer.prizma.feature.Feature;
@@ -39,7 +40,7 @@ public class FeatureReader {
 
     public static List<Feature> read(String xmlFilename) {
         try {
-            File fXmlFile = new File(xmlFilename);
+
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder;
             dBuilder = dbFactory.newDocumentBuilder();
@@ -81,14 +82,10 @@ public class FeatureReader {
         Element parametersElement = getSingleElementByName(featureElement, "parameters");
         Element analyzerElement = getSingleElementByName(featureElement, "analyzer");
         String type = featureElement.getAttribute("type");
+        String field = featureElement.getAttribute("field");
         String name = featureElement.getAttribute("name");
-        int weight = 1 ;
-        try {
-            weight = Integer.parseInt(featureElement.getAttribute("weight"));
-        }catch (Exception e){ }
-
         String description = descriptionElement.getTextContent();
-        Map<String, String> parameters = readParameters(parametersElement);
+
         Analyzer analyzer;
         if (analyzerElement == null){
             analyzer = null;
@@ -100,7 +97,15 @@ public class FeatureReader {
             analyzer = readAnalyzer(analyzerElement);
         }
 
-        return Feature.getInstance(type, name, weight, description, parameters, analyzer);
+        Map<String, String> parameters;
+        if (parametersElement == null){
+            parameters = null;
+        }
+        else {
+            parameters = readParameters(parametersElement);
+        }
+
+        return FeatureFactory.getInstance(type, field, name, description, parameters, analyzer);
     }
 
     private static Element getSingleElementByName(Element parent, String name) {
@@ -118,24 +123,24 @@ public class FeatureReader {
         NodeList normalizerNodes = analyzerElement.getElementsByTagName("normalizer");
         NodeList tokenizerNodes = analyzerElement.getElementsByTagName("tokenizer");
         NodeList filterNodes = analyzerElement.getElementsByTagName("filter");
-        List<INormalizer> normalizers = readNormalizers(normalizerNodes);
+        List<ICharFilter> normalizers = readNormalizers(normalizerNodes);
         ITokenizer tokenizer = readTokenizer(tokenizerNodes);
         List<IFilter> filters = readFilters(filterNodes);
         return new Analyzer(normalizers, tokenizer, filters);
 
     }
 
-    private static List<INormalizer> readNormalizers(NodeList normalizerNodes){
-        List<INormalizer> list = new ArrayList<>();
+    private static List<ICharFilter> readNormalizers(NodeList normalizerNodes){
+        List<ICharFilter> list = new ArrayList<>();
         for (int i = 0; i < normalizerNodes.getLength(); i++) {
             Element normalizerElement = (Element) normalizerNodes.item(i);
-            INormalizer n = readNormalizer(normalizerElement);
+            ICharFilter n = readNormalizer(normalizerElement);
             list.add(n);
         }
         return list;
     }
 
-    private static INormalizer readNormalizer(Element normalizerElement){
+    private static ICharFilter readNormalizer(Element normalizerElement){
         String name = normalizerElement.getAttribute("name");
         return NormalizerFactory.create(name);
     }

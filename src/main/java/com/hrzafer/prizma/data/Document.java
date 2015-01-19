@@ -25,7 +25,9 @@ public class Document implements Comparable<Document> {
 
     public Document(DocumentSource source) {
         this.data = source.getData();
-        data.put(CATEGORY_FIELDNAME, "?");
+        if (!data.containsKey(CATEGORY_FIELDNAME)){
+            data.put(CATEGORY_FIELDNAME, "?");
+        }
     }
 
     public String getActualCategory() {
@@ -46,6 +48,7 @@ public class Document implements Comparable<Document> {
 
     public void setPredictedCategory(String predictedCategory) {
         data.put(PREDICTED_CATEGORY_FIELDNAME, predictedCategory);
+
     }
 
     public String[] getData(){

@@ -16,7 +16,7 @@ public class StemDictReader {
         Map<String, String> map = new HashMap<String, String>();
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
-            if (line.charAt(0) != '#') {
+            if (!line.isEmpty() && line.charAt(0) != '#') {
                 try {
                     String[] columns = line.split("\t");
                     if (map.put(columns[0], columns[1]) != null) {
@@ -25,7 +25,6 @@ public class StemDictReader {
                 } catch (ArrayIndexOutOfBoundsException e) {
                     System.out.println("HATA:" + line);
                 }
-
             }
         }
         return map;
